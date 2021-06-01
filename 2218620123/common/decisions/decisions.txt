@@ -1,0 +1,382 @@
+﻿
+decision_stageone = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+	desc = decision_stageone_desc
+	selection_tooltip = decision_stageone_tooltip
+
+	is_shown = { 
+		is_ruler = yes 
+		martial >= 1 
+		prestige >= 800 
+		NOT = { has_trait = uchihagene }
+		NOT = { has_trait = onetomoe }
+		NOT = { has_trait = twotomoe } 
+		NOT = { has_trait = threetomoe }
+		NOT = { has_trait = mangekyosharingan } 
+		NOT = { has_trait = eternalsharingan }
+	}
+
+	is_valid = {
+		or = {
+			has_trait = education_martial_1
+			has_trait = education_martial_2
+			has_trait = education_martial_3
+			has_trait = education_martial_4
+		}
+	}
+
+	cost = {
+		prestige = 701
+	}
+
+    effect = { trigger_event = SG_Sharingan.1
+    }
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 50
+	}
+}
+
+# decision_stagetwo = {
+#	ai_check_interval = 0
+#	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+#	desc = decision_stagetwo_desc
+#	selection_tooltip = decision_stagetwo_tooltip
+#
+#	is_shown = { is_ruler = yes martial >= 2 prestige >= 800 
+#	NOT = { has_trait = onetomoe }
+#	NOT = { has_trait = twotomoe } 
+#	NOT = { has_trait = threetomoe }
+#	NOT = { has_trait = mangekyosharingan } 
+#	NOT = { has_trait = eternalsharingan }
+#	NOT = { has_trait = rinnegan }
+#	NOT = { has_trait = rinnesharingan }
+#	}
+#
+#	is_valid = {
+#		or = {
+#			has_trait = uchihagene
+#		}
+#	}
+#
+#	cost = {
+#		prestige = 750
+#	}
+#
+#   effect = { trigger_event = SG_Sharingan.2
+#    }
+#
+#	ai_potential = {
+#		always = yes
+#	}
+#
+#	ai_will_do = {
+#		base = 50
+#	}
+#}
+
+#decision_stagethree = {
+#	ai_check_interval = 0
+#	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+#	desc = decision_stagethree_desc
+#	selection_tooltip = decision_stagethree_tooltip
+#
+#	is_shown = { is_ruler = yes martial >= 2 prestige >= 800 
+#	NOT = { has_trait = twotomoe }
+#	NOT = { has_trait = threetomoe }
+#	NOT = { has_trait = mangekyosharingan } 
+#	NOT = { has_trait = eternalsharingan }
+#	NOT = { has_trait = rinnegan }
+#	NOT = { has_trait = rinnesharingan }
+#	}
+#
+#	is_valid = {
+#		or = {
+#			has_trait = onetomoe
+#		}
+#	}
+#
+#	cost = {
+#		prestige = 800
+#	}
+#
+#    effect = { trigger_event = SG_Sharingan.3
+#    }
+#
+#	ai_potential = {
+#		always = yes
+#	}
+#
+#	ai_will_do = {
+#		base = 50
+#	}
+#}
+
+#decision_stagefour = {
+#	ai_check_interval = 0
+#	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+#	desc = decision_stagefour_desc
+#	selection_tooltip = decision_stagefour_tooltip
+#
+#	is_shown = { is_ruler = yes martial >= 3 prestige >= 800 
+#	NOT = { has_trait = threetomoe }
+#	NOT = { has_trait = mangekyosharingan } 
+#	NOT = { has_trait = eternalsharingan }
+#	NOT = { has_trait = rinnegan }
+#	NOT = { has_trait = rinnesharingan }
+#	}
+#
+#	is_valid = {
+#		or = {
+#			has_trait = twotomoe
+#		}
+#	}
+#
+#	cost = {
+#		prestige = 850
+#	}
+#
+#    effect = { trigger_event = SG_Sharingan.4
+#    }
+#
+#	ai_potential = {
+#		always = yes
+#	}
+#
+#	ai_will_do = {
+#		base = 50
+#	}
+#}
+
+#decision_stagefive = {
+#	ai_check_interval = 0
+#	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+#	desc = decision_stagefive_desc
+#	selection_tooltip = decision_stagefive_tooltip
+#
+#	is_shown = { is_ruler = yes martial >= 5 prestige >= 800 
+#	NOT = { has_trait = mangekyosharingan }
+#	NOT = { has_trait = eternalsharingan }
+#	NOT = { has_trait = rinnegan }
+#	NOT = { has_trait = rinnesharingan }
+#	}
+#
+#	is_valid = {
+#		or = {
+#			has_trait = threetomoe
+#		}
+#	}
+#
+#	cost = {
+#		prestige = 900
+#	}
+#
+#    effect = { trigger_event = SG_Sharingan.5
+#    }
+#
+#	ai_potential = {
+#		always = yes
+#	}
+#
+#	ai_will_do = {
+#		base = 50
+#	}
+#}
+
+#decision_stagesix = {
+#	ai_check_interval = 0
+#	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+#	desc = decision_stagesix_desc
+#	selection_tooltip = decision_stagesix_tooltip
+#
+#	is_shown = { 
+#		is_ruler = yes 
+#		martial >= 7 
+#		prestige >= 800
+#		NOT = { has_trait = rinnegan }
+#		NOT = { has_trait = rinnesharingan }
+#	}
+#
+#	is_valid = {
+#		or = {
+#			has_trait = mangekyosharingan
+#		}
+#	}
+#
+#	cost = {
+#		prestige = 950
+#	}
+#
+#    effect = { trigger_event = SG_Sharingan.6
+#    }
+#
+#	ai_potential = {
+#		always = yes
+#	}
+#
+#	ai_will_do = {
+#		base = 50
+#	}
+#}
+
+decision_edotensei = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_edo_tensei.dds"
+	desc = decision_edotensei_desc
+	selection_tooltip = decision_edotensei_tooltip
+
+	is_shown = { 
+		is_ruler = yes 
+		gold >= 500
+		has_character_flag = unlock_edotensei
+		NOT = { has_character_flag = lock_edotensei }
+		is_ai = no
+	}
+
+	is_valid = {
+		or = { age >= 16 }
+	}
+
+	cost = {
+		gold = 500
+	}
+
+	effect = { 
+		trigger_event = EdoTensei.6
+		add_character_flag = {
+			flag = lock_edotensei
+			years = 20
+		}
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+decision_chibakutensei = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_edo_tensei.dds"
+	desc = decision_chibaku_desc
+	selection_tooltip = decision_chibakutensei_tooltip
+
+	is_shown = {
+		is_ai = no
+		NOT = { has_character_flag = lock_chibakutensei }
+		has_trait = rinnegan
+	}
+
+	is_valid = {
+		or = { age >= 16 }
+	}
+
+	effect = {
+		trigger_event = sixpaths_jutsu.1
+		add_character_flag = {
+			flag = lock_chibakutensei
+			years = 20
+		}
+	}
+}
+
+decision_hyugaone = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_eight_trigrams.dds"
+	desc = decision_hyugaone_desc
+	selection_tooltip = decision_hyugaone_tooltip
+
+	is_shown = { 
+		is_ruler = yes 
+		intrigue >= 1 
+		prestige >= 800
+		NOT = {
+			has_trait = uchihagene
+		} 
+	}
+
+	is_valid = {
+		or = {
+			has_trait = education_intrigue_1
+			has_trait = education_intrigue_2
+			has_trait = education_intrigue_3
+			has_trait = education_intrigue_4
+		}
+	}
+
+	cost = {
+		prestige = 701
+	}
+
+    effect = { trigger_event = ByakuganEvent.1
+    }
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 50
+	}
+}
+
+decision_elemental_release = {
+	ai_check_interval = 50
+	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+	desc = decision_elemental_release_desc
+	selection_tooltip = decision_elemental_release_tooltip
+	is_shown = {
+		age >= 12
+		NOT = { has_trait = windrelease }
+		NOT = { has_trait = firerelease }
+		NOT = { has_trait = waterrelease }
+		NOT = { has_trait = lightningrelease }
+		NOT = { has_trait = earthrelease }
+	}
+	
+	effect = { trigger_event = ElementalRelease.1 
+	}
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+decision_summoning_jutsu = {
+	ai_check__interval = 50
+	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+	desc = decision_summoning_jutsu_desc
+	selection_tooltip = decision_summoning_jutsu_tooltip
+	is_shown = {
+		age >= 12
+		NOT = { has_character_flag = summoning_jutsu }
+	}
+	
+	effect = { 
+		trigger_event = Summoning_Jutsu.1
+		add_character_flag = {
+			flag = summoning_jutsu
+			years = 300
+		}
+	}
+
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

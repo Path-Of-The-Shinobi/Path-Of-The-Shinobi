@@ -1,0 +1,392 @@
+﻿namespace = EdoTensei
+
+EdoTensei.1 = { 
+    type = character_event
+    title = EdoTensei.1.t
+    desc = EdoTensei.1.d
+    
+    theme = vassal
+    
+    right_portrait = {
+    character = root
+    animation = worry
+    }
+    
+    immediate = 
+    { 
+        create_character = { 
+             name = "Turkish Ōtsutsuki"
+			 age = 25
+			 gender = male
+			 dynasty_house = house_Ōtsutsuki
+			 diplomacy = 25
+             stewardship = 5
+			 martial = 5
+			 intrigue = 5
+			 learning = 5
+			 faith = faith:sixpaths
+			 culture = culture:norse
+             trait = education_diplomacy_4
+			 trait = diplomat
+             trait = august
+             trait = reveler_3
+			 trait = rinnegan
+             trait = gregarious
+             health = 20
+			 random_traits = no		
+			 location = root.capital_province	
+			 save_scope_as = gp_hamura
+        }
+    }
+	
+    option = {
+		name = EdoTensei.1.o
+
+        hidden_effect = {
+		    add_courtier = scope:gp_hamura
+
+		        scope:gp_hamura = {
+				    add_character_flag = {
+					    flag = blocked_from_leaving
+					    years = 50
+                    }
+                }
+			}
+		}
+	}
+
+EdoTensei.2 = {
+	type = character_event 
+	title = EdoTensei.2.t
+	desc = EdoTensei.2.d
+	theme = crown
+
+	right_portrait = {
+		character = root
+		animation = worry
+	}
+
+	left_portrait = {
+		character = scope:gp_madara
+		animation = worry
+	}
+
+	immediate = 
+	{
+		create_character = {
+			name = "Madara Uchiha"
+			age = 25
+			gender = male
+			dynasty = dynn_Uchiha
+			diplomacy = 15
+			martial = 25
+			intrigue = 16
+            trait = uchihagene
+			learning = 10
+			faith = faith:sixpaths
+			culture = culture:norse
+			trait = uchihagene
+			trait = diligent
+			trait = gregarious
+			trait = rinnegan
+			trait = rinnesharingan
+			random_traits = no		
+			location = root.capital_province	
+			save_scope_as = gp_madara
+		}
+	}
+
+	option = {
+		name = EdoTensei.2.o
+
+		hidden_effect = {
+			add_courtier = scope:gp_madara
+
+			scope:gp_madara = {
+					add_character_flag = {
+						flag = blocked_from_leaving
+						years = 2
+					}
+			    }
+		    }
+	    }
+    }
+
+EdoTensei.3 = { 
+    type = character_event
+    title = EdoTensei.3.t
+    desc = EdoTensei.3.d
+    
+    theme = vassal
+    
+    right_portrait = {
+    character = root
+    animation = worry
+    }
+
+    immediate = {
+	    create_character = {
+		    name = "ObanMark Hygua"
+		    age = 25
+		    gender = male
+		    dynasty = house_hygua
+		    diplomacy = 5
+            stewardship = 25
+		    martial = 5
+		    intrigue = 5
+		    learning = 5
+		    faith = faith:sixpaths
+		    culture = culture:norse
+            trait = education_stewardship_4
+		    trait = overseer
+            trait = architect
+            trait = administrator
+            trait = avaricious
+            health = 20
+		    random_traits = no		
+		    location = root.capital_province	
+		    save_scope_as = gp_obanmark
+	    }
+    }
+
+    option = {
+	    name = EdoTensei.3.o
+
+        hidden_effect = {
+		    add_courtier = scope:gp_obanmark
+
+		    scope:gp_obanmark = {
+				    add_character_flag = {
+					    flag = blocked_from_leaving
+					    years = 50
+                    }
+                }
+            }
+        }
+    }  
+
+EdoTensei.4 = {
+    type = character_event
+    title = EdoTensei.4.t
+    desc = EdoTensei.4.d
+    
+    theme = vassal
+    
+    right_portrait = {
+    character = root
+    animation = worry
+    }
+
+    immediate = 
+	{
+		create_character = {
+			name = "Sanglys Tokuyami"
+			age = 25
+			gender = male
+			dynasty = none
+			diplomacy = 5
+            stewardship = 5
+            health = 20
+			martial = 5
+			intrigue = 25
+			learning = 5
+			faith = faith:sixpaths
+			culture = culture:norse
+            trait = education_intrigue_4
+			trait = schemer
+            trait = seducer
+            trait = deceitful
+            trait = arbitrary
+			random_traits = no		
+			location = root.capital_province	
+			save_scope_as = gp_sanglys
+		}
+	}
+
+	option = {
+		name = EdoTensei.4.o
+
+        hidden_effect = {
+		    add_courtier = scope:gp_sanglys
+
+		    scope:gp_sanglys = {
+				    add_character_flag = {
+					    flag = blocked_from_leaving
+					    years = 500
+                    }
+                }
+            }
+        }
+    }
+
+EdoTensei.5 = {
+    type = character_event
+    title = EdoTensei.5.t
+    desc = EdoTensei.5.d
+    
+    theme = vassal
+    
+    right_portrait = {
+    character = root
+    animation = worry
+    }
+
+    immediate = 
+	{
+		create_character = {
+			name = "Veronica Tokuyami"
+			age = 25
+			gender = female
+			dynasty = none
+			diplomacy = 5
+			martial = 5
+            stewardship = 5
+            health = 20
+			intrigue = 5
+			learning = 25
+			faith = faith:sixpaths
+			culture = culture:norse
+            trait = education_learning_4
+			trait = scholar
+            trait = theologian
+            trait = mystic_3
+            trait = physician_3
+			random_traits = no		
+			location = root.capital_province	
+			save_scope_as = gp_veronica
+		}
+	}
+
+	option = {
+		name = EdoTensei.5.o
+
+        hidden_effect = {
+		    add_courtier = scope:gp_veronica
+
+		    scope:gp_veronica = {
+				     add_character_flag = {
+				        flag = blocked_from_leaving
+				        years = 500
+                    }
+                }
+            }
+        }
+    }
+
+EdoTensei.6 = {
+    type = character_event
+    title = EdoTensei.6.t
+    desc = EdoTensei.6.d
+    
+    theme = realm
+    
+    right_portrait = {
+    character = root
+    animation = worry
+    }
+
+    trigger = {
+        is_ruler = yes
+        age >= 16
+    }
+
+    option = {
+		name = EdoTensei.6.o
+		trigger = {
+			is_ai = no
+		}
+			ai_chance = {
+				factor = 0
+		}
+			random_list = {
+				100 = { trigger_event = EdoTensei.1 }
+			}
+	}
+
+    option = {
+		name = EdoTensei.6.o1
+		trigger = {
+			is_ai = no
+		}
+			ai_chance = {
+				factor = 0
+		}
+			random_list = {
+				100 = { trigger_event = EdoTensei.2 }
+			}
+	}
+
+    option = {
+		name = EdoTensei.6.o2
+		trigger = {
+			is_ai = no
+		}
+			ai_chance = {
+				factor = 0
+		}
+			random_list = {
+				100 = { trigger_event = EdoTensei.3 }
+			}
+	}
+
+    option = {
+		name = EdoTensei.6.o3
+		trigger = {
+			is_ai = no
+		}
+			ai_chance = {
+				factor = 0
+		}
+			random_list = {
+				100 = { trigger_event = EdoTensei.4 }
+			}
+	}
+
+    option = {
+		name = EdoTensei.6.o4
+		trigger = {
+			is_ai = no
+		}
+			ai_chance = {
+				factor = 0
+		}
+			random_list = {
+				100 = { trigger_event = EdoTensei.5 }
+			}
+	    }
+    }
+
+EdoTensei.7 = { 
+    type = character_event
+    title = EdoTensei.7.t
+    desc = EdoTensei.7.d
+
+    theme = vassal
+    
+    right_portrait = {
+    character = root
+    animation = anger
+    }
+
+	left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+	option = {
+		name = EdoTensei.7.o
+		hidden_effect = {
+			scope:actor = {
+				add_character_modifier = { 
+					modifier = fushitenseigood_modifier
+					years = 70
+				}
+			}
+
+			scope:recipient = {
+				add_character_modifier = { 
+					modifier = fushitenseibad_modifier
+					years = 25
+			}
+		}
+	}

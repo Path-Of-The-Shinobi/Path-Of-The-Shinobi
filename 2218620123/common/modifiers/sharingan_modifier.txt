@@ -1,0 +1,67 @@
+﻿#Sharingan Modifiers
+
+fushitenseigood_modifier = {
+    icon = health_positive
+    health = 500
+}
+
+fushitenseibad_modifier = {
+    icon = health_negative
+    health = -500
+}
+
+izanagi_modifier = {
+    icon = martial_positive
+    advantage = 20
+}
+
+chibakutensei_modifier = {
+    icon = martial_positive
+    siege_phase_time = -40
+}
+
+eight_trigrams_modifier = {
+    icon = prowess_positive
+    prowess = 64
+}
+
+woodstyle_deep_forest_emergence_modifier = {
+    icon = diplomacy_positive
+    holding_build_speed = -1
+    holding_build_gold_cost = -0.50
+}
+
+under_amaterasu_modifier = {
+    icon = health_negative
+    health = -15
+}
+
+under_tsukuyomi_modifier = {
+    icon = health_negative
+    health = -20
+}
+
+toad_summons_modifier = {
+    icon = diplomacy_positive
+    diplomacy = 5
+}
+
+slug_summons_modifier = {
+    icon = learning_positive
+    learning = 5
+}
+
+snake_summons_modifier = {
+    icon = intrigue_positive
+    intrigue = 5
+}
+
+dragon_summons_modifier = {
+    icon = martial_positive
+    martial = 5
+}
+
+monkey_summons_modifier = {
+    icon = stewardship_positive
+    stewardship = 5
+}

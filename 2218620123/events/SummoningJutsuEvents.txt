@@ -1,0 +1,25 @@
+﻿namespace = Summoning_Jutsu
+
+Summoning_Jutsu.1 = {
+    type = character_event
+	title = Summoning_Jutsu.1.t
+	desc = Summoning_Jutsu.1.d
+
+	theme = martial
+
+	right_portrait = {
+	character = root
+	animation = anger
+	}
+
+	option = {
+		name = Summoning_Jutsu.1.o
+			random_list = {
+				20 = { add_character_modifier = toad_summons_modifier }
+				20 = { add_character_modifier = slug_summons_modifier }
+				20 = { add_character_modifier = snake_summons_modifier }
+                20 = { add_character_modifier = dragon_summons_modifier }
+                20 = { add_character_modifier = monkey_summons_modifier }
+			}
+		}
+}

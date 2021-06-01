@@ -1,0 +1,75 @@
+﻿namespace = MangekyoEvents
+
+MangekyoEvents.0 = {
+    type = character_event
+    title = MangekyoEvents.0.t
+    desc = MangekyoEvents.0.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = MangekyoEvents.0.o
+		hidden_effect = {
+			scope:actor = {
+				add_character_flag = {
+                    flag = Used_Amaterasu
+                    years = 10
+                }
+			}
+
+			scope:recipient = {
+				add_character_modifier = {
+                    modifier = under_amaterasu_modifier
+                    years = 15
+                }
+			}
+		}
+	}
+}
+
+MangekyoEvents.1 = {
+    type = character_event
+    title = MangekyoEvents.1.t
+    desc = MangekyoEvents.1.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = MangekyoEvents.1.o
+		hidden_effect = {
+			scope:actor = {
+				add_character_flag = {
+                    flag = performed_tsukuyomi
+                    years = 10
+                }
+			}
+
+			scope:recipient = {
+				add_character_modifier = {
+                    modifier = under_tsukuyomi_modifier
+                    years = 15
+                }
+			}
+		}
+	}
+}

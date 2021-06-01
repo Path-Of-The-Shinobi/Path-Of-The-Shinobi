@@ -1,0 +1,214 @@
+﻿namespace = SG_Sharingan
+
+SG_Sharingan.1 = {
+	type = character_event
+	title = SG_Sharingan.1.t
+	desc = SG_Sharingan.1.d
+	
+	theme = crown
+
+	right_portrait = {
+	character = root
+	animation = worry
+	}
+	
+	option = {
+		name = SG_Sharingan.1.o
+		trigger = { age >= 16 }
+		
+			random_list = {
+	 			100 = { add_trait = uchihagene }
+			}
+		}
+}
+
+SG_Sharingan.2 = {
+	type = character_event
+	title = SG_Sharingan.2.t
+	desc = SG_Sharingan.2.d
+
+	theme = crown
+
+	right_portrait = {
+	character = root
+	animation = worry
+	}
+
+	option = {
+		name = SG_Sharingan.2.o
+		trigger = {
+			has_trait = uchihagene
+		}
+			random_list = {
+				100 = { add_trait = onetomoe }
+			}
+	}
+}
+
+SG_Sharingan.3 = {
+	type = character_event
+	title = SG_Sharingan.3.t
+	desc = SG_Sharingan.3.d
+	theme = crown
+
+	right_portrait = {
+	character = root
+	animation = worry
+	}
+
+	option = {
+		name = SG_Sharingan.3.o
+		trigger = {
+			has_trait = onetomoe
+		}
+			random_list = {
+				100 = { add_trait = twotomoe }
+			}
+			remove_trait = onetomoe
+	}
+}
+
+SG_Sharingan.4 = {
+	type = character_event
+	title = SG_Sharingan.4.t
+	desc = SG_Sharingan.4.d
+
+	theme = crown
+
+	right_portrait = {
+	character = root
+	animation = worry
+	}
+
+	option = {
+		name = SG_Sharingan.4.o
+		trigger = {
+			has_trait = twotomoe
+		}
+			random_list = {
+				100 = { add_trait = threetomoe }
+			}
+			remove_trait = twotomoe
+	}
+}
+
+SG_Sharingan.5 = {
+	type = character_event
+	title = SG_Sharingan.5.t
+	desc = SG_Sharingan.5.d
+
+	theme = crown
+
+	right_portrait = {
+	character = root
+	animation = worry
+	}
+
+	option = {
+		name = SG_Sharingan.5.o
+		trigger = {
+			has_trait = threetomoe
+		}
+			random_list = {
+				95 = { add_trait = mangekyosharingan }
+				50 = { add_trait = wounded_1 }
+			}
+	}
+
+	option = {
+		name = SG_Sharingan.5.k
+		trigger = {
+			has_trait = threetomoe
+		}
+	}
+}
+
+SG_Sharingan.6 = {
+	type = character_event
+	title = SG_Sharingan.6.t
+	desc = SG_Sharingan.6.d
+
+	theme = crown
+
+	right_portrait = {
+	character = root
+	animation = worry
+	}
+
+	option = {
+		name = SG_Sharingan.6.o
+		trigger = {
+			has_trait = mangekyosharingan
+		}
+			random_list = {
+				75 = { add_trait = eternalsharingan }
+				25 = { add_trait = wounded_2 }
+			}
+			remove_trait = mangekyosharingan
+	}
+
+	option = {
+		name = SG_Sharingan.6.k
+		trigger = {
+			has_trait = mangekyosharingan
+		}
+	}
+}
+
+SG_Sharingan.7 = {
+	type = character_event
+	title = SG_Sharingan.7.t
+	desc = SG_Sharingan.7.d
+
+	theme = crown
+
+	right_portrait = {
+	character = root
+	animation = anger
+	}
+
+	option = {
+		name = SG_Sharingan.7.o
+		trigger = {
+			has_trait = eternalsharingan
+		}
+			random_list = {
+				45 = { add_trait = rinnegan }
+				55 = { add_trait = wounded_2 }
+				2 = { remove_trait = eternalsharingan }
+			}
+	}
+
+	option = {
+		name = SG_Sharingan.7.k
+		trigger = {
+			has_trait = eternalsharingan
+		}
+	}
+}
+
+SG_Sharingan.8 = {
+	type = character_event
+	title = SG_Sharingan.8.t
+	desc = SG_Sharingan.8.d
+	theme = crown
+
+	right_portrait = {
+		character = root
+		animation = anger
+	}
+
+	option = {
+		name = SG_Sharingan.8.o
+		trigger = {
+			age >= 16
+		}
+			scope:actor = {
+				hidden_effect = {
+					add_hook = {
+						type = fabrication_hook
+						target = scope:recipient
+				}
+			}
+	}
+}

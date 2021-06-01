@@ -1,0 +1,25 @@
+﻿namespace = Izanagi
+
+Izanagi.1 = {
+    type = character_event
+    title = izanagi.t
+    desc = izanagi.d
+
+    theme = vassal
+    
+    right_portrait = {
+    character = root
+    animation = anger
+    }
+
+	option = {
+		name = izanagi.o
+		hidden_effect = {
+			scope:actor = {
+				add_character_modifier =  { 
+                    modifier = izanagi_modifier
+                    years = 2
+                }
+            }
+        }
+	}

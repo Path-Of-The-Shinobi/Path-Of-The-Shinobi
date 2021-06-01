@@ -1,0 +1,42 @@
+﻿namespace = sixpaths_jutsu
+
+sixpaths_jutsu.1 = {
+  type = character_event
+  title = sixpaths_jutsu.1.t
+  desc = sixpaths_jutsu.1.d
+    
+  theme = vassal
+
+  right_portrait = {
+  character = root
+  animation = anger
+  }
+
+  option = {
+	  name = sixpaths_jutsu.1.o
+	  hidden_effect = { 
+      add_character_modifier = { 
+      modifier = chibakutensei_modifier
+      years = 2
+      }
+    }
+  }
+}
+
+#sixpaths_jutsu.2 = {
+#  type = character_event
+#  title = sixpaths_jutsu.2.t
+#  desc = sixpaths_jutsu.2.d
+#
+#  theme = martial
+#
+#  right_portrait = {
+#    character = root
+#    animation = worry
+#  }
+#
+#  option = {
+#    sixpaths_jutsu.2.o
+#
+#  }
+#}

@@ -1,0 +1,14 @@
+﻿l_english:
+
+ ninjutsu_name:1 "Ninjutsu"
+ ninjutsu_focus:1 "Ninjutsu"
+ ninjutsu_focus_desc:0 "Ninjutsu (Ninja Techniques) are one of the three main jutsu categories. Ninjutsu is the most nebulous of the three , and may not be simply described as anything that is not taijutsu or genjutsu"
+ ninjutsu_focus_effect_desc:0 "Focusing on Ninjutsu grants:"
+ genjutsu_name:1 "Genjutsu"
+ taijutsu_name:1 "Taijutsu"
+ genjutsu_focus:1 "Genjutsu"
+ genjutsu_focus_desc:1 "Genjutsu (Illusionary Techniques) is one of the main jutsu categories which uses chakra. Unlike ninjutsu, the effects of genjutsu are not real, being only sensory illusions experienced by those who fall victim to it. Genjutsu falls under the broad category of Yin Release"
+ taijutsu_focus:1 "Taijutsu"
+ taijutsu_focus_desc:1 "Taijutsu (Body Techniques) is a basic form of techniques and refers to any techniques involving the martial arts or the optimisation of natural human abilities. Executed by directly accessing the user's physical and mental energies, relying on the stamina and strength gained through training. It typically does not require chakra. Taijutsu is, simply put, hand-to-hand combat"
+ taijutsu_focus_effect_desc:0 "Focusing on Taijutsu grants:"
+ genjutsu_focus_effect_desc:0 "Focusing on Genjutsu grants:"

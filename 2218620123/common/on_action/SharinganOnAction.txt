@@ -1,0 +1,141 @@
+﻿on_birthday = {
+    on_actions = {
+        sharingan_birthday_one
+        sharingan_birthday_two
+        sharingan_birthday_three
+        sharingan_birthday_four
+        sharingan_birthday_five
+        sharingan_birthday_six
+        sharingan_birthday_seven
+        sharingan_birthday_eight
+    }
+}
+
+sharingan_birthday_one = {
+    trigger = {
+        AND = {
+            age = 16
+            martial >= 2
+        }
+        OR = {
+            has_trait = education_martial_1
+        }
+        OR = {
+            has_trait = education_martial_2
+        }
+        OR = {
+            has_trait = education_martial_3
+        }
+        OR = {
+            has_trait = education_martial_4
+        }
+    }
+
+    events = {
+        SG_Sharingan.1
+    }
+}
+
+sharingan_birthday_two = {
+    trigger = {
+        AND = {
+            age = 18
+            has_trait = uchihagene
+            NOT = { has_trait = rinnesharingan }
+        }
+    }
+
+    events = {
+        SG_Sharingan.2
+    }
+}
+
+sharingan_birthday_three = {
+    trigger = {
+        AND = {
+            age = 20
+            has_trait = onetomoe
+            NOT = { has_trait = rinnesharingan }
+        }
+    }
+
+    events = {
+        SG_Sharingan.3
+    }
+}
+
+sharingan_birthday_four = {
+    trigger = {
+        AND = {
+            age = 22
+            has_trait = twotomoe
+            NOT = { has_trait = rinnesharingan }
+        }
+    }
+
+    events = {
+        SG_Sharingan.4
+    }
+}
+
+sharingan_birthday_five = {
+    trigger = {
+        AND = {
+            age = 24
+            has_trait = threetomoe
+            NOT = { has_trait = rinnesharingan }
+        }
+    }
+
+    events = {
+        SG_Sharingan.5
+    }
+}
+
+sharingan_birthday_six = {
+    trigger = {
+        AND = {
+            age = 26
+            has_trait = mangekyosharingan
+            NOT = { has_trait = rinnesharingan }
+        }
+    }
+
+    events = {
+        SG_Sharingan.6
+    }
+}
+
+sharingan_birthday_seven = {
+    trigger = {
+        AND = {
+            age >= 28
+            has_trait = eternalsharingan
+            NOT = { has_trait = rinnegan }
+        }
+    }
+
+    events = {
+        SG_Sharingan.7
+    }
+}
+
+sharingan_birthday_eight = {
+    trigger = {
+        AND = {
+            age >= 16
+            NOT = { has_character_flag = lock_kagyua }
+            is_ai = no
+        }
+    }
+
+    events = {
+        SG_Secret.4
+    }
+
+    effect = {
+        add_character_flag = {
+            flag = lock_kagyua
+        }
+    }
+}

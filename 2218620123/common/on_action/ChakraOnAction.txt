@@ -1,0 +1,10 @@
+﻿#Chakra Events
+
+on_game_start = {
+    effect = {
+        set_variable = {
+            name = Chakra
+            value = 500
+        }
+    }
+}

@@ -1,0 +1,13 @@
+﻿#Special Birth Events
+
+on_birth_child = {
+    on_actions = {
+        Special_Birth_One
+    }
+}
+
+Special_Birth_One = {
+    events = {
+        ElementalRelease.1
+    }
+}

@@ -1,0 +1,139 @@
+﻿namespace = sharingan_level
+
+sharingan_level.1 = {
+    type = character_event
+    title = sharingan_level.1.t
+    desc = sharingan_level.1.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = anger
+    }
+
+    option = {
+		name = sharingan_level.1.o
+		scope:actor = {
+			random_list = {
+				50 = { add_trait = wounded_1 }
+                70 = { add_trait = onetomoe }
+			}
+            add_character_flag = {
+                flag = SG_Level_1
+                months = 2
+            }
+		}
+	}
+}
+
+sharingan_level.2 = {
+    type = character_event
+    title = sharingan_level.2.t
+    desc = sharingan_level.2.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = anger
+    }
+
+    option = {
+		name = sharingan_level.2.o
+		scope:actor = {
+			random_list = {
+				50 = { add_trait = wounded_1 }
+                100 = { add_trait = twotomoe }
+			}
+            remove_trait = onetomoe
+
+            add_character_flag = {
+                flag = SG_Level_2
+                months = 4
+            }
+		}
+	}
+}
+
+sharingan_level.3 = {
+    type = character_event
+    title = sharingan_level.3.t
+    desc = sharingan_level.3.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = anger
+    }
+
+    option = {
+		name = sharingan_level.3.o
+		scope:actor = {
+			random_list = {
+				50 = { add_trait = wounded_1 }
+                100 = { add_trait = threetomoe }
+			}
+            remove_trait = twotomoe
+		}
+        add_character_flag = {
+                flag = SG_Level_3
+                months = 6
+            }
+	}
+}
+
+sharingan_level.4 = {
+    type = character_event
+    title = sharingan_level.4.t
+    desc = sharingan_level.4.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = anger
+    }
+
+    option = {
+		name = sharingan_level.4.o
+		scope:actor = {
+			random_list = {
+				50 = { add_trait = wounded_1 }
+                65 = { add_trait = mangekyosharingan }
+			}
+		}
+        add_character_flag = {
+                flag = SG_Level_4
+                months = 8
+            }
+	}
+}
+
+sharingan_level.5 = {
+    type = character_event
+    title = sharingan_level.5.t
+    desc = sharingan_level.5.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = anger
+    }
+
+    option = {
+		name = sharingan_level.5.o
+		scope:actor = {
+			random_list = {
+				100 = { add_trait = eternalsharingan }
+                100 = { remove_trait = mangekyosharingan }
+			}
+		}
+        add_character_flag = {
+                flag = SG_Level_5
+                months = 10
+            }
+	}
+}

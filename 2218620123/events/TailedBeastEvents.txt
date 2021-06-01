@@ -1,0 +1,311 @@
+﻿namespace = Tailed_Beast
+
+Tailed_Beast.1 = {
+    type = character_event
+    title = Tailed_Beast.1.t
+    desc = Tailed_Beast.1.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = Tailed_Beast.1.o
+		hidden_effect = {
+			scope:actor = {
+				add_trait = one_tail
+			}
+
+			scope:recipient = {
+				remove_trait = one_tail
+			}
+		}
+	}
+}
+
+Tailed_Beast.2 = {
+    type = character_event
+    title = Tailed_Beast.2.t
+    desc = Tailed_Beast.2.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = Tailed_Beast.2.o
+		hidden_effect = {
+			scope:actor = {
+				add_trait = two_tail
+			}
+
+			scope:recipient = {
+				remove_trait = two_tail
+			}
+		}
+	}
+}
+
+Tailed_Beast.3 = {
+    type = character_event
+    title = Tailed_Beast.3.t
+    desc = Tailed_Beast.3.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = Tailed_Beast.3.o
+		hidden_effect = {
+			scope:actor = {
+				add_trait = three_tail
+			}
+
+			scope:recipient = {
+				remove_trait = three_tail
+			}
+		}
+	}
+}
+
+Tailed_Beast.4 = {
+    type = character_event
+    title = Tailed_Beast.4.t
+    desc = Tailed_Beast.4.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = Tailed_Beast.4.o
+		hidden_effect = {
+			scope:actor = {
+				add_trait = four_tail
+			}
+
+			scope:recipient = {
+				remove_trait = four_tail
+			}
+		}
+	}
+}
+
+Tailed_Beast.5 = {
+    type = character_event
+    title = Tailed_Beast.5.t
+    desc = Tailed_Beast.5.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = Tailed_Beast.5.o
+		hidden_effect = {
+			scope:actor = {
+				add_trait = five_tail
+			}
+
+			scope:recipient = {
+				remove_trait = five_tail
+			}
+		}
+	}
+}
+
+Tailed_Beast.6 = {
+    type = character_event
+    title = Tailed_Beast.6.t
+    desc = Tailed_Beast.6.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = Tailed_Beast.6.o
+		hidden_effect = {
+			scope:actor = {
+				add_trait = six_tail
+			}
+
+			scope:recipient = {
+				remove_trait = six_tail
+			}
+		}
+	}
+}
+
+Tailed_Beast.7 = {
+    type = character_event
+    title = Tailed_Beast.7.t
+    desc = Tailed_Beast.7.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = Tailed_Beast.7.o
+		hidden_effect = {
+			scope:actor = {
+				add_trait = seven_tail
+			}
+
+			scope:recipient = {
+				remove_trait = seven_tail
+			}
+		}
+	}
+}
+
+Tailed_Beast.8 = {
+    type = character_event
+    title = Tailed_Beast.8.t
+    desc = Tailed_Beast.8.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = Tailed_Beast.8.o
+		hidden_effect = {
+			scope:actor = {
+				add_trait = eight_tail
+			}
+
+			scope:recipient = {
+				remove_trait = eight_tail
+			}
+		}
+	}
+}
+
+Tailed_Beast.9 = {
+    type = character_event
+    title = Tailed_Beast.9.t
+    desc = Tailed_Beast.9.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = Tailed_Beast.9.o
+		hidden_effect = {
+			scope:actor = {
+				add_trait = nine_tail
+			}
+
+			scope:recipient = {
+				remove_trait = nine_tail
+			}
+		}
+	}
+}
+
+Tailed_Beast.10 = {
+    type = character_event
+    title = Tailed_Beast.10.t
+    desc = Tailed_Beast.10.d
+
+    theme = martial
+
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    left_portrait = {
+	character = scope:recipient
+	animation = worry
+	}
+
+    option = {
+		name = Tailed_Beast.10.o
+		hidden_effect = {
+			scope:actor = {
+				add_trait = ten_tail
+			}
+
+			scope:recipient = {
+				remove_trait = ten_tail
+			}
+		}
+	}
+}

@@ -1,0 +1,547 @@
+﻿#Character Interactions
+
+perform_tsukuyomi_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+    
+    ai_maybe = no
+
+	desc = perform_tsukuyomi_interaction_desc
+
+	is_shown = {
+		scope:actor = {
+			has_trait = uchihagene
+			has_trait = mangekyosharingan
+			NOT = { has_character_flag = performed_tsukuyomi }
+		}
+	}
+    
+     on_send = {
+        scope:actor = {
+			trigger_event = MangekyoEvents.1
+        }
+    }
+}
+
+create_shadow_clone_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+
+	ai_maybe = no
+
+	desc = create_shadow_clone_desc
+
+	is_shown = {
+		scope:actor = {
+			martial >= 10
+			NOT = { has_character_flag = recently_used_shadow_clones }
+			has_character_flag = chakra_level_100
+			is_ai = no
+		}
+	}
+
+	 on_send = {
+		 scope:actor = {
+			 trigger_event = SG_Secret.3
+
+			  add_character_flag = {
+				 flag = recently_used_shadow_clones
+				 years = 5
+			 }
+		 }
+	 }
+}
+
+perform_kotoamatsukami_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+    
+    ai_maybe = no
+
+	desc = perform_kotoamatsukami_desc
+
+	is_shown = {
+		scope:actor = {
+            age >= 16
+			NOT = { has_character_flag = recently_performed_kotoamatsukami }
+			has_character_flag = unlock_kotoamtsukami
+			has_trait = uchihagene
+		}
+	}
+    
+     on_send = {
+        scope:actor = {
+			trigger_event = SG_Sharingan.8
+
+			add_character_flag = {
+				flag = recently_performed_kotoamatsukami
+				years = 15
+			}
+        }
+    }
+}
+
+perform_fushitensei_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = perform_fushitensei_desc
+
+	is_shown = {
+		scope:actor = {
+			age >= 40
+			has_character_flag = unlock_fushitensei
+			NOT = { has_character_flag = lock_fushitensei }
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = EdoTensei.7
+
+			add_character_flag = {
+				flag = lock_fushitensei
+				years = 50
+			}
+		}
+	}
+}
+
+activate_izanagi_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = activate_izanagi_desc
+
+	is_shown = {
+		scope:actor = {
+			has_trait = threetomoe
+			NOT = { has_character_flag = lock_izanagi }
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Izanagi.1
+
+			add_character_flag = {
+				flag = lock_izanagi
+				years = 10
+			}
+		}
+	}
+}
+
+train_sharingan_level_one_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = train_sharingan_level_one_interaction_desc
+
+	is_shown = {
+		scope:actor = {
+			has_trait = uchihagene
+			NOT = { has_trait = onetomoe }
+			NOT = { has_trait = twotomoe }
+			NOT = { has_trait = threetomoe }
+			NOT = { has_trait = mangekyosharingan }
+			NOT = { has_trait = eternalsharingan }
+			NOT = { has_character_flag = SG_Level_1 }
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = sharingan_level.1
+		}
+	}
+}
+
+train_sharingan_level_two_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = train_sharingan_level_two_interaction_desc
+
+	is_shown = {
+		scope:actor = {
+			has_trait = onetomoe
+			NOT = { has_trait = twotomoe }
+			NOT = { has_trait = threetomoe }
+			NOT = { has_trait = mangekyosharingan }
+			NOT = { has_trait = eternalsharingan }
+			NOT = { has_character_flag = SG_Level_2 }
+			NOT = { has_trait = rinnegan }
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = sharingan_level.2
+			}
+		}
+	}
+
+train_sharingan_level_three_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = train_sharingan_level_three_interaction_desc
+
+	is_shown = {
+		scope:actor = {
+			has_trait = twotomoe
+			NOT = { has_character_flag = SG_Level_3 }
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = sharingan_level.3
+		}
+	}
+}
+
+train_sharingan_level_four_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = train_sharingan_level_four_interaction_desc
+
+	is_shown = {
+		scope:actor = {
+			has_trait = threetomoe
+			NOT = { has_character_flag = SG_Level_4 }
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = sharingan_level.4
+		}
+	}
+}
+
+train_sharingan_level_five_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = train_sharingan_level_five_interaction_desc
+
+	is_shown = {
+		scope:actor = {
+			has_trait = mangekyosharingan
+			NOT = { has_character_flag = SG_Level_5 }
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = sharingan_level.5
+		}
+	}
+}
+
+eight_trigrams_character_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = eight_trigrams_character_interaction_desc
+
+	is_shown = {
+		scope:actor = {
+			has_trait = byakugan
+			has_trait = hyugagene
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = ByakuganEvent.2
+		}
+	}
+}
+
+#Jutsu Intereactions
+
+wood_style_interaction_one = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = wood_style_interaction_one_desc
+
+	is_shown = {
+		scope:actor = {
+			has_trait = woodrelease
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Elemental_Jutsu.1
+		}
+	}
+}
+
+become_jinchuriki_interaction_one = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = become_jinchuriki_interaction_one_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = eternalsharingan
+		}
+		NOT = { has_trait = one_tail }
+		NOT = { has_character_flag = Sacrifice }
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Tailed_Beast.1
+			add_character_flag = {
+				flag = Sacrifice
+				years = 3
+			}
+		}
+	}
+}
+
+become_jinchuriki_interaction_two = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = become_jinchuriki_interaction_two_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = eternalsharingan
+		}
+		NOT = { has_trait = two_tail }
+		NOT = { has_character_flag = Sacrifice }
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Tailed_Beast.2
+			add_character_flag = {
+				flag = Sacrifice
+				years = 3
+			}
+		}
+	}
+}
+
+become_jinchuriki_interaction_three = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = become_jinchuriki_interaction_three_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = eternalsharingan
+		}
+		NOT = { has_trait = three_tail }
+		NOT = { has_character_flag = Sacrifice }
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Tailed_Beast.3
+			add_character_flag = {
+				flag = Sacrifice
+				years = 3
+			}
+		}
+	}
+}
+
+become_jinchuriki_interaction_four = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = become_jinchuriki_interaction_four_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = eternalsharingan
+		}
+		NOT = { has_trait = four_tail }
+		NOT = { has_character_flag = Sacrifice }
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Tailed_Beast.4
+			add_character_flag = {
+				flag = Sacrifice
+				years = 3
+			}
+		}
+	}
+}
+
+become_jinchuriki_interaction_five = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = become_jinchuriki_interaction_five_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = eternalsharingan
+		}
+		NOT = { has_trait = five_tail }
+		NOT = { has_character_flag = Sacrifice }
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Tailed_Beast.5
+			add_character_flag = {
+				flag = Sacrifice
+				years = 3
+			}
+		}
+	}
+}
+
+become_jinchuriki_interaction_six = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = become_jinchuriki_interaction_six_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = eternalsharingan
+		}
+		NOT = { has_trait = six_tail }
+		NOT = { has_character_flag = Sacrifice }
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Tailed_Beast.6
+			add_character_flag = {
+				flag = Sacrifice
+				years = 3
+			}
+		}
+	}
+}
+
+become_jinchuriki_interaction_seven = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = become_jinchuriki_interaction_seven_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = eternalsharingan
+		}
+		NOT = { has_trait = seven_tail }
+		NOT = { has_character_flag = Sacrifice }
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Tailed_Beast.7
+			add_character_flag = {
+				flag = Sacrifice
+				years = 3
+			}
+		}
+	}
+}
+
+become_jinchuriki_interaction_eight = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = become_jinchuriki_interaction_eight_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = eternalsharingan
+		}
+		NOT = { has_trait = eight_tail }
+		NOT = { has_character_flag = Sacrifice }
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Tailed_Beast.8
+			add_character_flag = {
+				flag = Sacrifice
+				years = 3
+			}
+		}
+	}
+}
+
+become_jinchuriki_interaction_nine = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = become_jinchuriki_interaction_nine_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = eternalsharingan
+		}
+		NOT = { has_trait = nine_tail }
+		NOT = { has_character_flag = Sacrifice }
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Tailed_Beast.9
+			add_character_flag = {
+				flag = Sacrifice
+				years = 3
+			}
+		}
+	}
+}
+
+become_jinchuriki_interaction_ten = {
+	category = interaction_category_hostile
+	common_interaction = no
+	ai_maybe = no
+	desc = become_jinchuriki_interaction_ten_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = eternalsharingan
+		}
+		NOT = { has_trait = ten_tail }
+		NOT = { has_character_flag = Sacrifice }
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = Tailed_Beast.10
+			add_character_flag = {
+				flag = Sacrifice
+				years = 3
+			}
+		}
+	}
+}
+
+use_amaterasu_interaction = {
+	category = interaction_category_hostile
+	common_interaction = no
+	desc = use_amaterasu_interaction_desc
+	is_shown = {
+		scope:actor = {
+			has_trait = mangekyosharingan
+			OR = { has_trait = eternalsharingan }
+			NOT = { has_character_flag = Used_Amaterasu }
+		}
+	}
+
+	on_send = {
+		scope:actor = {
+			trigger_event = MangekyoEvents.0
+			add_character_flag = {
+				flag = Blind_Sharingan_1
+				years = 700
+			}
+		}
+	}
+}

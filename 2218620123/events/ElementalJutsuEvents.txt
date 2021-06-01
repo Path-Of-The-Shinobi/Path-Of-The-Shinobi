@@ -1,0 +1,25 @@
+﻿#Elemental Jutsu Events
+namespace = Elemental_Jutsu
+
+Elemental_Jutsu.1 = {
+    type = character_event
+	title = Elemental_Jutsu.1.t
+	desc = Elemental_Jutsu.1.d
+
+	theme = crown
+
+	right_portrait = {
+	character = root
+	animation = idle
+	}
+
+	option = {
+		name = Elemental_Jutsu.1.o
+		hidden_effect = {
+			add_character_modifier = { 
+                modifier = woodstyle_deep_forest_emergence_modifier
+                years = 5
+            }
+        }
+    }
+}

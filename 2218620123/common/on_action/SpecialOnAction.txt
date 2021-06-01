@@ -1,0 +1,23 @@
+﻿#Special Events
+
+on_yearly_playable = {
+    on_actions = {
+        Special_Event_One
+    }
+}
+
+Special_Event_One = {
+    trigger = {
+        AND = {
+            age >= 25
+            martial >= 15
+        }
+        NOT = {
+            has_trait = rinnesharingan
+        }
+    }
+
+    events = {
+        SG_Secret.1
+    }
+}

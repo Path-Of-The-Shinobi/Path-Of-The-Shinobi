@@ -1,0 +1,565 @@
+﻿#Sharingan Characters
+
+999001 = {
+        name = kagyua_otsutsuki
+	    dynasty = 700081
+	    female = yes
+	    martial = 14
+	    diplomacy = 23
+	    intrigue = 10
+	    stewardship = 21
+	    trait = byakugan
+	    trait = education_intrigue_4
+	    trait = rinnesharingan
+	    religion = sixpaths	
+	    culture = french
+	    450.5.25 = {
+		birth = yes
+	    }
+	    466.5.25 = {
+		add_spouse = 999002
+	    }
+	    500.5.25 = {
+		death = yes
+	    }
+    }
+
+999002 = {
+	name = tenji_tetsukami
+	dynasty = 700081
+	religion = sixpaths
+	culture = french
+	450.5.25 = {
+		birth = yes
+	}
+	466.5.25 = {
+		add_spouse = 999001
+	}
+	500.5.25 = {
+		death = yes
+	}
+}
+
+999003 = {
+	name = hagoromo_otsutsuki
+	dynasty = 700081
+	religion = sixpaths
+	culture = french
+	mother = 999001
+	father = 999002
+	trait = rinnegan
+	trait = rinnesharingan
+	470.5.25 = {
+		birth = yes
+	}
+	485.5.25 = {
+		add_spouse = 999004
+	}
+	505.5.25 = {
+		death = yes
+	}
+}
+
+999004 = {
+	name = kanna_halafarin
+	female = yes
+	religion = sixpaths
+	culture = french
+	470.5.25 = {
+		birth = yes
+	}
+	485.5.25 = {
+		add_spouse = 999003
+	}
+	505.5.25 = {
+		death = yes
+	}
+}
+
+999005 = {
+	name = karla_otsutsuki
+	female = yes
+	dynasty = 700081
+	religion = sixpaths
+	father = 999003
+	mother = 999004
+	culture = french
+	490.5.25 = {
+		birth = yes
+	}
+	505.5.25 = {
+		add_spouse = 999006
+	}
+	545.5.25 = {
+		death = yes
+	}
+}
+
+999006 = {
+	name = asura_otsutsuki
+	dynasty = 700081
+	father = 999003
+	mother = 999004
+	religion = sixpaths
+	culture = french
+	490.5.25 = {
+		birth = yes
+	}
+	505.5.25 = {
+		add_spouse = 999005
+	}
+	545.5.25 = {
+		death = yes
+	}
+}
+
+999007 = {
+	name = butsuma_senju
+	dynasty = 700084
+	religion = sixpaths
+	culture = french
+	mother = 999005
+	father = 999006
+	trait = senjugene
+	515.5.25 = {
+		birth = yes
+	}
+	531.5.25 = {
+		add_spouse = 999008
+	}
+	550.5.25 = {
+		death = yes
+	}
+}
+
+999008 = {
+	name = gaelin_senju
+	dynasty = 700084
+	female = yes
+	religion = sixpaths
+	culture = french
+	trait = senjugene
+	515.5.25 = {
+		birth = yes
+	}
+	531.5.25 = {
+		add_spouse = 999007
+	}
+	550.5.25 = {
+		death = yes
+	}
+}
+
+999012 = {
+	name = hahsirama_senju
+	dynasty = 700084
+	religion = sixpaths
+	mother = 999008
+	father = 999007
+	culture = french
+	trait = senjugene
+	535.5.25 = {
+		birth = yes
+	}
+	585.5.25 = {
+		add_spouse = 999011
+	}
+	590.5.25 = {
+		death = yes
+	}
+}
+
+999009 = {
+	name = indra_otsutsuki
+	dynasty = 700081
+	father = 999003
+	mother = 999004
+	trait = uchihagene
+	trait = mangekyosharingan
+	religion = sixpaths
+	culture = french
+	590.5.25 = {
+		birth = yes
+	}
+	607.5.25 = {
+		add_spouse = 999010
+	}
+	610.5.25 = {
+		death = yes
+	}
+}
+
+999010 = {
+	name = rebecca_uzumaki
+	female = yes
+	dynasty = 700083
+	religion = sixpaths
+	trait = uzumakigene
+	culture = french
+	590.5.25 = {
+		birth = yes
+	}
+	607.5.25 = {
+		add_spouse = 999009
+	}
+	610.5.25 = {
+		death = yes
+	}
+}
+
+999011 = {
+	name = mito_uzumaki
+	female = yes
+	dynasty = 700083
+	religion = sixpaths
+	culture = french
+	trait = uzumakigene
+	540.5.25 = {
+		birth = yes
+	}
+	555.5.25 = {
+		add_spouse = 999012
+	}
+	590.5.25 = {
+		death = yes
+	}
+}
+
+999013 = {
+	name = madara_uchiha
+	dynasty = 700082
+	mother = 999010
+	father = 999009
+	religion = sixpaths
+	culture = french
+	trait = uchihagene
+	trait = rinnegan
+	trait = twin
+	608.5.25 = {
+		birth = yes
+	}
+	624.5.25 = {
+		add_spouse = 999014
+	}
+	630.5.25 = {
+		death = yes
+	}
+}
+
+999014 = {
+	name = kemura_uchiha
+	dynasty = 700082
+	female = yes
+	trait = twin
+	trait = uchihagene
+	religion = sixpaths
+	culture = french
+	608.5.25 = {
+		birth = yes
+	}
+	624.5.25 = {
+		add_spouse = 999013
+	}
+	630.5.25 = {
+		death = yes
+	}
+}
+
+999015 = {
+	name = itachi_uchiha
+	dynasty = 700082
+	mother = 999014
+	father = 999013
+	religion = sixpaths
+	trait = uchihagene
+	trait = mangekyosharingan
+	culture = french
+	625.5.25 = {
+		birth = yes
+	}
+	640.5.25 = {
+		add_spouse = 999017
+	}
+	670.5.25 = {
+		death = yes
+	}
+}
+
+999016 = {
+	name = sasuke_uchiha
+	dynasty = 700082
+	mother = 999014
+	father = 999013
+	trait = eternalsharingan
+	trait = rinnesharingan
+	trait = uchihagene
+	religion = sixpaths
+	culture = french
+	625.5.25 = {
+		birth = yes
+	}
+	640.5.25 = {
+		add_spouse = 999018
+	}
+	670.5.25 = {
+		death = yes
+	}
+}
+
+999017 = {
+	name = karin_uzumaki
+	female = yes
+	dynasty = 700083
+	religion = sixpaths
+	culture = french
+	trait = uzumakigene
+	625.5.25 = {
+		birth = yes
+	}
+	640.5.25 = {
+		add_spouse = 999015
+	}
+	779.5.25 = {
+		death = yes
+	}
+}
+
+999018 = {
+	name = sakura_haruno
+	female = yes
+	religion = sixpaths
+	culture = french
+	625.5.25 ={
+		birth = yes
+	}
+	640.5.25 = {
+		add_spouse = 999016
+	}
+	779.5.25 = {
+		death = yes
+	}
+}
+
+999030 = {
+	name = sarada_uchiha
+	dynasty = 700082
+	female = yes
+	mother = 999018
+	father = 999016
+	trait = uchihagene
+	trait = onetomoe
+	religion = sixpaths
+	culture = french
+	780.5.25 = {
+		birth = yes
+	}
+	825.5.25 = {
+		add_spouse = 999029
+	}
+}
+
+999019 = {
+	name = kushina_uzumaki
+	dynasty = 700083
+	female = yes
+	religion = sixpaths
+	culture = french
+	trait = uzumakigene
+	670.5.25 = {
+		birth = yes
+	}
+	686.5.25 = {
+		add_spouse = 999020
+	}
+	710.5.25 = {
+		death = yes
+	}
+}
+
+999020 = {
+	name = minato_namikaze
+	religion = sixpaths
+	culture = french
+	670.5.25 = {
+		birth = yes
+	}
+	686.5.25 = {
+		add_spouse = 999019
+	}
+	710.5.25 = {
+		death = yes
+	}
+}
+
+999021 = {
+	name = naruto_uzumaki
+	dynasty = 700083
+	religion = sixpaths
+	culture = french
+	father = 999020
+	mother = 999019
+	trait = uzumakigene
+	710.3.25 = {
+		birth = yes
+	}
+	726.5.25 = {
+		add_spouse = 999028
+	}
+}
+
+999022 = {
+	name = hamura_otsutsuki
+	dynasty = 700081
+	religion = sixpaths
+	culture = french
+	mother = 999001
+	trait = byakugan
+	father = 999002
+	470.5.25 = {
+		birth = yes
+	}
+	485.5.25 = {
+		add_spouse = 999023
+	}
+	525.5.25 = {
+		death = yes
+	}
+}
+
+999023 = {
+	name = tenabi_cola
+	female = yes
+	religion = sixpaths
+	culture = french
+	470.5.25 = {
+		birth = yes
+	}
+	485.5.25 = {
+		add_spouse = 999022
+	}
+	525.5.25 = {
+		death = yes
+	}
+}
+
+999024 = {
+	name = feshura_hygua
+	dynasty = 700080
+	female = yes
+	trait = byakugan
+	mother = 999023
+	father = 999022
+	religion = sixpaths
+	culture = french
+	524.5.25 = {
+		birth = yes
+	}
+	576.5.25 = {
+		add_spouse = 999025
+	}
+	610.5.25 = {
+		death = yes
+	}
+}
+
+999025 = {
+	name = neji_hygua
+	dynasty = 700080
+	religion = sixpaths
+	trait = byakugan
+	culture = french
+	525.5.25 = {
+		birth = yes
+	}
+	576.5.25 = {
+		add_spouse = 999024
+	}
+	610.5.25 = {
+		death = yes
+	}
+}
+
+999026 = {
+	name = kimimaro_lowborn
+	religion = sixpaths
+	culture = french
+	trait = byakugan
+	610.5.25 = {
+		birth = yes
+	}
+	656.5.25 = {
+		add_spouse = 999027
+	}
+	711.5.25 = {
+		death = yes
+	}
+}
+
+999027 = {
+	name = arianna_lowborn
+	religion = sixpaths
+	female = yes
+	trait = byakugan
+	culture = french
+	610.5.25 = {
+		birth = yes
+	}
+	656.5.25 = {
+		add_spouse = 999026
+	}
+	711.5.25 = {
+		death = yes
+	}
+}
+
+999028 = {
+	name = hinata_hygua
+	dynasty = 700080
+	religion = sixpaths
+	mother = 999027
+	father = 999026
+	trait = byakugan
+	culture = french
+	female = yes
+	710.5.25 = {
+		birth = yes
+	}
+	726.5.25 = {
+		add_spouse = 999021
+	}
+}
+
+999029 = {
+	name = boruto_uzumaki
+	dynasty = 700083
+	religion = sixpaths
+	culture = french
+	trait = jogan
+	trait = uzumakigene
+	father = 999021
+	mother = 999028
+	780.5.25 = {
+		birth = yes
+	}
+	825.5.25 = {
+		add_spouse = 999030
+	}
+}
+
+999031 = {
+	name = naomi_uzumaki
+	dynasty = 700083
+	religion = sixpaths
+	culture = french
+	fertility = 1
+	sexuality = heterosexual
+	trait = uchihagene
+	trait = byakugan
+	trait = uzumakigene
+	father = 999029
+	mother = 999030
+	female = yes
+	851.5.25 = {
+		birth = yes
+	}
+}

@@ -1,0 +1,178 @@
+﻿namespace = SG_Secret
+
+SG_Secret.1 = {
+	type = character_event
+	title = SG_Secret.1.t
+	desc = SG_Secret.1.d
+
+	theme = crown
+
+	right_portrait = {
+	character = root
+	animation = worry
+	}
+
+	option = {
+		name = SG_Secret.1.o
+		trigger = {
+			has_trait = rinnegan
+			has_trait = eternalsharingan
+            martial >= 16
+			is_ai = no
+		}
+			ai_chance = {
+				factor = 0
+		}
+			random_list = {
+				55 = { add_trait = rinnesharingan }
+				45 = { add_trait = wounded_2 }
+			}
+	}
+}
+
+SG_Secret.3 = {
+	type = character_event
+	title = SG_Secret.3.t
+	desc = SG_Secret.3.d
+
+	theme = crown
+
+	right_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = SG_Secret.3.o
+		spawn_army = {
+            uses_supply = no
+			inheritable = no
+			name = SG_Secret.3.o1
+			levies = {
+				value = 500
+			}
+			men_at_arms = {
+				type = ShadowClones
+				stacks = 1
+			}
+			location = root.capital_province
+		}
+	}
+}
+
+SG_Secret.4 = {
+	type = character_event 
+	title = SG_Secret.4.t
+	desc = SG_Secret.4.d
+	theme = crown
+
+	right_portrait = {
+		character = root
+		animation = worry
+	}
+
+	left_portrait = {
+		character = scope:gp_momoshiki
+		animation = worry
+	}
+
+	immediate = 
+	{
+		create_character = {
+			name = "Momoshiki"
+			age = 16
+			gender = male
+			dynasty = 700081
+			diplomacy = 30
+			martial = 30
+			intrigue = 30
+			learning = 30
+			prowess = 50
+			health = 50
+			faith = faith:sixpaths
+			culture = culture:french
+			trait = education_martial_4
+			trait = diligent
+			trait = gregarious
+			trait = fecund
+			trait = rinnegan
+			trait = byakugan
+			random_traits = no
+			save_scope_as = gp_momoshiki
+			location = root.capital_province
+		}
+		create_character = {
+			name = "Isobu"
+			age = 16
+			gender = female
+			dynasty = 700082
+			diplomacy = 30
+			martial = 30
+			intrigue = 30
+			learning = 30
+			prowess = 50
+			health = 50
+			faith = faith:sixpaths
+			culture = culture:french
+			trait = education_martial_4
+			trait = diligent
+			trait = gregarious
+			trait = three_tail
+			trait = fecund
+			trait = uchihagene
+			random_traits = no
+			save_scope_as = gp_isabu
+			location = root.capital_province
+		}
+		create_character = {
+			name = "Kurama"
+			age = 16
+			gender = male
+			dynasty = 700083
+			diplomacy = 30
+			martial = 30
+			intrigue = 30
+			learning = 30
+			prowess = 50
+			health = 50
+			faith = faith:sixpaths
+			culture = culture:french
+			trait = education_martial_4
+			trait = diligent
+			trait = nine_tail
+			trait = gregarious
+			trait = uchihagene
+			trait = fecund
+			random_traits = no
+			save_scope_as = gp_kurama
+			location = root.capital_province
+		}
+	}
+
+	option = {
+		name = SG_Secret.4.o
+
+		hidden_effect = {
+			add_visiting_courtier = scope:gp_momoshiki
+			scope:gp_momoshiki = {
+					add_character_flag = {
+						flag = blocked_from_leaving
+						days = 32
+					}
+			    }
+		    }
+			add_visiting_courtier = scope:gp_isabu
+			scope:gp_isabu = {
+					add_character_flag = {
+						flag = blocked_from_leaving
+						days = 32
+					}
+			    }
+			add_visiting_courtier = scope:gp_kurama
+			scope:gp_kurama = {
+					add_character_flag = {
+						flag = blocked_from_leaving
+						days = 32
+					}
+			    }
+		    }
