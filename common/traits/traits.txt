@@ -5,8 +5,6 @@ uchihagene = {
 	physical = yes
 	personal_scheme_power_mult = 0.25
 	independent_ruler_opinion = 5
-	health = 1
-	health_trait = yes
 	prowess = 5
 	ruler_designer_cost = 2
 	monthly_dynasty_prestige = 1
@@ -32,7 +30,6 @@ onetomoe = {
 	personal_scheme_power_mult = 0.50
 	independent_ruler_opinion = 10
 	ruler_designer_cost = 5
-	health = 2
 	prowess = 10
 	monthly_prestige = 7
 	desc = {
@@ -46,6 +43,8 @@ onetomoe = {
 			desc = trait_onetomoe_desc
 		}
 	}
+
+	icon = onetomoe.dds
 }
 
 twotomoe = {
@@ -55,7 +54,6 @@ twotomoe = {
 	personal_scheme_power_mult = 0.75
 	independent_ruler_opinion = 15
 	ruler_designer_cost = 10
-	health = 3
 	prowess = 12
 	monthly_prestige = 9
 	inherit_chance = 0
@@ -70,6 +68,8 @@ twotomoe = {
 			desc = trait_twotomoe_desc
 		}
 	}
+
+	icon = twotomoe.dds
 }
 
 threetomoe = {
@@ -79,7 +79,6 @@ threetomoe = {
 	personal_scheme_power_mult = 1.0
 	independent_ruler_opinion = 20
 	ruler_designer_cost = 15
-	health = 4
 	prowess = 15
 	monthly_prestige = 11
 	inherit_chance = 0
@@ -94,6 +93,8 @@ threetomoe = {
 			desc = trait_threetomoe_desc
 		}
 	}
+
+	icon = threetomoe.dds
 }
 
 mangekyosharingan = {
@@ -103,7 +104,6 @@ mangekyosharingan = {
 	personal_scheme_power_mult = 1.25
 	independent_ruler_opinion = 25
 	ruler_designer_cost = 60
-	health = 5
 	prowess = 20
 	monthly_prestige = 13
 	inherit_chance = 0
@@ -118,6 +118,8 @@ mangekyosharingan = {
 			desc = trait_mangekyosharingan_desc
 		}
 	}
+
+	icon = mangekyosharingan.dds
 }
 
 eternalsharingan = {
@@ -127,7 +129,6 @@ eternalsharingan = {
 	personal_scheme_power_mult = 1.50
 	independent_ruler_opinion = 30
 	ruler_designer_cost = 100
-	health = 6
 	prowess = 25
 	monthly_prestige = 15
 	inherit_chance = 0
@@ -142,6 +143,8 @@ eternalsharingan = {
 			desc = trait_eternalsharingan_desc
 		}
 	}
+
+	icon = eternalsharingan.dds
 }
 
 rinnegan = {
@@ -151,7 +154,6 @@ rinnegan = {
 	personal_scheme_power_mult = 1.75
 	independent_ruler_opinion = 35
 	ruler_designer_cost = 150
-	health = 7
 	prowess = 30
 	monthly_prestige = 20
 	inherit_chance = 0
@@ -166,6 +168,8 @@ rinnegan = {
 			desc = trait_rinnegan_desc
 		}
 	}
+
+	icon = rinnegan.dds
 }
 
 rinnesharingan = {
@@ -174,7 +178,6 @@ rinnesharingan = {
 	martial = 16
 	personal_scheme_power_mult = 2.0
 	independent_ruler_opinion = 30
-	health = 8
 	ruler_designer_cost = 250
 	prowess = 35
 	monthly_prestige = 25
@@ -190,6 +193,8 @@ rinnesharingan = {
 			desc = trait_rinnesharingan_desc
 		}
 	}
+
+	icon = rinnesharingan.dds
 }
 
 byakugan = {
@@ -199,7 +204,6 @@ byakugan = {
 	personal_scheme_power_mult = 4.0
 	independent_ruler_opinion = 10
 	ruler_designer_cost = 10
-	health = 2
 	prowess = 6
 	monthly_prestige = 4
 	monthly_dynasty_prestige = 1
@@ -215,6 +219,8 @@ byakugan = {
 			desc = trait_byakugan_desc
 		}
 	}
+
+	icon = byakugan.dds
 }
 
 tenseigan = {
@@ -224,7 +230,6 @@ tenseigan = {
 	personal_scheme_power_mult = 12.0
 	independent_ruler_opinion = 30
 	ruler_designer_cost = 10
-	health = 18
 	prowess = 18
 	monthly_prestige = 19
 	inherit_chance = 35
@@ -239,6 +244,8 @@ tenseigan = {
 			desc = trait_tenseigan_desc
 		}
 	}
+
+	icon = tenseigan.dds
 }
 
 fushitenseigood = {
@@ -283,7 +290,6 @@ jogan = {
 	martial = 5
 	personal_scheme_power_mult = 2.0
 	independent_ruler_opinion = 30
-	health = 10
 	ruler_designer_cost = 10
 	prowess = 10
 	monthly_prestige = 7
@@ -299,6 +305,8 @@ jogan = {
 			desc = trait_jogan_desc
 		}
 	}
+
+	icon = jogan.dds
 }
 
 one_tail = {
@@ -875,7 +883,7 @@ yin_yangrelease = {
 	index = 705
 	learning = 4
 	ruler_designer_cost = 7
-	inherit_chance = 50
+	inherit_chance = 5
 	monthly_dynasty_prestige = 0.5
 	desc = {
 		first_valid = {
