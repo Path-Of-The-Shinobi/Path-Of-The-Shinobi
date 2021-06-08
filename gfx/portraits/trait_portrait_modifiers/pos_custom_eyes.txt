@@ -19,7 +19,7 @@
 
 mangekyosharingan_both_eyes = {
 	mangekyosharingan_both_eyes = {
-		traits = { rinnegan }
+		traits = { mangekyosharingan }
 
 		dna_modifiers = {
 			accessory = {
@@ -34,7 +34,7 @@ mangekyosharingan_both_eyes = {
 
 eternalsharingan_both_eyes = {
 	eternalsharingan_both_eyes = {
-		traits = { rinnegan }
+		traits = { eternalsharingan }
 
 		dna_modifiers = {
 			accessory = {

@@ -107,7 +107,7 @@ entity = {
 	}
 }
 
-# CoH Custom Eyes
+# POH Custom Eyes
 entity = {
 	name = "female_eyes_sharingan_both"
 	pdxmesh = "female_eyes_mesh"
@@ -143,104 +143,36 @@ entity = {
 }
 
 entity = {
-	name = "female_eyes_rinnegan_l_sharingan_r"
+	name = "female_eyes_mangekyosharingan_both"
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
 		name = "female_eyes_rightShape"
 		index = 0
-		texture_diffuse = "male_eyes_sharingan_diffuse.dds"
+		texture_diffuse = "male_eyes_mangekyosharingan_diffuse.dds"
 	}
 
 	meshsettings = {
 		name = "female_eyes_leftShape"
 		index = 0
-		texture_diffuse = "male_eyes_rinnegan_diffuse.dds"
+		texture_diffuse = "male_eyes_mangekyosharingan_diffuse.dds"
 	}
 }
 
 entity = {
-	name = "female_eyes_rinnegan_r_sharingan_l"
+	name = "female_eyes_eternalsharingan_both"
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
 		name = "female_eyes_rightShape"
 		index = 0
-		texture_diffuse = "male_eyes_rinnegan_diffuse.dds"
+		texture_diffuse = "male_eyes_eternalsharingan_diffuse.dds"
 	}
 
 	meshsettings = {
 		name = "female_eyes_leftShape"
 		index = 0
-		texture_diffuse = "male_eyes_sharingan_diffuse.dds"
-	}
-}
-
-entity = {
-	name = "female_eyes_rinnegan_r"
-	pdxmesh = "female_eyes_mesh"
-	
-	meshsettings = {
-		name = "female_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_rinnegan_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "female_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_diffuse.dds"
-	}
-}
-
-entity = {
-	name = "female_eyes_rinnegan_l"
-	pdxmesh = "female_eyes_mesh"
-	
-	meshsettings = {
-		name = "female_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "female_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_rinnegan_diffuse.dds"
-	}
-}
-
-entity = {
-	name = "female_eyes_sharingan_r"
-	pdxmesh = "female_eyes_mesh"
-	
-	meshsettings = {
-		name = "female_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_sharingan_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "female_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_diffuse.dds"
-	}
-}
-
-entity = {
-	name = "female_eyes_sharingan_l"
-	pdxmesh = "female_eyes_mesh"
-	
-	meshsettings = {
-		name = "female_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "female_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_sharingan_diffuse.dds"
+		texture_diffuse = "male_eyes_eternalsharingan_diffuse.dds"
 	}
 }
 

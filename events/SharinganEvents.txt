@@ -142,7 +142,7 @@ SG_Sharingan.6 = {
 		}
 			random_list = {
 				75 = { add_trait = eternalsharingan }
-				25 = { add_trait = wounded_2 }
+				25 = { add_trait = wounded_1 }
 			}
 			remove_trait = mangekyosharingan
 	}
@@ -173,8 +173,8 @@ SG_Sharingan.7 = {
 			has_trait = eternalsharingan
 		}
 			random_list = {
-				45 = { add_trait = rinnegan }
-				55 = { add_trait = wounded_2 }
+				50 = { add_trait = rinnegan }
+				50 = { add_trait = wounded_1 }
 				2 = { remove_trait = eternalsharingan }
 			}
 	}
