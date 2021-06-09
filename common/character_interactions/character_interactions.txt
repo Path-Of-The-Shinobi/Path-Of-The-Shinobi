@@ -202,42 +202,24 @@ train_sharingan_level_three_interaction = {
 	}
 }
 
-train_sharingan_level_four_interaction = {
-	category = interaction_category_hostile
-	common_interaction = no
-	ai_maybe = no
-	desc = train_sharingan_level_four_interaction_desc
+#Mangekyo Sharingan Character Interactions
 
-	is_shown = {
+obtain_mangekyo_sharingan = {
+    category = interaction_category_hostile
+    common_interaction = no
+    is_shown = {
 		scope:actor = {
 			has_trait = threetomoe
-			NOT = { has_character_flag = SG_Level_4 }
+			NOT = { has_trait = mangekyosharingan }
 		}
+		#scope:recipient = {
+		#	has_trait = threetomoe
+		#	NOT = { has_trait = mangekyosharingan }
+		#}
 	}
-
-	on_send = {
+    on_send = {
 		scope:actor = {
-			trigger_event = sharingan_level.4
-		}
-	}
-}
-
-train_sharingan_level_five_interaction = {
-	category = interaction_category_hostile
-	common_interaction = no
-	ai_maybe = no
-	desc = train_sharingan_level_five_interaction_desc
-
-	is_shown = {
-		scope:actor = {
-			has_trait = mangekyosharingan
-			NOT = { has_character_flag = SG_Level_5 }
-		}
-	}
-
-	on_send = {
-		scope:actor = {
-			trigger_event = sharingan_level.5
+			trigger_event = MangekyoEvents.2
 		}
 	}
 }
