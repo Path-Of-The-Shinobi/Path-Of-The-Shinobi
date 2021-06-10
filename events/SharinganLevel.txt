@@ -1,139 +1,293 @@
 ﻿namespace = sharingan_level
 
 sharingan_level.1 = {
-    type = character_event
-    title = sharingan_level.1.t
-    desc = sharingan_level.1.d
-
-    theme = martial
-
-    right_portrait = {
-        character = root
-        animation = anger
-    }
-
-    option = {
-		name = sharingan_level.1.o
-		scope:actor = {
-			random_list = {
-				50 = { add_trait = wounded_1 }
-                70 = { add_trait = onetomoe }
+	title = sharingan_level.1.t
+	desc = sharingan_level.1.desc
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	option = {
+		name = sharingan_level.1.a
+		ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				trait = uchihagene
+				NOT = {
+					has_character_flag = flag_onetomoesharingan
+				}
 			}
-            add_character_flag = {
-                flag = SG_Level_1
-                months = 2
-            }
+			random_list = {
+				9 = {
+					modifier = {
+						add = 1.5
+						trait = intellect_good_3
+					}
+					modifier = {
+						add = 1.2
+						trait = intellect_good_2
+					}
+					modifier = {
+						add = 1.0
+						trait = intellect_good_1
+					}
+					add_trait = onetomoe
+					add_character_flag = flag_onetomoesharingan
+				}
+				1 = {
+					modifier = {
+						add = 1.2
+						trait = intellect_bad_1
+					}
+					modifier = {
+						add = 1.8
+						trait = intellect_bad_2
+					}
+					modifier = {
+						add = 2.5
+						trait = intellect_bad_3
+					}
+					add_trait = wounded_1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				trait = onetomoe
+				has_character_flag = flag_onetomoesharingan
+			}
+			random_list = {
+				8.5 = {
+					modifier = {
+						add = 1.5
+						trait = intellect_good_3
+					}
+					modifier = {
+						add = 1.2
+						trait = intellect_good_2
+					}
+					add_trait = twotomoe
+					remove_trait = onetomoe
+					add_character_flag = flag_twotomoesharingan
+					remove_character_flag = flag_onetomoesharingan
+				}
+				1.5 = {
+					modifier = {
+						add = 1.2
+						trait = intellect_bad_1
+					}
+					modifier = {
+						add = 1.8
+						trait = intellect_bad_2
+					}
+					modifier = {
+						add = 2.5
+						trait = intellect_bad_3
+					}
+					add_trait = wounded_1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				trait = twotomoe
+				has_character_flag = flag_twotomoesharingan
+			}
+			random_list = {
+				8 = {
+					modifier = {
+						add = 1.5
+						trait = intellect_good_3
+					}
+					modifier = {
+						add = 1.2
+						trait = intellect_good_2
+					}
+					add_trait = threetomoe
+					remove_trait = twotomoe
+					add_character_flag = flag_threetomoesharingan
+					remove_character_flag = flag_twotomoesharingan
+				}
+				2 = {
+					modifier = {
+						add = 1.2
+						trait = intellect_bad_1
+					}
+					modifier = {
+						add = 1.8
+						trait = intellect_bad_2
+					}
+					modifier = {
+						add = 2.5
+						trait = intellect_bad_3
+					}
+					add_trait = wounded_1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				trait = threetomoe
+				has_character_flag = flag_threetomoesharingan
+			}
+			random_list = {
+				1.5 = {
+					modifier = {
+						add = 1.5
+						trait = intellect_good_3
+					}
+					modifier = {
+						add = 1.2
+						trait = intellect_good_2
+					}
+					add_trait = mangekyosharingan_1
+					remove_trait = threetomoe
+					add_character_flag = flag_mangekyosharingan1
+					add_character_flag = flag_mangekyosharingan
+					remove_character_flag = flag_threetomoesharingan
+				}
+				1.5 = {
+					modifier = {
+						add = 1.5
+						trait = intellect_good_3
+					}
+					modifier = {
+						add = 1.2
+						trait = intellect_good_2
+					}
+					add_trait = mangekyosharingan_2
+					remove_trait = threetomoe
+					add_character_flag = flag_mangekyosharingan2
+					add_character_flag = flag_mangekyosharingan
+					remove_character_flag = flag_threetomoesharingan
+				}
+				1.5 = {
+					modifier = {
+						add = 1.5
+						trait = intellect_good_3
+					}
+					modifier = {
+						add = 1.2
+						trait = intellect_good_2
+					}
+					add_trait = mangekyosharingan_3
+					remove_trait = threetomoe
+					add_character_flag = flag_mangekyosharingan3
+					add_character_flag = flag_mangekyosharingan
+					remove_character_flag = flag_threetomoesharingan
+				}
+				1.5 = {
+					modifier = {
+						add = 1.5
+						trait = intellect_good_3
+					}
+					modifier = {
+						add = 1.2
+						trait = intellect_good_2
+					}
+					add_trait = mangekyosharingan_4
+					remove_trait = threetomoe
+					add_character_flag = flag_mangekyosharingan4
+					add_character_flag = flag_mangekyosharingan
+					remove_character_flag = flag_threetomoesharingan
+					add_character_flag = flag_endtrain
+				}
+				4 = {
+					modifier = {
+						add = 1.2
+						trait = intellect_bad_1
+					}
+					modifier = {
+						add = 1.8
+						trait = intellect_bad_2
+					}
+					modifier = {
+						add = 2.5
+						trait = intellect_bad_3
+					}
+					add_trait = wounded_1
+				}
+			}
+		}
+		add_character_modifier = {
+			modifier = train_recently
+			years = 1
 		}
 	}
 }
 
 sharingan_level.2 = {
-    type = character_event
-    title = sharingan_level.2.t
-    desc = sharingan_level.2.d
-
-    theme = martial
-
-    right_portrait = {
-        character = root
-        animation = anger
-    }
-
-    option = {
-		name = sharingan_level.2.o
-		scope:actor = {
-			random_list = {
-				50 = { add_trait = wounded_1 }
-                100 = { add_trait = twotomoe }
-			}
-            remove_trait = onetomoe
-
-            add_character_flag = {
-                flag = SG_Level_2
-                months = 4
-            }
+	title = sharingan_level.2.t
+	desc = sharingan_level.2.desc
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	
+	trigger = {
+		OR = {
+			trait = mangekyosharingan_1
+			trait = mangekyosharingan_2
+			trait = mangekyosharingan_3
+			trait = mangekyosharingan_4
 		}
 	}
-}
-
-sharingan_level.3 = {
-    type = character_event
-    title = sharingan_level.3.t
-    desc = sharingan_level.3.d
-
-    theme = martial
-
-    right_portrait = {
-        character = root
-        animation = anger
-    }
-
-    option = {
-		name = sharingan_level.3.o
-		scope:actor = {
-			random_list = {
-				50 = { add_trait = wounded_1 }
-                100 = { add_trait = threetomoe }
-			}
-            remove_trait = twotomoe
+	
+	option = {
+		name = sharingan_level.2.a
+		ai_chance = {
+			base = 100
 		}
-        add_character_flag = {
-                flag = SG_Level_3
-                months = 6
-            }
-	}
-}
-
-sharingan_level.4 = {
-    type = character_event
-    title = sharingan_level.4.t
-    desc = sharingan_level.4.d
-
-    theme = martial
-
-    right_portrait = {
-        character = root
-        animation = anger
-    }
-
-    option = {
-		name = sharingan_level.4.o
-		scope:actor = {
-			random_list = {
-				50 = { add_trait = wounded_1 }
-                65 = { add_trait = mangekyosharingan }
+		if = {
+			limit = {
+				OR = {
+					trait = mangekyosharingan_1
+					trait = mangekyosharingan_2
+					trait = mangekyosharingan_3
+					trait = mangekyosharingan_4
+				}
+				NOT = {
+					trait = eternalmangekyo
+				}
 			}
-		}
-        add_character_flag = {
-                flag = SG_Level_4
-                months = 8
-            }
-	}
-}
-
-sharingan_level.5 = {
-    type = character_event
-    title = sharingan_level.5.t
-    desc = sharingan_level.5.d
-
-    theme = martial
-
-    right_portrait = {
-        character = root
-        animation = anger
-    }
-
-    option = {
-		name = sharingan_level.5.o
-		scope:actor = {
 			random_list = {
-				100 = { add_trait = eternalsharingan }
-                100 = { remove_trait = mangekyosharingan }
+				5 = {
+					modifier = {
+						add = 1.5
+						trait = intellect_good_3
+					}
+					modifier = {
+						add = 1.2
+						trait = intellect_good_2
+					}
+					add_trait = eternalmangekyo
+					remove_trait = mangekyosharingan_1
+					remove_trait = mangekyosharingan_2
+					remove_trait = mangekyosharingan_3
+					remove_trait = mangekyosharingan_4
+					add_character_flag = flag_eternalmangekyo
+					remove_character_flag = flag_mangekyosharingan
+				}
+				5 = {
+					modifier = {
+						add = 1.2
+						trait = intellect_bad_1
+					}
+					modifier = {
+						add = 1.8
+						trait = intellect_bad_2
+					}
+					modifier = {
+						add = 2.5
+						trait = intellect_bad_3
+					}
+					add_trait = wounded_1
+				}
 			}
 		}
-        add_character_flag = {
-                flag = SG_Level_5
-                months = 10
-            }
 	}
 }

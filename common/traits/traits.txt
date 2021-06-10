@@ -1,251 +1,494 @@
 ﻿
 uchihagene = {
-	index = 665
-	martial = 10
-	physical = yes
-	personal_scheme_power_mult = 0.25
-	independent_ruler_opinion = 5
-	prowess = 5
-	ruler_designer_cost = 2
-	monthly_dynasty_prestige = 1
-	monthly_prestige = 5
-	inherit_chance = 100
+	opposites = {
+		hyugagene
+		forbiddengene
+	}
+
+	index = 2000
+	name = trait_uchihagene
+	
+	martial = 2
+	learning = 2
+	prowess = 4
+	
+	fame = yes
+	
+	monthly_prestige_gain_mult = 0.2
+	inbreeding_chance = -1
+	positive_random_genetic_chance = .5
+	
+	general_opinion = -5
+	opposite_opinion = -100
+	
+	shown_in_ruler_designer = yes
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_uchihagene
+				desc = trait_uchihagene_desc
 			}
-			desc = trait_uchihagene_desc
+			desc = trait_uchihagene_character_desc
 		}
 	}
 }
 
 onetomoe = {
-	index = 666
-	martial = 4
+	index = 2001
+	name = trait_onetomoe
+	
+	martial = 2
+	intrigue = 2
+	prowess = 3
+	
+	good = yes
 	physical = yes
-	personal_scheme_power_mult = 0.50
-	independent_ruler_opinion = 10
-	ruler_designer_cost = 5
-	prowess = 10
-	monthly_prestige = 7
+	
+	general_opinion = -5
+	
+	shown_in_ruler_designer = yes
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_onetomoe
+				desc = trait_onetomoe_desc
 			}
-			desc = trait_onetomoe_desc
+			desc = trait_onetomoe_character_desc
 		}
 	}
-
-	icon = onetomoe.dds
 }
 
-twotomoe = {
-	index = 667
-	martial = 6
+two_tomoe = {
+	index = 2002
+	name = trait_twotomoe
+	
+	martial = 3
+	intrigue = 4
+	prowess = 4
+	
+	good = yes
 	physical = yes
-	personal_scheme_power_mult = 0.75
-	independent_ruler_opinion = 15
-	ruler_designer_cost = 10
-	prowess = 12
-	monthly_prestige = 9
-	inherit_chance = 0
+	
+	general_opinion = -5
+	
+	shown_in_ruler_designer = yes
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_twotomoe
+				desc = trait_twotomoe_desc
 			}
-			desc = trait_twotomoe_desc
+			desc = trait_twotomoe_character_desc
 		}
 	}
-
-	icon = twotomoe.dds
 }
 
 threetomoe = {
-	index = 668
-	martial = 8
+	index = 2003
+	name = trait_threetomoe
+	
+	martial = 4
+	intrigue = 5
+	prowess = 6
+	
+	good = yes
 	physical = yes
-	personal_scheme_power_mult = 1.0
-	independent_ruler_opinion = 20
-	ruler_designer_cost = 15
-	prowess = 15
-	monthly_prestige = 11
-	inherit_chance = 0
+	
+	general_opinion = -7
+	personal_scheme_power_mult = 4.0
+	
+	shown_in_ruler_designer = yes
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_threetomoe
+				desc = trait_threetomoe_desc
 			}
-			desc = trait_threetomoe_desc
+			desc = trait_threetomoe_character_desc
 		}
 	}
-
-	icon = threetomoe.dds
 }
 
-mangekyosharingan = {
-	index = 669
+mangekyosharingan_1 = {
+	index = 2004
+	name = trait_mangekyosharingan_1
+	
+	martial = 6
+	intrigue = 8
+	prowess = 10
+	
+	good = yes
 	physical = yes
+	
+	general_opinion = -10
+	shown_in_ruler_designer = yes
+	
+	general_opinion = -10
+	monthly_prestige = .6
+	dread_baseline_add = 40
+	hostile_scheme_resistance_add = 0.6
+	enemy_hostile_scheme_success_chance_add = -60
+	personal_scheme_power_mult = 8.0
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_mangekyosharingan_1_desc
+			}
+			desc = trait_mangekyosharingan_1_character_desc
+		}
+	}
+}
+
+mangekyosharingan_2 = {
+	index = 2005
+	name = trait_mangekyosharingan_2
+	
+	martial = 6
+	intrigue = 8
+	prowess = 10
+	
+	good = yes
+	physical = yes
+	
+	shown_in_ruler_designer = yes	
+	
+	general_opinion = -10
+	monthly_prestige = .6
+	dread_baseline_add = 40
+	hostile_scheme_resistance_add = 0.6
+	enemy_hostile_scheme_success_chance_add = -60
+	personal_scheme_power_mult = 8.0
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_mangekyo_sharingan_2_desc
+			}
+			desc = trait_mangekyo_sharingan_2_character_desc
+		}
+	}
+}
+
+mangekyosharingan_3 = {
+	index = 2006
+	name = trait_mangekyosharingan_3
+	
+	martial = 6
+	intrigue = 8
+	prowess = 10
+	
+	good = yes
+	physical = yes
+	
+	shown_in_ruler_designer = yes
+	
+	general_opinion = -10
+	monthly_prestige = .6
+	dread_baseline_add = 40
+	hostile_scheme_resistance_add = 0.6
+	enemy_hostile_scheme_success_chance_add = -60
+	personal_scheme_power_mult = 8.0
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_mangekyosharingan_3_desc
+			}
+			desc = trait_mangekyosharingan_3_character_desc
+		}
+	}
+}
+
+mangekyosharingan_4 = {
+	index = 2007
+	name = trait_mangekyosharingan_4
+	
+	martial = 6
+	intrigue = 8
+	prowess = 10
+	
+	good = yes
+	physical = yes
+	
+	shown_in_ruler_designer = yes
+	
+	general_opinion = -10
+	monthly_prestige = .6
+	dread_baseline_add = 40
+	hostile_scheme_resistance_add = 0.6
+	enemy_hostile_scheme_success_chance_add = -60
+	personal_scheme_power_mult = 8.0
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_mangekyosharingan_4_desc
+			}
+			desc = trait_mangekyosharingan_4_character_desc
+		}
+	}
+}
+
+eternalmangekyo = {
+	index = 2008
+	name = trait_eternalmangekyo
+	
 	martial = 10
-	personal_scheme_power_mult = 1.25
-	independent_ruler_opinion = 25
-	ruler_designer_cost = 60
-	prowess = 20
-	monthly_prestige = 13
-	inherit_chance = 0
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_mangekyosharingan
-			}
-			desc = trait_mangekyosharingan_desc
-		}
-	}
-
-	icon = mangekyosharingan.dds
-}
-
-eternalsharingan = {
-	index = 670
+	intrigue = 10
+	prowess = 15
+	
+	good = yes
 	physical = yes
-	martial = 12
-	personal_scheme_power_mult = 1.50
-	independent_ruler_opinion = 30
-	ruler_designer_cost = 100
-	prowess = 25
-	monthly_prestige = 15
-	inherit_chance = 0
+	
+	shown_in_ruler_designer = yes
+	
+	general_opinion = -15
+	monthly_prestige = .7
+	dread_baseline_add = 50
+	hostile_scheme_resistance_add = 0.7
+	enemy_hostile_scheme_success_chance_add = -70
+	personal_scheme_power_mult = 8.5
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_eternalsharingan
+				desc = trait_eternalmangekyo_desc
 			}
-			desc = trait_eternalsharingan_desc
+			desc = trait_eternalmangekyo_character_desc
 		}
 	}
-
-	icon = eternalsharingan.dds
 }
 
 rinnegan = {
-	index = 671
+	index = 2009
+	name = trait_rinnegan
+	
+	good = yes
 	physical = yes
-	martial = 14
-	personal_scheme_power_mult = 1.75
-	independent_ruler_opinion = 35
-	ruler_designer_cost = 150
-	prowess = 30
-	monthly_prestige = 20
-	inherit_chance = 0
+	
+	martial = 12
+	intrigue = 14
+	prowess = 20
+	
+	good = yes
+	physical = yes
+	
+	shown_in_ruler_designer = yes
+	
+	general_opinion = -15
+	monthly_prestige = 1
+	dread_baseline_add = 50
+	hostile_scheme_resistance_add = 0.8
+	enemy_hostile_scheme_success_chance_add = -80
+	personal_scheme_power_mult = 9.0
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_rinnegan
+				desc = trait_rinnegan_desc
 			}
-			desc = trait_rinnegan_desc
+			desc = trait_rinnegan_character_desc
 		}
 	}
-
-	icon = rinnegan.dds
 }
 
 rinnesharingan = {
-	index = 672
+	index = 2010
+	name = trait_rinnesharingan
+	
+	good = yes
 	physical = yes
-	martial = 16
-	personal_scheme_power_mult = 2.0
-	independent_ruler_opinion = 30
-	ruler_designer_cost = 250
-	prowess = 35
-	monthly_prestige = 25
-	inherit_chance = 0
+	
+	martial = 15
+	intrigue = 18
+	prowess = 30
+	
+	good = yes
+	physical = yes
+	
+	shown_in_ruler_designer = yes
+	
+	general_opinion = -15
+	monthly_prestige = 1.5
+	dread_baseline_add = 60
+	hostile_scheme_resistance_add = 0.9
+	enemy_hostile_scheme_success_chance_add = -90
+	personal_scheme_power_mult = 9.5
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_rinnesharingan
+				desc = trait_rinnesharingan_desc
 			}
-			desc = trait_rinnesharingan_desc
+			desc = trait_rinnesharingan_character_desc
 		}
 	}
-
-	icon = rinnesharingan.dds
 }
 
 byakugan = {
-	index = 673
-	physical = yes
+	index = 2014
+	name = trait_byakugan
+	
 	martial = 5
+	diplomacy = 10
+	intrigue = 20
+	prowess = 20
+	
+	good = yes
+	physical = yes
+	
+	monthly_prestige = 2
+	hostile_scheme_resistance_add = 0.9
+	enemy_hostile_scheme_success_chance_add = -90
 	personal_scheme_power_mult = 4.0
-	independent_ruler_opinion = 10
-	ruler_designer_cost = 10
-	prowess = 6
-	monthly_prestige = 4
-	monthly_dynasty_prestige = 1
-	inherit_chance = 100
+	
+	shown_in_ruler_designer = yes
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_byakugan
+				desc = trait_byakugan_desc
 			}
-			desc = trait_byakugan_desc
+			desc = trait_byakugan_character_desc
 		}
 	}
-
-	icon = byakugan.dds
 }
 
 tenseigan = {
-	index = 674
-	physical = yes
+	index = 2012
+	name = trait_tenseigan
+	
 	martial = 10
-	personal_scheme_power_mult = 12.0
-	independent_ruler_opinion = 30
-	ruler_designer_cost = 10
-	prowess = 18
-	monthly_prestige = 19
-	inherit_chance = 35
+	diplomacy = 15
+	intrigue = 25
+	prowess = 40
+	
+	good = yes
+	physical = yes
+	
+	monthly_prestige = 2
+	hostile_scheme_resistance_add = 1
+	enemy_hostile_scheme_success_chance_add = -100
+	personal_scheme_power_mult = 8.0
+	
+	shown_in_ruler_designer = yes
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_tenseigan
+				desc = trait_tenseigan_desc
 			}
-			desc = trait_tenseigan_desc
+			desc = trait_tenseigan_character_desc
 		}
 	}
+}
 
-	icon = tenseigan.dds
+################ FORBIDDEN EYES ################
+forbiddengene = {
+	opposites = {
+		uchihagene
+		hyugagene
+	}
+	
+	index = 2015
+	name = trait_forbiddengene
+	
+	fame = yes
+	
+	martial = 4
+	diplomacy = 4
+	intrigue = 2
+	prowess = 10
+	
+	inbreeding_chance = -0.5
+	positive_random_genetic_chance = .1
+	
+	opposite_opinion = -50
+	
+	shown_in_ruler_designer = yes
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_forbiddengene_desc
+			}
+			desc = trait_forbiddengene_character_desc
+		}
+	}
+}
+
+forbiddeneyes = {
+	index = 2016
+	name = trait_forbiddeneyes
+	
+	martial = 20
+	diplomacy = 20
+	intrigue = 20
+	prowess = 50
+	
+	good = yes
+	physical = yes
+	
+	monthly_prestige = 2
+	hostile_scheme_resistance_add = 1
+	enemy_hostile_scheme_success_chance_add = -100
+	
+	shown_in_ruler_designer = yes
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_forbiddeneyes_desc
+			}
+			desc = trait_forbiddeneyes_character_desc
+		}
+	}
 }
 
 fushitenseigood = {
@@ -285,28 +528,35 @@ fushitenseibad = {
 }
 
 jogan = {
-	index = 677
+	index = 2013
+	name = trait_jogan
+	
+	martial = 8
+	diplomacy = 12
+	intrigue = 22
+	prowess = 25
+	
+	good = yes
 	physical = yes
-	martial = 5
+	
+	monthly_prestige = 2
+	hostile_scheme_resistance_add = 0.9
+	enemy_hostile_scheme_success_chance_add = -90
 	personal_scheme_power_mult = 2.0
-	independent_ruler_opinion = 30
-	ruler_designer_cost = 10
-	prowess = 10
-	monthly_prestige = 7
-	inherit_chance = 35
+	
+	shown_in_ruler_designer = yes
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_jogan
+				desc = trait_jogan_desc
 			}
-			desc = trait_jogan_desc
+			desc = trait_jogan_character_desc
 		}
 	}
-
-	icon = jogan.dds
 }
 
 one_tail = {
@@ -530,23 +780,36 @@ ten_tail = {
 }
 
 hyugagene = {
-	index = 688
-	intrigue = 5
-	health = 1
-	ruler_designer_cost = 2
-	monthly_dynasty_prestige = 1
-	prowess = 15
-	monthly_prestige = 10
-	inherit_chance = 100
+	opposites = {
+		uchihagene
+		forbiddengene
+	}
+	
+	index = 2011
+	name = trait_hyugagene
+	
+	fame = yes
+	
+	martial = 2
+	diplomacy = 2
+	prowess = 2
+	
+	inbreeding_chance = -1
+	positive_random_genetic_chance = .3
+	
+	opposite_opinion = -100
+	
+	shown_in_ruler_designer = yes
+	
 	desc = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_hyugagene
+				desc = trait_hyugagene_desc
 			}
-			desc = trait_hyugagene_desc
+			desc = trait_hyugagene_character_desc
 		}
 	}
 }

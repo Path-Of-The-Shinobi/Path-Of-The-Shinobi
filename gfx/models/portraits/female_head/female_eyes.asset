@@ -3,16 +3,7 @@ pdxmesh = {
 	file = "female_eyes.mesh"
 
 	meshsettings = {
-		name = "female_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_diffuse.dds"
-		texture_normal = "male_eyes_normal.dds"
-		texture_specular = "male_eyes_properties.dds"
-		shader = "portrait_eye"
-		shader_file = "gfx/FX/jomini/portrait.shader"
-	}
-	meshsettings = {
-		name = "female_eyes_leftShape"
+		name = "female_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_diffuse.dds"
 		texture_normal = "male_eyes_normal.dds"
@@ -32,12 +23,7 @@ entity = {
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
-		name = "female_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_no_shadow_diffuse.dds"
-	}
-	meshsettings = {
-		name = "female_eyes_leftShape"
+		name = "female_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_no_shadow_diffuse.dds"
 	}
@@ -48,12 +34,7 @@ entity = {
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
-		name = "female_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_dark_iris_diffuse.dds"
-	}
-	meshsettings = {
-		name = "female_eyes_leftShape"
+		name = "female_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_dark_iris_diffuse.dds"
 	}
@@ -64,12 +45,7 @@ entity = {
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
-		name = "female_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_asian_diffuse.dds"
-	}
-	meshsettings = {
-		name = "female_eyes_leftShape"
+		name = "female_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_asian_diffuse.dds"
 	}
@@ -80,12 +56,7 @@ entity = {
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
-		name = "female_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_bloodshot_diffuse.dds"
-	}
-	meshsettings = {
-		name = "female_eyes_leftShape"
+		name = "female_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_bloodshot_diffuse.dds"
 	}
@@ -96,99 +67,162 @@ entity = {
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
-		name = "female_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_blind_diffuse.dds"
-	}
-	meshsettings = {
-		name = "female_eyes_leftShape"
+		name = "female_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_blind_diffuse.dds"
 	}
 }
 
-# POH Custom Eyes
 entity = {
-	name = "female_eyes_sharingan_both"
+	name = "female_eyes_mangekyo_1_entity"
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
-		name = "female_eyes_rightShape"
+		name = "female_eyesShape"
 		index = 0
-		texture_diffuse = "male_eyes_sharingan_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "female_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_sharingan_diffuse.dds"
+		texture_diffuse = "male_eyes_mangekyo_1_diffuse.dds"
 	}
 }
 
 entity = {
-	name = "female_eyes_rinnegan_both"
+	name = "female_eyes_mangekyo_2_entity"
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
-		name = "female_eyes_rightShape"
+		name = "female_eyesShape"
+		index = 0
+		texture_diffuse = "male_eyes_mangekyo_2_diffuse.dds"
+	}
+}
+
+entity = {
+	name = "female_eyes_mangekyo_3_entity"
+	pdxmesh = "female_eyes_mesh"
+	
+	meshsettings = {
+		name = "female_eyesShape"
+		index = 0
+		texture_diffuse = "male_eyes_mangekyo_3_diffuse.dds"
+	}
+}
+
+entity = {
+	name = "female_eyes_mangekyo_4_entity"
+	pdxmesh = "female_eyes_mesh"
+	
+	meshsettings = {
+		name = "female_eyesShape"
+		index = 0
+		texture_diffuse = "male_eyes_mangekyo_4_diffuse.dds"
+	}
+}
+
+entity = {
+	name = "female_eyes_one_tomoe_entity"
+	pdxmesh = "female_eyes_mesh"
+	
+	meshsettings = {
+		name = "female_eyesShape"
+		index = 0
+		texture_diffuse = "male_eyes_one_tomoe_diffuse.dds"
+	}
+}
+
+entity = {
+	name = "female_eyes_two_tomoe_entity"
+	pdxmesh = "female_eyes_mesh"
+	
+	meshsettings = {
+		name = "female_eyesShape"
+		index = 0
+		texture_diffuse = "male_eyes_two_tomoe_diffuse.dds"
+	}
+}
+
+entity = {
+	name = "female_eyes_three_tomoe_entity"
+	pdxmesh = "female_eyes_mesh"
+	
+	meshsettings = {
+		name = "female_eyesShape"
+		index = 0
+		texture_diffuse = "male_eyes_three_tomoe_diffuse.dds"
+	}
+}
+
+entity = {
+	name = "female_eyes_byakugan_entity"
+	pdxmesh = "female_eyes_mesh"
+	
+	meshsettings = {
+		name = "female_eyesShape"
+		index = 0
+		texture_diffuse = "male_eyes_byakugan_diffuse.dds"
+	}
+}
+
+entity = {
+	name = "female_eyes_eternal_mangekyo_entity"
+	pdxmesh = "female_eyes_mesh"
+	
+	meshsettings = {
+		name = "female_eyesShape"
+		index = 0
+		texture_diffuse = "male_eyes_eternal_mangekyo_diffuse.dds"
+	}
+}
+
+entity = {
+	name = "female_eyes_rinnegan_entity"
+	pdxmesh = "female_eyes_mesh"
+	
+	meshsettings = {
+		name = "female_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_rinnegan_diffuse.dds"
 	}
+}
 
+entity = {
+	name = "female_eyes_rinne_sharingan_entity"
+	pdxmesh = "female_eyes_mesh"
+	
 	meshsettings = {
-		name = "female_eyes_leftShape"
+		name = "female_eyesShape"
 		index = 0
-		texture_diffuse = "male_eyes_rinnegan_diffuse.dds"
+		texture_diffuse = "male_eyes_rinne_sharingan_diffuse.dds"
 	}
 }
 
 entity = {
-	name = "female_eyes_mangekyosharingan_both"
+	name = "female_eyes_tenseigan_entity"
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
-		name = "female_eyes_rightShape"
+		name = "female_eyesShape"
 		index = 0
-		texture_diffuse = "male_eyes_mangekyosharingan_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "female_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_mangekyosharingan_diffuse.dds"
+		texture_diffuse = "male_eyes_tenseigan_diffuse.dds"
 	}
 }
 
 entity = {
-	name = "female_eyes_eternalsharingan_both"
+	name = "female_eyes_jogan_entity"
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
-		name = "female_eyes_rightShape"
+		name = "female_eyesShape"
 		index = 0
-		texture_diffuse = "male_eyes_eternalsharingan_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "female_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_eternalsharingan_diffuse.dds"
+		texture_diffuse = "male_eyes_jogan_diffuse.dds"
 	}
 }
 
 entity = {
-	name = "female_eyes_reanimated"
+	name = "female_eyes_forbidden_eyes_entity"
 	pdxmesh = "female_eyes_mesh"
 	
 	meshsettings = {
-		name = "female_eyes_rightShape"
+		name = "female_eyesShape"
 		index = 0
-		texture_diffuse = "male_eyes_reanimated.dds"
-	}
-
-	meshsettings = {
-		name = "female_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_reanimated.dds"
+		texture_diffuse = "male_eyes_forbidden_eyes_diffuse.dds"
 	}
 }
