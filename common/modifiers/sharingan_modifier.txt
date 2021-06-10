@@ -65,3 +65,7 @@ monkey_summons_modifier = {
     icon = stewardship_positive
     stewardship = 5
 }
+
+train_recently = {
+	icon = martial_negative
+}
