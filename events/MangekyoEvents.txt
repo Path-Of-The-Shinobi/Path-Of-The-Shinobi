@@ -105,7 +105,7 @@ MangekyoEvents.2 = {
                     }
                 }
             }
-            scppe:recipient = {
+            scope:recipient = {
                 death = { natural }
                 random_list = {
                     90 = { death = { killer = scope:actor death_reason = stolen_sharingan_reason } }
