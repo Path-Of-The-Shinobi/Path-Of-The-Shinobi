@@ -507,11 +507,18 @@
 
 #Mangekyo Sharingan Events
  MangekyoEvents.0.t:0 "Mangekyo Sharingan:Amaterasu"
- MangekyoEvents.0.d:0 "With the power of the mangekyo sharingan at your fingertips you feel that you can do alot of damage wiht the Amaterasu Flames"
+ MangekyoEvents.0.d:0 "With the power of the mangekyo sharingan at your fingertips you feel that you can do alot of damage with the Amaterasu Flames"
  MangekyoEvents.0.o:0 "Active the Amaterasu"
  MangekyoEvents.1.t:0 "Mangekyo Sharingan:Tsukuyomi"
  MangekyoEvents.1.d:0 "With the power of the mangekyo sharingan at your fingertips you feel that you can do alot of damage with the Tsukuyomi"
  MangekyoEvents.1.o:0 "Activate the Tsukuyomi"
+ MangekyoEvents.2.t:0 "Obtain The Mangekyo Sharingan"
+ MangekyoEvents.2.d:0 "Although the power of you max level sharingan gives you lots of power you believe that by killing somone who is closest to you you can obtain a new type of power one that is said to be forbidden in your lineage"
+ MangekyoEvents.2.o:0 "Obtain The Mangekyo Sharingan"
+ MangekyoEvents.2.a:0 "Abstain from obtaining the Mangekyo Sharingan"
+
+#Character Interactions
+ obtain_mangekyo_sharingan:0 "Awaken The Mangekyo Sharingan"
 
 #Summoning Jutsu Localization
  decision_summoning_jutsu:0 "Kuchiyose no Jutsu"
@@ -522,3 +529,14 @@
  Summoning_Jutsu.1.t:0 "Kuchiyose no Jutsu (Summoning Realm)"
  Summoning_Jutsu.1.d:0 "After Performing the handsigns Boar → Dog → Bird → Monkey → Ram, you are instantly transported to the realm of summons that you share an affinty with which realm have you ended up in"
  Summoning_Jutsu.1.o:0 "Right now its a WIP so its randomaly assigned out of four options for now that is"
+
+ #Test
+ death_uchiha_incident:0 "was killed in the Uchiha Incident"
+ death_uchiha_incident_killer:0 "was killed by [TARGET_CHARACTER.GetUIName] in the Uchiha Incident"
+ death_tailed_beast_extraction:0 "died after [CHARACTER.GetHerHis] Tailed Beast was extracted"
+ death_tailed_beast_extraction_killer:0 "died after [CHARACTER.GetHerHis] Tailed Beast was extracted by [TARGET_CHARACTER.GetUIName]"
+ death_rinne_rebirth:0 "died after using Rinne Rebirth"
+ death_reaper_death_seal:0 "died after using Reaper Death Seal"
+ death_sacrifice:0 "sacrificed [CHARACTER.GetHerselfHimself] to save others"
+ death_sealing:0 "was sealed away"
+ death_ascended:0 "ascended to the heavens"
