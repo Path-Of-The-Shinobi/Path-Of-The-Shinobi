@@ -12,8 +12,18 @@
  trait_threetomoe:0 "Sharingan with Three Tomoe"
  trait_threetomoe_desc:0 "A fully developed Sharingan with three Tomoe, for many Uchiha the last stage of their development."
 
- trait_mangekyosharingan:0 "Mangekyō Sharingan"
- trait_mangekyosharingan_desc:0 "The Mangekyō Sharingan is usually acquired by killing someone close to the owner and looks different for each user, but they all have in common that the Tomoe melt into a new shape. It is much stronger than a normal Sharingan and gives the user special abilities, but its use damages the eyesight and ultimately leads to complete blindness. Very few Uchiha have achieved this advancement of Sharingan."
+ trait_mangekyosharingan_1:0 "Mangekyō Sharingan"
+ trait_mangekyosharingan_1_desc:0 "The Mangekyō Sharingan is usually acquired by killing someone close to the owner and looks different for each user, but they all have in common that the Tomoe melt into a new shape. It is much stronger than a normal Sharingan and gives the user special abilities, but its use damages the eyesight and ultimately leads to complete blindness. Very few Uchiha have achieved this advancement of Sharingan."
+
+ trait_mangekyosharingan_2:0 "Mangekyō Sharingan"
+ trait_mangekyosharingan_2_desc:0 "The Mangekyō Sharingan is usually acquired by killing someone close to the owner and looks different for each user, but they all have in common that the Tomoe melt into a new shape. It is much stronger than a normal Sharingan and gives the user special abilities, but its use damages the eyesight and ultimately leads to complete blindness. Very few Uchiha have achieved this advancement of Sharingan."
+
+ trait_mangekyosharingan_3:0 "Mangekyō Sharingan"
+ trait_mangekyosharingan_3_desc:0 "The Mangekyō Sharingan is usually acquired by killing someone close to the owner and looks different for each user, but they all have in common that the Tomoe melt into a new shape. It is much stronger than a normal Sharingan and gives the user special abilities, but its use damages the eyesight and ultimately leads to complete blindness. Very few Uchiha have achieved this advancement of Sharingan."
+
+ trait_mangekyosharingan_4:0 "Mangekyō Sharingan"
+ trait_mangekyosharingan_4_desc:0 "The Mangekyō Sharingan is usually acquired by killing someone close to the owner and looks different for each user, but they all have in common that the Tomoe melt into a new shape. It is much stronger than a normal Sharingan and gives the user special abilities, but its use damages the eyesight and ultimately leads to complete blindness. Very few Uchiha have achieved this advancement of Sharingan."
+
 
  trait_eternalsharingan:0 "Eternal Mangekyō Sharingan"
  trait_eternalsharingan_desc:0 "The eternal (permanent) Mangekyō Sharingan. You only get it by implanting another Mangekyō Sharingan and already owning one, the two Sharingan mix and you get a new, improved Sharingan."
@@ -71,6 +81,14 @@
 
  trait_hyugagene:0 "Hyuga-Gene"
  trait_hyugagene_desc:0 "The bloodline of the Hyuga clan with their unique Kekkei Genkai the byakugan."
+ 
+ trait_forbiddengene:0 "Forbidden-Blood"
+ trait_forbiddengene_desc:0 "Through the rare occurrance of both Hyuga and Uchiha Clan blood intercepting, this character has been born with eyes with unfathomable powers."
+ trait_forbiddengene_character_desc:0 "Through the rare occurrance of both Hyuga and Uchiha Clan blood intercepting, [ROOT.GetCharacter.GetFirstNameNoTooltip] has been born with eyes with unfathomable powers."
+    
+ trait_forbiddeneyes:0 "Forbidden Eyes"
+ trait_forbiddeneyes_desc:0 "This character has eyes with powers that is believed to have powers so great that no dojutsu can rival its overwhelming strength. These eyes were the creation of the unificiation between the sharingan and byakugan."
+ trait_forbiddeneyes_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has eyes with powers that is believed to have powers so great that no dojutsu can rival its overwhelming strength. These eyes were the creation of the unificiation between the sharingan and byakugan."
 #Uchiha Decision
  decision_stageone:0 "Path of the Uchiha - The Secret of the Blood"
  decision_stageone_desc:0 "By studying ancient scriptures from your family, you discover that you are likely a descendant of the Uchiha clan."
@@ -254,21 +272,14 @@
  SG_Secret.4.t:0 "A rumble in the sky."
  SG_Secret.4.d:0 "During the night the entire world was awakened by an earthquake that stirred the sky. Meotors fell from the sky and the whole world trembled with fear that something had arrived."
  SG_Secret.4.o:0 "What can that mean for the world?"
- sharingan_level.1.t:0 "Training Your Shairngan"
+ 
+ sharingan_level.1.t:0 "Training Your Sharingan"
  sharingan_level.1.d:0 "Now that you have unlocked your families ancient bloodline you decide to train yourself in the bloodline to try and obtain the legendery Sharingan of your ancestors"
- sharingan_level.1.o:0 "Try to level yor sharingan"
- sharingan_level.2.t:0 "Training Your Shairngan"
- sharingan_level.2.d:0 "Now that you have unlocked your one tomoe sharingan you decide that further training is required in order to see how far these new eyes can take you"
- sharingan_level.2.o:0 "Try to level your sharingan"
- sharingan_level.3.t:0 "Training Your Shairngan"
- sharingan_level.3.d:0 "Now that you have unlocked your two tomoe sharingan you decide training is in order to see how far these new eyes can take you"
- sharingan_level.3.o:0 "Try to level yor sharingan"
- sharingan_level.4.t:0 "Training Your Shairngan"
- sharingan_level.4.d:0 "Now that you have unlocked your three tomoe sharingan you decide training is in order to see how far these new eyes can take you"
- sharingan_level.4.o:0 "Try to level yor sharingan"
- sharingan_level.5.t:0 "Training Your Shairngan"
- sharingan_level.5.d:0 "Now that you have unlocked your Mangekyo Sharingan you decide to take a look at the ancient stone tablet that you discovered earlier in the year"
- sharingan_level.5.o:0 "Try to level yor sharingan"
+ sharingan_level.1.a:0 "Try to level yor Sharingan"
+ sharingan_level.2.t:0 "Obtain the Eternal Sharingan"
+ sharingan_level.2.d:0 "After obtaining the mangekyo sharingan, you feel your eyesight fading with every use. You know that in order to never lose your sight you have to take the eyes of another uchiha..."
+ sharingan_level.2.a:0 "Eternal Sight is Yours"
+ 
  activate_izanagi_interaction:0 "Activate the Izanagi."
  activate_izanagi_desc:0 "Activate the Izanagi."
  izanagi.t:0 "Engage the Izanagi."
