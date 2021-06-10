@@ -3,16 +3,7 @@ pdxmesh = {
 	file = "male_eyes.mesh"
 	
 	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_diffuse.dds"
-		texture_normal = "male_eyes_normal.dds"
-		texture_specular = "male_eyes_properties.dds"
-		shader = "portrait_eye"
-		shader_file = "gfx/FX/jomini/portrait.shader"
-	}
-	meshsettings = {
-		name = "male_eyes_leftShape"
+		name = "male_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_diffuse.dds"
 		texture_normal = "male_eyes_normal.dds"
@@ -32,13 +23,7 @@ entity = {
 	pdxmesh = "male_eyes_mesh"
 	
 	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_no_shadow_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
+		name = "male_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_no_shadow_diffuse.dds"
 	}
@@ -49,13 +34,7 @@ entity = {
 	pdxmesh = "male_eyes_mesh"
 	
 	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_dark_iris_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
+		name = "male_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_dark_iris_diffuse.dds"
 	}
@@ -66,13 +45,7 @@ entity = {
 	pdxmesh = "male_eyes_mesh"
 	
 	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_asian_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
+		name = "male_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_asian_diffuse.dds"
 	}
@@ -83,13 +56,7 @@ entity = {
 	pdxmesh = "male_eyes_mesh"
 	
 	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_bloodshot_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
+		name = "male_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_bloodshot_diffuse.dds"
 	}
@@ -100,118 +67,9 @@ entity = {
 	pdxmesh = "male_eyes_mesh"
 	
 	meshsettings = {
-		name = "male_eyes_rightShape"
+		name = "male_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_blind_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_blind_diffuse.dds"
-	}
-}
-
-# POS Custom Eyes
-entity = {
-	name = "male_eyes_sharingan_both"
-	pdxmesh = "male_eyes_mesh"
-	
-	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_sharingan_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_sharingan_diffuse.dds"
-	}
-}
-
-entity = {
-	name = "male_eyes_rinnegan_both"
-	pdxmesh = "male_eyes_mesh"
-	
-	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_rinnegan_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_rinnegan_diffuse.dds"
-	}
-}
-
-entity = {
-	name = "male_eyes_mangekyosharingan_both"
-	pdxmesh = "male_eyes_mesh"
-	
-	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_mangekyosharingan_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_mangekyosharingan_diffuse.dds"
-	}
-}
-
-entity = {
-	name = "male_eyes_eternalsharingan_both"
-	pdxmesh = "male_eyes_mesh"
-	
-	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_eternalsharingan_diffuse.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_eternalsharingan_diffuse.dds"
-	}
-}
-
-entity = {
-	name = "male_eyes_reanimated"
-	pdxmesh = "male_eyes_mesh"
-	
-	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_reanimated.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_reanimated.dds"
-	}
-}
-
-entity = {
-	name = "male_eyes_orochimaru"
-	pdxmesh = "male_eyes_mesh"
-	
-	meshsettings = {
-		name = "male_eyes_rightShape"
-		index = 0
-		texture_diffuse = "male_eyes_orochimaru.dds"
-	}
-
-	meshsettings = {
-		name = "male_eyes_leftShape"
-		index = 0
-		texture_diffuse = "male_eyes_orochimaru.dds"
 	}
 }
 
@@ -355,5 +213,16 @@ entity = {
 		name = "male_eyesShape"
 		index = 0
 		texture_diffuse = "male_eyes_jogan_diffuse.dds"
+	}
+}
+
+entity = {
+	name = "male_eyes_forbidden_eyes_entity"
+	pdxmesh = "male_eyes_mesh"
+	
+	meshsettings = {
+		name = "male_eyesShape"
+		index = 0
+		texture_diffuse = "male_eyes_forbidden_eyes_diffuse.dds"
 	}
 }
