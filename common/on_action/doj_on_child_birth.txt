@@ -1,0 +1,216 @@
+on_birth_child = {
+	events = {
+	}
+
+	on_actions = {
+		on_uchiha_birth
+		on_hyuga_birth
+		on_forbidden_birth
+	}
+}
+
+on_uchiha_birth = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_uchiha = yes
+					}
+					scope:mother = {
+						is_uchiha = yes
+					}
+				}
+			}
+			add_trait = uchiha_blood
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_uchiha = yes
+					}
+					scope:mother = {
+						is_uchiha = no
+					}
+				}
+			}
+			add_trait = uchiha_blood
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_uchiha = no
+					}
+					scope:mother = {
+						is_uchiha = yes
+						patrilinear_marriage = no
+					}
+				}
+			}
+			add_trait = uchihagene
+		}
+	}
+}
+
+on_forbidden_birth = {
+	effect = {
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						scope:real_father = {
+							is_uchiha = yes
+						}
+						scope:mother = {
+							is_hyuga = yes
+						}
+					}
+					AND = {
+						scope:real_father = {
+							is_hyuga = yes
+						}
+						scope:mother = {
+							is_uchiha = yes
+						}
+					}
+				}
+			}
+			random_list = {
+				30 = {
+					add_trait = forbiddengene
+					add_trait = forbiddeneyes
+				}
+				35 = {
+					add_trait = uchihagene
+				}
+				35 = {
+					add_trait = hyugagene
+					random_list = {
+						95 = {
+							add_trait = byakugan
+						}
+						5 = {
+							add_trait = jogan
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_forbidden = yes
+					}
+					scope:mother = {
+						is_forbidden = yes
+					}
+				}
+			}
+			add_trait = forbiddengene
+			add_trait = forbiddeneyes
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_forbidden = yes
+					}
+					scope:mother = {
+						is_forbidden = no
+					}
+				}
+			}
+			add_trait = forbiddengene
+			add_trait = forbiddeneyes
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_forbidden = no
+					}
+					scope:mother = {
+						is_forbidden = yes
+						patrilinear_marriage = no
+					}
+				}
+			}
+			add_trait = forbiddengene
+			add_trait = forbiddeneyes
+		}
+	}
+}
+
+on_hyuga_birth = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_hyuga = yes
+					}
+					scope:mother = {
+						is_hyuga = yes
+					}
+				}
+			}
+			add_trait = hyugagene
+			add_trait = byakugan
+			random_list = {
+				95 = {
+					add_trait = byakugan
+				}
+				5 = {
+					add_trait = jogan
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_hyuga = yes
+					}
+					scope:mother = {
+						is_hyuga = no
+					}
+				}
+			}
+			add_trait = hyugagene
+			add_trait = byakugan
+			random_list = {
+				95 = {
+					add_trait = byakugan
+				}
+				5 = {
+					add_trait = jogan
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					scope:real_father = {
+						is_hyuga = no
+					}
+					scope:mother = {
+						is_hyuga = yes
+						patrilinear_marriage = no
+					}
+				}
+			}
+			add_trait = hyugagene
+			random_list = {
+				95 = {
+					add_trait = byakugan
+				}
+				5 = {
+					add_trait = jogan
+				}
+			}
+		}
+	}
+}
