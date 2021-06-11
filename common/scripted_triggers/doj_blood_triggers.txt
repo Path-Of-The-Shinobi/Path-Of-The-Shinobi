@@ -1,4 +1,4 @@
-is_uchiha = {
+﻿is_uchiha = {
 	has_trait = uchihagene
 }
 
