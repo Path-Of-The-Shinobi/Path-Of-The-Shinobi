@@ -63,7 +63,7 @@ SG_Sharingan.3 = {
 		}
 			random_list = {
 				100 = { 
-					add_trait = twotomoe
+					add_trait = twotomoe 
 					remove_trait = onetomoe
 				}
 			}
@@ -149,7 +149,7 @@ SG_Sharingan.6 = {
 		}
 			random_list = {
 				40 = { 
-					add_trait = eternalsharingan
+					add_trait = eternalsharingan 
 					remove_trait = mangekyosharingan
 				}
 				60 = { add_trait = wounded_1 }
@@ -182,6 +182,11 @@ SG_Sharingan.7 = {
 			has_trait = eternalsharingan
 		}
 			random_list = {
+				30 = { 
+					add_trait = rinnegan
+					remove_trait = eternalsharingan
+				}
+				70 = { add_trait = wounded_1 }
 				50 = { 
 					add_trait = rinnegan
 					remove_trait = eternalsharingan

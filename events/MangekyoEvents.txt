@@ -91,8 +91,11 @@ MangekyoEvents.2 = {
         animation = worry
     }
 
+
+
     option = {
         name = MangekyoEvents.2.o
+
 		if = {
 			limit = {
 				has_trait = mangekyo_sharingan_1
@@ -180,7 +183,7 @@ MangekyoEvents.2 = {
         hidden_effect = {
             add_character_modifier = {
                 modifier = steal_sharingan_modifier
-                years = 5
+                years = 6
             }
         }
     }
