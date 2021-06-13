@@ -1,4 +1,4 @@
-mangekyo_1_eyes = {
+﻿mangekyo_1_eyes = {
 	mangekyo_1_eyes = {
 		traits = { mangekyosharingan_1 }
 		dna_modifiers = {			
@@ -112,7 +112,7 @@ byakugan_eyes = {
 
 eternal_mangekyo_eyes = {
 	eternal_mangekyo_eyes = {
-		traits = { eternalmangekyo }
+		traits = { eternalsharingan }
 		dna_modifiers = {			
 			accessory = {
 			    mode = replace

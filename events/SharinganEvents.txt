@@ -187,6 +187,11 @@ SG_Sharingan.7 = {
 					remove_trait = eternalsharingan
 				}
 				70 = { add_trait = wounded_1 }
+				50 = { 
+					add_trait = rinnegan
+					remove_trait = eternalsharingan
+				}
+				50 = { add_trait = wounded_1 }
 			}
 	}
 

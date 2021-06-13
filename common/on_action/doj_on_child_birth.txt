@@ -1,4 +1,4 @@
-on_birth_child = {
+﻿on_birth_child = {
 	events = {
 	}
 

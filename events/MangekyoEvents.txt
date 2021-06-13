@@ -91,6 +91,11 @@ MangekyoEvents.2 = {
         animation = worry
     }
 
+
+
+    option = {
+        name = MangekyoEvents.2.o
+
 		if = {
 			limit = {
 				has_trait = mangekyo_sharingan_1

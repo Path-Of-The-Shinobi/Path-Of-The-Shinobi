@@ -2,7 +2,7 @@
 
 sharingan_level.1 = {
 	title = sharingan_level.1.t
-	desc = sharingan_level.1.desc
+	desc = sharingan_level.1.d
 	theme = martial
 	left_portrait = {
 		character = root
@@ -15,7 +15,7 @@ sharingan_level.1 = {
 		}
 		if = {
 			limit = {
-				trait = uchihagene
+				has_trait = uchihagene
 				NOT = {
 					has_character_flag = flag_onetomoesharingan
 				}
@@ -24,15 +24,15 @@ sharingan_level.1 = {
 				9 = {
 					modifier = {
 						add = 1.5
-						trait = intellect_good_3
+						has_trait = intellect_good_3
 					}
 					modifier = {
 						add = 1.2
-						trait = intellect_good_2
+						has_trait = intellect_good_2
 					}
 					modifier = {
 						add = 1.0
-						trait = intellect_good_1
+						has_trait = intellect_good_1
 					}
 					add_trait = onetomoe
 					add_character_flag = flag_onetomoesharingan
@@ -40,15 +40,15 @@ sharingan_level.1 = {
 				1 = {
 					modifier = {
 						add = 1.2
-						trait = intellect_bad_1
+						has_trait = intellect_bad_1
 					}
 					modifier = {
 						add = 1.8
-						trait = intellect_bad_2
+						has_trait = intellect_bad_2
 					}
 					modifier = {
 						add = 2.5
-						trait = intellect_bad_3
+						has_trait = intellect_bad_3
 					}
 					add_trait = wounded_1
 				}
@@ -56,18 +56,18 @@ sharingan_level.1 = {
 		}
 		else_if = {
 			limit = {
-				trait = onetomoe
+				has_trait = onetomoe
 				has_character_flag = flag_onetomoesharingan
 			}
 			random_list = {
 				8.5 = {
 					modifier = {
 						add = 1.5
-						trait = intellect_good_3
+						has_trait = intellect_good_3
 					}
 					modifier = {
 						add = 1.2
-						trait = intellect_good_2
+						has_trait = intellect_good_2
 					}
 					add_trait = twotomoe
 					remove_trait = onetomoe
@@ -77,15 +77,15 @@ sharingan_level.1 = {
 				1.5 = {
 					modifier = {
 						add = 1.2
-						trait = intellect_bad_1
+						has_trait = intellect_bad_1
 					}
 					modifier = {
 						add = 1.8
-						trait = intellect_bad_2
+						has_trait = intellect_bad_2
 					}
 					modifier = {
 						add = 2.5
-						trait = intellect_bad_3
+						has_trait = intellect_bad_3
 					}
 					add_trait = wounded_1
 				}
@@ -93,18 +93,18 @@ sharingan_level.1 = {
 		}
 		else_if = {
 			limit = {
-				trait = twotomoe
+				has_trait = twotomoe
 				has_character_flag = flag_twotomoesharingan
 			}
 			random_list = {
 				8 = {
 					modifier = {
 						add = 1.5
-						trait = intellect_good_3
+						has_trait = intellect_good_3
 					}
 					modifier = {
 						add = 1.2
-						trait = intellect_good_2
+						has_trait = intellect_good_2
 					}
 					add_trait = threetomoe
 					remove_trait = twotomoe
@@ -114,15 +114,15 @@ sharingan_level.1 = {
 				2 = {
 					modifier = {
 						add = 1.2
-						trait = intellect_bad_1
+						has_trait = intellect_bad_1
 					}
 					modifier = {
 						add = 1.8
-						trait = intellect_bad_2
+						has_trait = intellect_bad_2
 					}
 					modifier = {
 						add = 2.5
-						trait = intellect_bad_3
+						has_trait = intellect_bad_3
 					}
 					add_trait = wounded_1
 				}
@@ -130,18 +130,18 @@ sharingan_level.1 = {
 		}
 		else_if = {
 			limit = {
-				trait = threetomoe
+				has_trait = threetomoe
 				has_character_flag = flag_threetomoesharingan
 			}
 			random_list = {
 				1.5 = {
 					modifier = {
 						add = 1.5
-						trait = intellect_good_3
+						has_trait = intellect_good_3
 					}
 					modifier = {
 						add = 1.2
-						trait = intellect_good_2
+						has_trait = intellect_good_2
 					}
 					add_trait = mangekyosharingan_1
 					remove_trait = threetomoe
@@ -152,11 +152,11 @@ sharingan_level.1 = {
 				1.5 = {
 					modifier = {
 						add = 1.5
-						trait = intellect_good_3
+						has_trait = intellect_good_3
 					}
 					modifier = {
 						add = 1.2
-						trait = intellect_good_2
+						has_trait = intellect_good_2
 					}
 					add_trait = mangekyosharingan_2
 					remove_trait = threetomoe
@@ -167,11 +167,11 @@ sharingan_level.1 = {
 				1.5 = {
 					modifier = {
 						add = 1.5
-						trait = intellect_good_3
+						has_trait = intellect_good_3
 					}
 					modifier = {
 						add = 1.2
-						trait = intellect_good_2
+						has_trait = intellect_good_2
 					}
 					add_trait = mangekyosharingan_3
 					remove_trait = threetomoe
@@ -182,11 +182,11 @@ sharingan_level.1 = {
 				1.5 = {
 					modifier = {
 						add = 1.5
-						trait = intellect_good_3
+						has_trait = intellect_good_3
 					}
 					modifier = {
 						add = 1.2
-						trait = intellect_good_2
+						has_trait = intellect_good_2
 					}
 					add_trait = mangekyosharingan_4
 					remove_trait = threetomoe
@@ -198,15 +198,15 @@ sharingan_level.1 = {
 				4 = {
 					modifier = {
 						add = 1.2
-						trait = intellect_bad_1
+						has_trait = intellect_bad_1
 					}
 					modifier = {
 						add = 1.8
-						trait = intellect_bad_2
+						has_trait = intellect_bad_2
 					}
 					modifier = {
 						add = 2.5
-						trait = intellect_bad_3
+						has_trait = intellect_bad_3
 					}
 					add_trait = wounded_1
 				}
@@ -221,7 +221,7 @@ sharingan_level.1 = {
 
 sharingan_level.2 = {
 	title = sharingan_level.2.t
-	desc = sharingan_level.2.desc
+	desc = sharingan_level.2.d
 	theme = martial
 	left_portrait = {
 		character = root
@@ -230,10 +230,10 @@ sharingan_level.2 = {
 	
 	trigger = {
 		OR = {
-			trait = mangekyosharingan_1
-			trait = mangekyosharingan_2
-			trait = mangekyosharingan_3
-			trait = mangekyosharingan_4
+			has_trait = mangekyosharingan_1
+			has_trait = mangekyosharingan_2
+			has_trait = mangekyosharingan_3
+			has_trait = mangekyosharingan_4
 		}
 	}
 	
@@ -245,24 +245,24 @@ sharingan_level.2 = {
 		if = {
 			limit = {
 				OR = {
-					trait = mangekyosharingan_1
-					trait = mangekyosharingan_2
-					trait = mangekyosharingan_3
-					trait = mangekyosharingan_4
+					has_trait = mangekyosharingan_1
+					has_trait = mangekyosharingan_2
+					has_trait = mangekyosharingan_3
+					has_trait = mangekyosharingan_4
 				}
 				NOT = {
-					trait = eternalmangekyo
+					has_trait = eternalmangekyo
 				}
 			}
 			random_list = {
 				5 = {
 					modifier = {
 						add = 1.5
-						trait = intellect_good_3
+						has_trait = intellect_good_3
 					}
 					modifier = {
 						add = 1.2
-						trait = intellect_good_2
+						has_trait = intellect_good_2
 					}
 					add_trait = eternalmangekyo
 					remove_trait = mangekyosharingan_1
@@ -275,15 +275,15 @@ sharingan_level.2 = {
 				5 = {
 					modifier = {
 						add = 1.2
-						trait = intellect_bad_1
+						has_trait = intellect_bad_1
 					}
 					modifier = {
 						add = 1.8
-						trait = intellect_bad_2
+						has_trait = intellect_bad_2
 					}
 					modifier = {
 						add = 2.5
-						trait = intellect_bad_3
+						has_trait = intellect_bad_3
 					}
 					add_trait = wounded_1
 				}
