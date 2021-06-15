@@ -1,0 +1,43 @@
+﻿namespace = Dojutsu_Events
+
+Dojutsu_Events.0 = {
+	type = character_event
+	title = Dojutsu_Events.0.t
+	desc = Dojutsu_Events.0.d
+
+	theme = crown
+
+	right_portrait = {
+	character = root
+	animation = worry
+	}
+
+	option = {
+		name = Dojutsu_Events.0.o
+		trigger = {
+			NOT = {
+                has_trait = uchihagene
+            }
+		}
+			random_list = {
+				100 = { add_trait = uchihagene }
+			}
+	}
+
+    option = {
+        name = Dojutsu_Events.0.a
+        trigger = {
+            NOT = {
+                has_trait = hyugagene
+                has_trait = byakugan
+            }
+        }
+            random_list = {
+                100 = 
+                {
+                add_trait = hyugagene 
+                add_trait = byakugan
+                }
+            }
+    }
+}

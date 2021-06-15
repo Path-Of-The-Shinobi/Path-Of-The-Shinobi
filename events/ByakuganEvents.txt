@@ -2,29 +2,6 @@
 
 ByakuganEvent.1 = {
 	type = character_event
-	title = ByakuganEvent.1.t
-	desc = ByakuganEvent.1.d
-	
-	theme = crown
-
-	right_portrait = {
-	character = root
-	animation = worry
-	}
-	
-	option = {
-		name = ByakuganEvent.1.o
-		trigger = { age >= 16 }
-		
-			random_list = {
-	 			100 = { add_trait = hyugagene }
-                100 = { add_trait = byakugan }
-			}
-		}
-}
-
-ByakuganEvent.2 = {
-	type = character_event
 	title = ByakuganEvent.2.t
 	desc = ByakuganEvent.2.d
 	

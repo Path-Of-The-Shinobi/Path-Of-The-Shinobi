@@ -250,7 +250,7 @@ eight_trigrams_character_interaction = {
 
 	on_send = {
 		scope:actor = {
-			trigger_event = ByakuganEvent.2
+			trigger_event = ByakuganEvent.1
 		}
 	}
 }

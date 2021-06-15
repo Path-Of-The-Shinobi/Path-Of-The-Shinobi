@@ -1,26 +1,26 @@
 ﻿namespace = SG_Sharingan
 
-SG_Sharingan.1 = {
-	type = character_event
-	title = SG_Sharingan.1.t
-	desc = SG_Sharingan.1.d
-	
-	theme = crown
-
-	right_portrait = {
-	character = root
-	animation = worry
-	}
-	
-	option = {
-		name = SG_Sharingan.1.o
-		trigger = { age >= 16 }
-		
-			random_list = {
-	 			100 = { add_trait = uchihagene }
-			}
-		}
-}
+#SG_Sharingan.1 = {
+#	type = character_event
+#	title = SG_Sharingan.1.t
+#	desc = SG_Sharingan.1.d
+#	
+#	theme = crown
+#
+#	right_portrait = {
+#	character = root
+#	animation = worry
+#	}
+#	
+#	option = {
+#		name = SG_Sharingan.1.o
+#		trigger = { age >= 16 }
+#		
+#			random_list = {
+#	 			100 = { add_trait = uchihagene }
+#			}
+#		}
+#}
 
 SG_Sharingan.2 = {
 	type = character_event
