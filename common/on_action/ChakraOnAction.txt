@@ -14,6 +14,6 @@ Dojutsu_1 = {
     }
 
     events = {
-        Dojutsu_Events.0
+        DojutsuEvent.1
     }
 }

@@ -95,7 +95,10 @@ sharingan_birthday_six = {
     trigger = {
         AND = {
             age = 26
-            has_trait = mangekyosharingan
+            has_trait = mangekyosharingan_1
+            OR = { has_trait = mangekyosharingan_2 }
+            OR = { has_trait = mangekyosharingan_3 }
+            OR = { has_trait = mangekyosharingan_4 }
             NOT = { has_trait = rinnesharingan }
         }
     }

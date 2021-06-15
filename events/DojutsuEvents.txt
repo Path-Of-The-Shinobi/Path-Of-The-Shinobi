@@ -1,9 +1,9 @@
 ﻿namespace = DojutsuEvent
 
-DojutsuEvent.0 = {
+DojutsuEvent.1 = {
 	type = character_event
-	title = DojutsuEvent.0.t
-	desc = DojutsuEvent.0.d
+	title = DojutsuEvent.1.t
+	desc = DojutsuEvent.1.d
 
 	theme = crown
 
@@ -13,23 +13,26 @@ DojutsuEvent.0 = {
 	}
 
 	option = {
-		name = DojutsuEvent.0.o
+		name = DojutsuEvent.1.o
 		trigger = {
-			NOT = {
-                has_trait = uchihagene
+			AND = {
+                NOT = { has_trait = uchihagene }
             }
 		}
 			random_list = {
-				100 = { add_trait = uchihagene }
+				100 = {
+                    add_trait = uchihagene
+                    set_house = house:house_Uchiha
+                }
 			}
 	}
 
     option = {
-        name = DojutsuEvent.0.a
+        name = DojutsuEvent.1.a
         trigger = {
-            NOT = {
-                has_trait = hyugagene
-                has_trait = byakugan
+            AND = {
+                NOT = { has_trait = hyugagene }
+                NOT = { has_trait = byakugan }
             }
         }
             random_list = {
@@ -37,6 +40,7 @@ DojutsuEvent.0 = {
                 {
                 add_trait = hyugagene 
                 add_trait = byakugan
+                set_house = house:house_Hygua
                 }
             }
     }
