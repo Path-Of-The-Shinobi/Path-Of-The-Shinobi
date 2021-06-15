@@ -553,9 +553,8 @@
 	culture = french
 	fertility = 1
 	sexuality = heterosexual
-	trait = uchihagene
-	trait = byakugan
-	trait = uzumakigene
+	trait = forbiddengene
+	trait = forbiddeneyes
 	father = 999029
 	mother = 999030
 	female = yes
