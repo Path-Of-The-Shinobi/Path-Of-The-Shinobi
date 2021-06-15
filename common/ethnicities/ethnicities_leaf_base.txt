@@ -38,10 +38,6 @@ leaf_base = {
     template = "ethnicity_template"
     using = "saxon"
     visible = no
-    gene_height = {
-        90 = { name = normal_height  range = { 0.55 0.7 }      }
-        10 = { name = normal_height  range = { 0.7 0.9 }      }
-    }
 }
 
 leaf = {
@@ -94,6 +90,11 @@ leaf = {
         10 = {  name = layer_2_low_thickness             range = { 0.25 0.75 }     }
         # 10 = {  name = layer_2_low_thickness             range = { 0.5 0.75 }     }
         10 = {  name = layer_2_lower_thickness             range = { 0.25 0.75 }     }
+    }
+	
+    gene_height = {
+        90 = { name = normal_height  range = { 0.55 0.7 }      }
+        10 = { name = normal_height  range = { 0.7 0.9 }      }
     }
 
 } 
@@ -148,6 +149,11 @@ leaf_blond = {
         10 = {  name = layer_2_low_thickness             range = { 0.25 0.75 }     }
         # 10 = {  name = layer_2_low_thickness             range = { 0.5 0.75 }     }
         10 = {  name = layer_2_lower_thickness             range = { 0.25 0.75 }     }
+    }
+	
+    gene_height = {
+        90 = { name = normal_height  range = { 0.55 0.7 }      }
+        10 = { name = normal_height  range = { 0.7 0.9 }      }
     }
 
 } 
@@ -215,6 +221,11 @@ leaf_ginger = {
         # 10 = {  name = layer_2_low_thickness             range = { 0.5 0.75 }     }
         10 = {  name = layer_2_lower_thickness             range = { 0.25 0.65 }     }
     }
+	
+    gene_height = {
+        90 = { name = normal_height  range = { 0.55 0.7 }      }
+        10 = { name = normal_height  range = { 0.7 0.9 }      }
+    }
 
 } 
 
@@ -279,6 +290,11 @@ leaf_brown_hair = {
         10 = {  name = layer_2_low_thickness             range = { 0.5 0.75 }     }
         10 = {  name = layer_2_lower_thickness             range = { 0.5 0.75 }     }
     }
+	
+    gene_height = {
+        90 = { name = normal_height  range = { 0.55 0.7 }      }
+        10 = { name = normal_height  range = { 0.7 0.9 }      }
+    }
 
 } 
 
@@ -342,6 +358,11 @@ leaf_dark_hair = {
         # 10 = {  name = layer_2_low_thickness             range = { 0.25 0.5 }     }
         10 = {  name = layer_2_low_thickness             range = { 0.5 1.0 }     }
         10 = {  name = layer_2_lower_thickness             range = { 0.5 1.0 }     }
+    }
+	
+    gene_height = {
+        90 = { name = normal_height  range = { 0.55 0.7 }      }
+        10 = { name = normal_height  range = { 0.7 0.9 }      }
     }
 
 }
