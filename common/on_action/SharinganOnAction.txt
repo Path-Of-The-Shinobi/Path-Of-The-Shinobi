@@ -7,7 +7,6 @@
         sharingan_birthday_five
         sharingan_birthday_six
         sharingan_birthday_seven
-        sharingan_birthday_eight
     }
 }
 
@@ -117,25 +116,5 @@ sharingan_birthday_seven = {
 
     events = {
         SG_Sharingan.7
-    }
-}
-
-sharingan_birthday_eight = {
-    trigger = {
-        AND = {
-            age >= 16
-            NOT = { has_character_flag = lock_kagyua }
-            is_ai = no
-        }
-    }
-
-    events = {
-        SG_Secret.4
-    }
-
-    effect = {
-        add_character_flag = {
-            flag = lock_kagyua
-        }
     }
 }

@@ -322,10 +322,10 @@
  EdoTensei.7.t:0 "Perform Fushi Tensei"
  EdoTensei.7.d:0 "If you use the Fushi Tensei Jutsu your character will get godlike health, but the character will get severe injuries and will likely die on the jutsu being used."
  EdoTensei.7.o:0 "Perform Fushi Tensei"
- Dojutsu_Events.0.t:0 "Path Of The Uchiha/Hyuga"
- Dojutsu_Events.0.d:0 "Please Pick one of the following options and you will be able to be assigned a trait and a family based on ur choice"
- Dojutsu_Events.0.o:0 "Become apart of the Uchiha Clan"
- Dojutsu_Events.0.a:0 "Become apart of the Hyuga Clan"
+ DojutsuEvent.0.t:0 "Path Of The Uchiha/Hyuga"
+ DojutsuEvent.0.d:0 "Please Pick one of the following options and you will be able to be assigned a trait and a family based on ur choice"
+ DojutsuEvent.0.o:0 "Become apart of the Uchiha Clan"
+ DojutsuEvent.0.a:0 "Become apart of the Hyuga Clan"
 
  #Character Names
  dynn_hygua:0 "Hyuga"

@@ -1,9 +1,9 @@
-﻿namespace = Dojutsu_Events
+﻿namespace = DojutsuEvent
 
-Dojutsu_Events.0 = {
+DojutsuEvent.0 = {
 	type = character_event
-	title = Dojutsu_Events.0.t
-	desc = Dojutsu_Events.0.d
+	title = DojutsuEvent.0.t
+	desc = DojutsuEvent.0.d
 
 	theme = crown
 
@@ -13,7 +13,7 @@ Dojutsu_Events.0 = {
 	}
 
 	option = {
-		name = Dojutsu_Events.0.o
+		name = DojutsuEvent.0.o
 		trigger = {
 			NOT = {
                 has_trait = uchihagene
@@ -25,7 +25,7 @@ Dojutsu_Events.0 = {
 	}
 
     option = {
-        name = Dojutsu_Events.0.a
+        name = DojutsuEvent.0.a
         trigger = {
             NOT = {
                 has_trait = hyugagene
