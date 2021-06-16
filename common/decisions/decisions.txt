@@ -8,30 +8,20 @@ decision_stageone = {
 	is_shown = { 
 		is_ruler = yes 
 		martial >= 1 
-		prestige >= 800 
 		NOT = { has_trait = uchihagene }
-		NOT = { has_trait = onetomoe }
-		NOT = { has_trait = twotomoe } 
-		NOT = { has_trait = threetomoe }
-		NOT = { has_trait = mangekyosharingan } 
-		NOT = { has_trait = eternalsharingan }
+		NOT = { has_trait = hyugagene }
+		NOT = { has_trait = forbiddengene }
 	}
 
 	is_valid = {
-		or = {
-			has_trait = education_martial_1
-			has_trait = education_martial_2
-			has_trait = education_martial_3
-			has_trait = education_martial_4
-		}
+		is_ruler = yes
 	}
 
 	cost = {
-		prestige = 701
+		prestige = 100
 	}
 
-    effect = { trigger_event = SG_Sharingan.1
-    }
+    effect = { trigger_event = SG_Sharingan.1 }
 
 	ai_potential = {
 		always = yes
@@ -297,27 +287,22 @@ decision_hyugaone = {
 	is_shown = { 
 		is_ruler = yes 
 		intrigue >= 1 
-		prestige >= 800
 		NOT = {
 			has_trait = uchihagene
+			has_trait = hyugagene
+			has_trait = forbiddengene
 		} 
 	}
 
 	is_valid = {
-		or = {
-			has_trait = education_intrigue_1
-			has_trait = education_intrigue_2
-			has_trait = education_intrigue_3
-			has_trait = education_intrigue_4
-		}
+		is_ruler = yes
 	}
 
 	cost = {
-		prestige = 701
+		prestige = 100
 	}
 
-    effect = { trigger_event = ByakuganEvent.1
-    }
+    effect = { trigger_event = ByakuganEvent.1 }
 
 	ai_potential = {
 		always = yes
