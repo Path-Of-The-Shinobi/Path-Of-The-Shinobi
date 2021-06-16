@@ -12,6 +12,8 @@ uchihagene = {
 	learning = 2
 	prowess = 4
 	
+	health = 3
+	
 	fame = yes
 	
 	monthly_prestige_gain_mult = 0.2
@@ -427,6 +429,8 @@ forbiddengene = {
 	intrigue = 2
 	prowess = 10
 	
+	health = 6
+	
 	inbreeding_chance = -0.5
 	positive_random_genetic_chance = 0.1
 	
@@ -779,6 +783,8 @@ hyugagene = {
 	martial = 2
 	diplomacy = 2
 	prowess = 2
+	
+	health = 3
 	
 	inbreeding_chance = -1
 	positive_random_genetic_chance = 0.3
