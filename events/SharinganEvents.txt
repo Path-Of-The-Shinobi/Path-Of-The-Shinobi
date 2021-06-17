@@ -157,12 +157,18 @@ SG_Sharingan.6 = {
 	option = {
 		name = SG_Sharingan.6.o
 		trigger = {
-			has_trait = mangekyosharingan
+			has_trait = mangekyosharingan_1
+			OR = { has_trait = mangekyosharingan_2 }
+			OR = { has_trait = mangekyosharingan_3 }
+			OR = { has_trait = mangekyosharingan_4 }
 		}
 			random_list = {
 				40 = { 
 					add_trait = eternalsharingan 
-					remove_trait = mangekyosharingan
+					remove_trait = mangekyosharingan_1
+					remove_trait = mangekyosharingan_2
+					remove_trait = mangekyosharingan_3
+					remove_trait = mangekyosharingan_4
 				}
 				60 = { add_trait = wounded_1 }
 			}

@@ -522,7 +522,7 @@ use_amaterasu_interaction = {
 	desc = use_amaterasu_interaction_desc
 	is_shown = {
 		scope:actor = {
-			has_trait = mangekyosharingan
+			has_trait = mangekyosharingan_1
 			OR = { has_trait = eternalsharingan }
 			NOT = { has_character_flag = Used_Amaterasu }
 		}

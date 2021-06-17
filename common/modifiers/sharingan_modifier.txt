@@ -69,3 +69,7 @@ monkey_summons_modifier = {
 train_recently = {
 	icon = martial_negative
 }
+
+steal_sharingan_modifier = {
+    icon = health_negative
+}
