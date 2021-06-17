@@ -1,10 +1,19 @@
 ﻿#Chakra Events
 
 on_game_start = {
-    effect = {
-        set_variable = {
-            name = Chakra
-            value = 500
-        }
+    on_actions = {
+        Dojutsu_1
     }
+}
+
+Dojutsu_1 = {
+	if = {
+		limit = {
+			is_landed = yes
+		}
+		trigger_event = {
+			id = DojutsuEvent.1
+			days = { 0 0 }
+		}
+	}
 }
