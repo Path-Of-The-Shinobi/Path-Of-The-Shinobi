@@ -175,7 +175,7 @@
 	father = 999003
 	mother = 999004
 	trait = uchihagene
-	trait = mangekyosharingan
+	trait = mangekyosharingan_1
 	religion = sixpaths
 	culture = french
 	590.5.25 = {
@@ -231,7 +231,7 @@
 	mother = 999010
 	father = 999009
 	religion = sixpaths
-	culture = french
+	culture = uchiha
 	trait = uchihagene
 	trait = rinnegan
 	trait = twin
@@ -253,7 +253,7 @@
 	trait = twin
 	trait = uchihagene
 	religion = sixpaths
-	culture = french
+	culture = uchiha
 	608.5.25 = {
 		birth = yes
 	}
@@ -272,8 +272,8 @@
 	father = 999013
 	religion = sixpaths
 	trait = uchihagene
-	trait = mangekyosharingan
-	culture = french
+	trait = mangekyosharingan_1
+	culture = uchiha
 	625.5.25 = {
 		birth = yes
 	}
@@ -294,7 +294,7 @@
 	trait = rinnesharingan
 	trait = uchihagene
 	religion = sixpaths
-	culture = french
+	culture = uchiha
 	625.5.25 = {
 		birth = yes
 	}
@@ -349,7 +349,7 @@
 	trait = uchihagene
 	trait = onetomoe
 	religion = sixpaths
-	culture = french
+	culture = uchiha
 	780.5.25 = {
 		birth = yes
 	}
@@ -553,9 +553,8 @@
 	culture = french
 	fertility = 1
 	sexuality = heterosexual
-	trait = uchihagene
-	trait = byakugan
-	trait = uzumakigene
+	trait = forbiddengene
+	trait = forbiddeneyes
 	father = 999029
 	mother = 999030
 	female = yes

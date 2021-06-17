@@ -11,7 +11,7 @@ perform_tsukuyomi_interaction = {
 	is_shown = {
 		scope:actor = {
 			has_trait = uchihagene
-			has_trait = mangekyosharingan
+			has_trait = mangekyosharingan_4
 			NOT = { has_character_flag = performed_tsukuyomi }
 		}
 	}
@@ -66,6 +66,7 @@ perform_kotoamatsukami_interaction = {
 			NOT = { has_character_flag = recently_performed_kotoamatsukami }
 			has_character_flag = unlock_kotoamtsukami
 			has_trait = uchihagene
+			has_trait = mangekyosharingan_2
 		}
 	}
     
@@ -144,7 +145,10 @@ train_sharingan_level_one_interaction = {
 			NOT = { has_trait = onetomoe }
 			NOT = { has_trait = twotomoe }
 			NOT = { has_trait = threetomoe }
-			NOT = { has_trait = mangekyosharingan }
+			NOT = { has_trait = mangekyosharingan_1 }
+			NOT = { has_trait = mangekyosharingan_2 }
+			NOT = { has_trait = mangekyosharingan_3 }
+			NOT = { has_trait = mangekyosharingan_4 }
 			NOT = { has_trait = eternalsharingan }
 			NOT = { has_character_flag = endtrain }
 			NOT = { has_character_modifier = train_recently }
@@ -169,7 +173,10 @@ train_sharingan_level_two_interaction = {
 			has_trait = onetomoe
 			NOT = { has_trait = twotomoe }
 			NOT = { has_trait = threetomoe }
-			NOT = { has_trait = mangekyosharingan }
+			NOT = { has_trait = mangekyosharingan_1 }
+			NOT = { has_trait = mangekyosharingan_2 }
+			NOT = { has_trait = mangekyosharingan_3 }
+			NOT = { has_trait = mangekyosharingan_4 }
 			NOT = { has_trait = eternalsharingan }
 			NOT = { has_character_flag = SG_Level_2 }
 			NOT = { has_trait = rinnegan }
@@ -183,25 +190,25 @@ train_sharingan_level_two_interaction = {
 	}
 }
 
-train_sharingan_level_three_interaction = {
-	category = interaction_category_hostile
-	common_interaction = no
-	ai_maybe = no
-	desc = train_sharingan_level_three_interaction_desc
-
-	is_shown = {
-		scope:actor = {
-			has_trait = twotomoe
-			NOT = { has_character_flag = SG_Level_3 }
-		}
-	}
-
-	on_send = {
-		scope:actor = {
-			trigger_event = sharingan_level.3
-		}
-	}
-}
+#train_sharingan_level_three_interaction = {
+#	category = interaction_category_hostile
+#	common_interaction = no
+#	ai_maybe = no
+#	desc = train_sharingan_level_three_interaction_desc
+#
+#	is_shown = {
+#		scope:actor = {
+#			has_trait = twotomoe
+#			NOT = { has_character_flag = SG_Level_3 }
+#		}
+#	}
+#
+#	on_send = {
+#		scope:actor = {
+#			trigger_event = sharingan_level.3
+#		}
+#	}
+#}
 
 #Mangekyo Sharingan Character Interactions
 
@@ -211,7 +218,10 @@ obtain_mangekyo_sharingan = {
     is_shown = {
 		scope:actor = {
 			has_trait = threetomoe
-			NOT = { has_trait = mangekyosharingan }
+			NOT = { has_trait = mangekyosharingan_1 }
+			NOT = { has_trait = mangekyosharingan_2 }
+			NOT = { has_trait = mangekyosharingan_3 }
+			NOT = { has_trait = mangekyosharingan_4 }
 		}
 		#scope:recipient = {
 		#	has_trait = threetomoe
@@ -240,7 +250,7 @@ eight_trigrams_character_interaction = {
 
 	on_send = {
 		scope:actor = {
-			trigger_event = ByakuganEvent.2
+			trigger_event = ByakuganEvent.1
 		}
 	}
 }
@@ -512,7 +522,7 @@ use_amaterasu_interaction = {
 	desc = use_amaterasu_interaction_desc
 	is_shown = {
 		scope:actor = {
-			has_trait = mangekyosharingan
+			has_trait = mangekyosharingan_1
 			OR = { has_trait = eternalsharingan }
 			NOT = { has_character_flag = Used_Amaterasu }
 		}

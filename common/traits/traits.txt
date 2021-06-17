@@ -29,8 +29,9 @@ uchihagene = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_uchihagene_desc
+				desc = trait_uchihagene
 			}
+			desc = trait_uchihagene_desc
 		}
 	}
 }
@@ -56,8 +57,9 @@ onetomoe = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_onetomoe_desc
+				desc = trait_onetomoe
 			}
+			desc = trait_onetomoe_desc
 		}
 	}
 }
@@ -83,8 +85,9 @@ twotomoe = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_twotomoe_desc
+				desc = trait_twotomoe
 			}
+			desc = trait_twotomoe_desc
 		}
 	}
 }
@@ -111,8 +114,9 @@ threetomoe = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_threetomoe_desc
+				desc = trait_threetomoe
 			}
+			desc = trait_threetomoe_desc
 		}
 	}
 }
@@ -144,8 +148,9 @@ mangekyosharingan_1 = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_mangekyosharingan_1_desc
+				desc = trait_mangekyosharingan_1
 			}
+			desc = trait_mangekyosharingan_1_desc
 		}
 	}
 }
@@ -176,8 +181,9 @@ mangekyosharingan_2 = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_mangekyosharingan_2_desc
+				desc = trait_mangekyosharingan_2
 			}
+			desc = trait_mangekyosharingan_2_desc
 		}
 	}
 }
@@ -208,8 +214,9 @@ mangekyosharingan_3 = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_mangekyosharingan_3_desc
+				desc = trait_mangekyosharingan_3
 			}
+			desc = trait_mangekyosharingan_3_desc
 		}
 	}
 }
@@ -240,8 +247,9 @@ mangekyosharingan_4 = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_mangekyosharingan_4_desc
+				desc = trait_mangekyosharingan_4
 			}
+			desc = trait_mangekyosharingan_4_desc
 		}
 	}
 }
@@ -272,8 +280,9 @@ eternalsharingan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_eternalsharingan_desc
+				desc = trait_eternalsharingan
 			}
+			desc = trait_eternalsharingan_desc
 		}
 	}
 }
@@ -307,8 +316,9 @@ rinnegan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_rinnegan_desc
+				desc = trait_rinnegan
 			}
+			desc = trait_rinnegan_desc
 		}
 	}
 }
@@ -342,8 +352,9 @@ rinnesharingan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_rinnesharingan_desc
+				desc = trait_rinnesharingan
 			}
+			desc = trait_rinnesharingan_desc
 		}
 	}
 }
@@ -373,8 +384,9 @@ byakugan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_byakugan_desc
+				desc = trait_byakugan
 			}
+			desc = trait_byakugan_desc
 		}
 	}
 }
@@ -404,8 +416,9 @@ tenseigan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_tenseigan_desc
+			desc = trait_tenseigan
 			}
+			desc = trait_tenseigan_desc
 		}
 	}
 }
@@ -539,8 +552,9 @@ jogan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_jogan_desc
+				desc = trait_jogan
 			}
+			desc = trait_jogan_desc
 		}
 	}
 }
@@ -793,15 +807,16 @@ hyugagene = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_hyugagene_desc
+				desc = trait_hyugagene
 			}
+			desc = trait_hyugagene_desc
 		}
 	}
 }
 
 firerelease = {
 	index = 689
-	martial = 4
+	martial = 2
 	prowess = 5
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
@@ -821,7 +836,7 @@ firerelease = {
 
 windrelease = {
 	index = 690
-	intrigue = 4
+	intrigue = 2
 	prowess = 5
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
@@ -841,7 +856,7 @@ windrelease = {
 
 lightningrelease = {
 	index = 691
-	diplomacy = 4
+	diplomacy = 2
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
 	prowess = 5
@@ -861,7 +876,7 @@ lightningrelease = {
 
 earthrelease = {
 	index = 692
-	stewardship = 4
+	stewardship = 2
 	prowess = 5
 	inherit_chance = 5
 	ruler_designer_cost = 7
@@ -881,7 +896,7 @@ earthrelease = {
 
 waterrelease = {
 	index = 693
-	learning = 4
+	learning = 2
 	prowess = 5
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
@@ -901,11 +916,11 @@ waterrelease = {
 
 icerelease = {
 	index = 694
-	intrigue = 4
-	learning = 5
+	intrigue = 2
+	learning = 3
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
-	prowess = 10
+	prowess = 5
 	inherit_chance = 5
 	desc = {
 		first_valid = {
@@ -922,11 +937,11 @@ icerelease = {
 
 woodrelease = {
 	index = 695
-	stewardship = 4
-	learning = 5
+	stewardship = 2
+	learning = 3
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 00.7
-	prowess = 10
+	prowess = 5
 	inherit_chance = 5
 	desc = {
 		first_valid = {
@@ -943,11 +958,11 @@ woodrelease = {
 
 lavarelease = {
 	index = 696
-	stewardship = 4
-	martial = 5
+	stewardship = 2
+	martial = 3
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
-	prowess = 10
+	prowess = 5
 	inherit_chance = 5
 	desc = {
 		first_valid = {
@@ -964,11 +979,11 @@ lavarelease = {
 
 stormrelease = {
 	index = 697
-	learning = 4
+	learning = 2
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
-	diplomacy = 5
-	prowess = 10
+	diplomacy = 3
+	prowess = 5
 	inherit_chance = 5
 	desc = {
 		first_valid = {
@@ -985,11 +1000,11 @@ stormrelease = {
 
 boilrelease = {
 	index = 698
-	learning = 4
-	martial = 5
+	learning = 2
+	martial = 3
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
-	prowess = 10
+	prowess = 5
 	inherit_chance = 5
 	desc = {
 		first_valid = {
@@ -1006,12 +1021,12 @@ boilrelease = {
 
 dustrelease = {
 	index = 699
-	stewardship = 4
-	intrigue = 5
-	martial = 4
+	stewardship = 2
+	intrigue = 2
+	martial = 3
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
-	prowess = 10
+	prowess = 5
 	inherit_chance = 5
 	desc = {
 		first_valid = {
@@ -1028,11 +1043,11 @@ dustrelease = {
 
 explosionrelease = {
 	index = 700
-	stewardship = 4
+	stewardship = 2
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
-	diplomacy = 5
-	prowess = 10
+	diplomacy = 3
+	prowess = 5
 	inherit_chance = 5
 	desc = {
 		first_valid = {
@@ -1049,11 +1064,11 @@ explosionrelease = {
 
 scorchrelease = {
 	index = 701
-	intrigue = 4
-	martial = 5
+	intrigue = 2
+	martial = 3
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
-	prowess = 4
+	prowess = 5
 	inherit_chance = 5
 	desc = {
 		first_valid = {
@@ -1070,8 +1085,8 @@ scorchrelease = {
 
 magnetrelease = {
 	index = 702
-	stewardship = 4
-	intrigue = 5
+	stewardship = 2
+	intrigue = 3
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
 	prowess = 4
@@ -1091,7 +1106,7 @@ magnetrelease = {
 
 yinrelease = {
 	index = 703
-	learning = 4
+	learning = 3
 	inherit_chance = 5
 	ruler_designer_cost = 7
 	monthly_dynasty_prestige = 0.5
@@ -1110,7 +1125,7 @@ yinrelease = {
 
 yangrelease = {
 	index = 704
-	learning = 5
+	learning = 3
 	ruler_designer_cost = 7
 	inherit_chance = 5
 	monthly_dynasty_prestige = 0.5
@@ -1129,7 +1144,7 @@ yangrelease = {
 
 yin_yangrelease = {
 	index = 705
-	learning = 4
+	learning = 5
 	ruler_designer_cost = 7
 	inherit_chance = 5
 	monthly_dynasty_prestige = 0.5

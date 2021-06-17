@@ -1,46 +1,46 @@
 ﻿
-decision_stageone = {
-	ai_check_interval = 0
-	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
-	desc = decision_stageone_desc
-	selection_tooltip = decision_stageone_tooltip
-
-	is_shown = { 
-		is_ruler = yes 
-		martial >= 1 
-		prestige >= 800 
-		NOT = { has_trait = uchihagene }
-		NOT = { has_trait = onetomoe }
-		NOT = { has_trait = twotomoe } 
-		NOT = { has_trait = threetomoe }
-		NOT = { has_trait = mangekyosharingan } 
-		NOT = { has_trait = eternalsharingan }
-	}
-
-	is_valid = {
-		or = {
-			has_trait = education_martial_1
-			has_trait = education_martial_2
-			has_trait = education_martial_3
-			has_trait = education_martial_4
-		}
-	}
-
-	cost = {
-		prestige = 701
-	}
-
-    effect = { trigger_event = SG_Sharingan.1
-    }
-
-	ai_potential = {
-		always = yes
-	}
-
-	ai_will_do = {
-		base = 50
-	}
-}
+#decision_stageone = {
+#	ai_check_interval = 0
+#	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+#	desc = decision_stageone_desc
+#	selection_tooltip = decision_stageone_tooltip
+#
+#	is_shown = { 
+#		is_ruler = yes 
+#		martial >= 1 
+#		prestige >= 800 
+#		NOT = { has_trait = uchihagene }
+#		NOT = { has_trait = onetomoe }
+#		NOT = { has_trait = twotomoe } 
+#		NOT = { has_trait = threetomoe }
+#		NOT = { has_trait = mangekyosharingan } 
+#		NOT = { has_trait = eternalsharingan }
+#	}
+#
+#	is_valid = {
+#		or = {
+#			has_trait = education_martial_1
+#			has_trait = education_martial_2
+#			has_trait = education_martial_3
+#			has_trait = education_martial_4
+#		}
+#	}
+#
+#	cost = {
+#		prestige = 701
+#	}
+#
+#    effect = { trigger_event = SG_Sharingan.1
+#    }
+#
+#	ai_potential = {
+#		always = yes
+#	}
+#
+#	ai_will_do = {
+#		base = 50
+#	}
+#}
 
 # decision_stagetwo = {
 #	ai_check_interval = 0
@@ -288,45 +288,45 @@ decision_chibakutensei = {
 	}
 }
 
-decision_hyugaone = {
-	ai_check_interval = 0
-	picture = "gfx/interface/illustrations/decisions/decision_eight_trigrams.dds"
-	desc = decision_hyugaone_desc
-	selection_tooltip = decision_hyugaone_tooltip
-
-	is_shown = { 
-		is_ruler = yes 
-		intrigue >= 1 
-		prestige >= 800
-		NOT = {
-			has_trait = uchihagene
-		} 
-	}
-
-	is_valid = {
-		or = {
-			has_trait = education_intrigue_1
-			has_trait = education_intrigue_2
-			has_trait = education_intrigue_3
-			has_trait = education_intrigue_4
-		}
-	}
-
-	cost = {
-		prestige = 701
-	}
-
-    effect = { trigger_event = ByakuganEvent.1
-    }
-
-	ai_potential = {
-		always = yes
-	}
-
-	ai_will_do = {
-		base = 50
-	}
-}
+#decision_hyugaone = {
+#	ai_check_interval = 0
+#	picture = "gfx/interface/illustrations/decisions/decision_eight_trigrams.dds"
+#	desc = decision_hyugaone_desc
+#	selection_tooltip = decision_hyugaone_tooltip
+#
+#	is_shown = { 
+#		is_ruler = yes 
+#		intrigue >= 1 
+#		prestige >= 800
+#		NOT = {
+#			has_trait = uchihagene
+#		} 
+#	}
+#
+#	is_valid = {
+#		or = {
+#			has_trait = education_intrigue_1
+#			has_trait = education_intrigue_2
+#			has_trait = education_intrigue_3
+#			has_trait = education_intrigue_4
+#		}
+#	}
+#
+#	cost = {
+#		prestige = 701
+#	}
+#
+#   effect = { trigger_event = ByakuganEvent.1
+#   }
+#
+#	ai_potential = {
+#		always = yes
+#	}
+#
+#	ai_will_do = {
+#		base = 50
+#	}
+#}
 
 decision_elemental_release = {
 	ai_check_interval = 50

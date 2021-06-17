@@ -251,7 +251,7 @@ sharingan_level.2 = {
 					has_trait = mangekyosharingan_4
 				}
 				NOT = {
-					has_trait = eternalmangekyo
+					has_trait = eternalsharingan
 				}
 			}
 			random_list = {
@@ -264,12 +264,12 @@ sharingan_level.2 = {
 						add = 1.2
 						has_trait = intellect_good_2
 					}
-					add_trait = eternalmangekyo
+					add_trait = eternalsharingan
 					remove_trait = mangekyosharingan_1
 					remove_trait = mangekyosharingan_2
 					remove_trait = mangekyosharingan_3
 					remove_trait = mangekyosharingan_4
-					add_character_flag = flag_eternalmangekyo
+					add_character_flag = flag_eternalsharingan
 					remove_character_flag = flag_mangekyosharingan
 				}
 				5 = {

@@ -1,0 +1,20 @@
+﻿bm_200_beforechakra = {
+    start_date = 485.5.25
+    is_playable = yes
+
+    character = {
+		name = "bookmark_beforechakra_kagyua_otsutsuki"
+		dynasty = 700081
+		dynasty_splendor_level = 2
+		type = female
+		birth = 450.5.25
+		title = d_york
+		government = feudal_government
+		culture = french
+		religion = sixpaths
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 999001
+		position = { 700 620 }
+
+		animation = disapproval
+}
