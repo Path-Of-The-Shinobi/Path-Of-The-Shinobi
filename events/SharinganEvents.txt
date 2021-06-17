@@ -114,8 +114,20 @@ SG_Sharingan.5 = {
 			has_trait = threetomoe
 		}
 			random_list = {
-				60 = { 
-					add_trait = mangekyosharingan
+				15 = { 
+					add_trait = mangekyosharingan_1
+					remove_trait = threetomoe
+				}
+				15 = { 
+					add_trait = mangekyosharingan_2
+					remove_trait = threetomoe
+				}
+				15 = { 
+					add_trait = mangekyosharingan_3
+					remove_trait = threetomoe
+				}
+				15 = { 
+					add_trait = mangekyosharingan_4
 					remove_trait = threetomoe
 				}
 				40 = { add_trait = wounded_1 }
@@ -145,12 +157,18 @@ SG_Sharingan.6 = {
 	option = {
 		name = SG_Sharingan.6.o
 		trigger = {
-			has_trait = mangekyosharingan
+			has_trait = mangekyosharingan_1
+			OR = { has_trait = mangekyosharingan_2 }
+			OR = { has_trait = mangekyosharingan_3 }
+			OR = { has_trait = mangekyosharingan_4 }
 		}
 			random_list = {
 				40 = { 
 					add_trait = eternalsharingan 
-					remove_trait = mangekyosharingan
+					remove_trait = mangekyosharingan_1
+					remove_trait = mangekyosharingan_2
+					remove_trait = mangekyosharingan_3
+					remove_trait = mangekyosharingan_4
 				}
 				60 = { add_trait = wounded_1 }
 			}
@@ -159,7 +177,10 @@ SG_Sharingan.6 = {
 	option = {
 		name = SG_Sharingan.6.k
 		trigger = {
-			has_trait = mangekyosharingan
+			has_trait = mangekyosharingan_1
+			OR = { has_trait = mangekyosharingan_2 }
+			OR = { has_trait = mangekyosharingan_3 }
+			OR = { has_trait = mangekyosharingan_4 }
 		}
 	}
 }
@@ -182,11 +203,6 @@ SG_Sharingan.7 = {
 			has_trait = eternalsharingan
 		}
 			random_list = {
-				30 = { 
-					add_trait = rinnegan
-					remove_trait = eternalsharingan
-				}
-				70 = { add_trait = wounded_1 }
 				50 = { 
 					add_trait = rinnegan
 					remove_trait = eternalsharingan

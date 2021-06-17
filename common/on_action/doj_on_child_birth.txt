@@ -22,7 +22,7 @@ on_uchiha_birth = {
 					}
 				}
 			}
-			add_trait = uchiha_blood
+			add_trait = uchihagene
 		}
 		if = {
 			limit = {
@@ -35,7 +35,7 @@ on_uchiha_birth = {
 					}
 				}
 			}
-			add_trait = uchiha_blood
+			add_trait = uchihagene
 		}
 		if = {
 			limit = {

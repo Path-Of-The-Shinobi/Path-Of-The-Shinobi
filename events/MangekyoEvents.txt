@@ -20,14 +20,14 @@ MangekyoEvents.0 = {
     option = {
 		name = MangekyoEvents.0.o
 		hidden_effect = {
-			scope:actor = {
+			scope:root = {
 				add_character_flag = {
                     flag = Used_Amaterasu
                     years = 10
                 }
 			}
 
-			scope:recipient = {
+			scope:event_target = {
 				add_character_modifier = {
                     modifier = under_amaterasu_modifier
                     years = 15
@@ -57,14 +57,14 @@ MangekyoEvents.1 = {
     option = {
 		name = MangekyoEvents.1.o
 		hidden_effect = {
-			scope:actor = {
+			scope:root = {
 				add_character_flag = {
                     flag = performed_tsukuyomi
                     years = 10
                 }
 			}
 
-			scope:recipient = {
+			scope:event_target = {
 				add_character_modifier = {
                     modifier = under_tsukuyomi_modifier
                     years = 15
@@ -98,19 +98,19 @@ MangekyoEvents.2 = {
 
 		if = {
 			limit = {
-				has_trait = mangekyo_sharingan_1
+				has_trait = mangekyosharingan_1
 			}
 			hidden_effect = {
-				scope:actor = {
+				scope:root = {
 					add_trait = eternalsharingan
-					remove_trait = mangekyo_sharingan_1
+					remove_trait = mangekyosharingan_1
 				}
-				scope:recipient = {
+				scope:event_target = {
 					random_list = {
 						10 = { death = { killer = scope:actor death_reason = stolen_sharingan_reason } }
 						90 = { 
 							add_opinion = { modifier = angry_opinion years = 5 target = scope:actor }
-							add_trait = blinded
+							add_trait = blind
 						}
 					}
 				}
@@ -118,19 +118,19 @@ MangekyoEvents.2 = {
 		}
 		else_if = {
 			limit = {
-				has_trait = mangekyo_sharingan_2
+				has_trait = mangekyosharingan_2
 			}
 			hidden_effect = {
-				scope:actor = {
+				scope:root = {
 					add_trait = eternalsharingan
-					remove_trait = mangekyo_sharingan_2
+					remove_trait = mangekyosharingan_2
 				}
-				scope:recipient = {
+				scope:event_target = {
 					random_list = {
 						10 = { death = { killer = scope:actor death_reason = stolen_sharingan_reason } }
 						90 = { 
 							add_opinion = { modifier = angry_opinion years = 5 target = scope:actor }
-							add_trait = blinded
+							add_trait = blind
 						}
 					}
 				}
@@ -138,19 +138,19 @@ MangekyoEvents.2 = {
 		}
 		else_if = {
 			limit = {
-				has_trait = mangekyo_sharingan_3
+				has_trait = mangekyosharingan_3
 			}
 			hidden_effect = {
-				scope:actor = {
+				scope:root = {
 					add_trait = eternalsharingan
-					remove_trait = mangekyo_sharingan_3
+					remove_trait = mangekyosharingan_3
 				}
-				scope:recipient = {
+				scope:event_target  = {
 					random_list = {
 						10 = { death = { killer = scope:actor death_reason = stolen_sharingan_reason } }
 						90 = { 
 							add_opinion = { modifier = angry_opinion years = 5 target = scope:actor }
-							add_trait = blinded
+							add_trait = blind
 						}
 					}
 				}
@@ -158,19 +158,19 @@ MangekyoEvents.2 = {
 		}
 		else_if = {
 			limit = {
-				has_trait = mangekyo_sharingan_4
+				has_trait = mangekyosharingan_4
 			}
 			hidden_effect = {
-				scope:actor = {
+				scope:root = {
 					add_trait = eternalsharingan
-					remove_trait = mangekyo_sharingan_4
+					remove_trait = mangekyosharingan_4
 				}
-				scope:recipient = {
+				scope:event_target  = {
 					random_list = {
 						10 = { death = { killer = scope:actor death_reason = stolen_sharingan_reason } }
 						90 = { 
 							add_opinion = { modifier = angry_opinion years = 5 target = scope:actor }
-							add_trait = blinded
+							add_trait = blind
 						}
 					}
 				}

@@ -1,4 +1,4 @@
-blind_effect = {
+﻿blind_effect = {
 	if = {
 		limit = {
 			AND = {

@@ -12,8 +12,6 @@ uchihagene = {
 	learning = 2
 	prowess = 4
 	
-	health = 3
-	
 	fame = yes
 	
 	monthly_prestige_gain_mult = 0.2
@@ -31,8 +29,9 @@ uchihagene = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_uchihagene_desc
+				desc = trait_uchihagene
 			}
+			desc = trait_uchihagene_desc
 		}
 	}
 }
@@ -58,8 +57,9 @@ onetomoe = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_onetomoe_desc
+				desc = trait_onetomoe
 			}
+			desc = trait_onetomoe_desc
 		}
 	}
 }
@@ -85,8 +85,9 @@ twotomoe = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_twotomoe_desc
+				desc = trait_twotomoe
 			}
+			desc = trait_twotomoe_desc
 		}
 	}
 }
@@ -113,8 +114,9 @@ threetomoe = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_threetomoe_desc
+				desc = trait_threetomoe
 			}
+			desc = trait_threetomoe_desc
 		}
 	}
 }
@@ -146,8 +148,9 @@ mangekyosharingan_1 = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_mangekyosharingan_1_desc
+				desc = trait_mangekyosharingan_1
 			}
+			desc = trait_mangekyosharingan_1_desc
 		}
 	}
 }
@@ -178,8 +181,9 @@ mangekyosharingan_2 = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_mangekyosharingan_2_desc
+				desc = trait_mangekyosharingan_2
 			}
+			desc = trait_mangekyosharingan_2_desc
 		}
 	}
 }
@@ -210,8 +214,9 @@ mangekyosharingan_3 = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_mangekyosharingan_3_desc
+				desc = trait_mangekyosharingan_3
 			}
+			desc = trait_mangekyosharingan_3_desc
 		}
 	}
 }
@@ -242,8 +247,9 @@ mangekyosharingan_4 = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_mangekyosharingan_4_desc
+				desc = trait_mangekyosharingan_4
 			}
+			desc = trait_mangekyosharingan_4_desc
 		}
 	}
 }
@@ -274,8 +280,9 @@ eternalsharingan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_eternalsharingan_desc
+				desc = trait_eternalsharingan
 			}
+			desc = trait_eternalsharingan_desc
 		}
 	}
 }
@@ -309,8 +316,9 @@ rinnegan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_rinnegan_desc
+				desc = trait_rinnegan
 			}
+			desc = trait_rinnegan_desc
 		}
 	}
 }
@@ -344,8 +352,9 @@ rinnesharingan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_rinnesharingan_desc
+				desc = trait_rinnesharingan
 			}
+			desc = trait_rinnesharingan_desc
 		}
 	}
 }
@@ -375,8 +384,9 @@ byakugan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_byakugan_desc
+				desc = trait_byakugan
 			}
+			desc = trait_byakugan_desc
 		}
 	}
 }
@@ -406,8 +416,9 @@ tenseigan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_tenseigan_desc
+			desc = trait_tenseigan
 			}
+			desc = trait_tenseigan_desc
 		}
 	}
 }
@@ -428,8 +439,6 @@ forbiddengene = {
 	diplomacy = 4
 	intrigue = 2
 	prowess = 10
-	
-	health = 6
 	
 	inbreeding_chance = -0.5
 	positive_random_genetic_chance = 0.1
@@ -543,8 +552,9 @@ jogan = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_jogan_desc
+				desc = trait_jogan
 			}
+			desc = trait_jogan_desc
 		}
 	}
 }
@@ -784,8 +794,6 @@ hyugagene = {
 	diplomacy = 2
 	prowess = 2
 	
-	health = 3
-	
 	inbreeding_chance = -1
 	positive_random_genetic_chance = 0.3
 	
@@ -799,8 +807,9 @@ hyugagene = {
 				trigger = {
 					NOT = { exists = this }
 				}
-				desc = trait_hyugagene_desc
+				desc = trait_hyugagene
 			}
+			desc = trait_hyugagene_desc
 		}
 	}
 }

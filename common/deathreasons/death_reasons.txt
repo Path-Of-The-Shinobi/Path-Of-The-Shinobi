@@ -27,3 +27,7 @@ death_sealing = {
 death_ascended = {
 	icon = "death_natural.dds"
 }
+
+stolen_sharingan_reason = {
+	icon = "death_murder.dds"
+}

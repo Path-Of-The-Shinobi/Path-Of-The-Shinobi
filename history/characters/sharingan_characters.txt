@@ -175,7 +175,7 @@
 	father = 999003
 	mother = 999004
 	trait = uchihagene
-	trait = mangekyosharingan
+	trait = mangekyosharingan_1
 	religion = sixpaths
 	culture = french
 	590.5.25 = {
@@ -272,7 +272,7 @@
 	father = 999013
 	religion = sixpaths
 	trait = uchihagene
-	trait = mangekyosharingan
+	trait = mangekyosharingan_1
 	culture = uchiha
 	625.5.25 = {
 		birth = yes

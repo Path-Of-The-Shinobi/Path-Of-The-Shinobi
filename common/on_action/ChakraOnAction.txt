@@ -7,13 +7,13 @@ on_game_start = {
 }
 
 Dojutsu_1 = {
-	if = {
-		limit = {
-			is_landed = yes
-		}
-		trigger_event = {
-			id = DojutsuEvent.1
-			days = { 0 0 }
-		}
-	}
+    trigger = {
+        AND = {
+            is_landed = yes
+        }
+    }
+
+    events = {
+        DojutsuEvent.1
+    }
 }
