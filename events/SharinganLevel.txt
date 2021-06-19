@@ -36,6 +36,7 @@ sharingan_level.1 = {
 					}
 					add_trait = onetomoe
 					add_character_flag = flag_onetomoesharingan
+					add_character_flag = flag_onetomoe
 				}
 				1 = {
 					modifier = {
@@ -73,6 +74,7 @@ sharingan_level.1 = {
 					remove_trait = onetomoe
 					add_character_flag = flag_twotomoesharingan
 					remove_character_flag = flag_onetomoesharingan
+					add_character_flag = flag_twotomoe
 				}
 				1.5 = {
 					modifier = {
@@ -110,6 +112,7 @@ sharingan_level.1 = {
 					remove_trait = twotomoe
 					add_character_flag = flag_threetomoesharingan
 					remove_character_flag = flag_twotomoesharingan
+					add_character_flag = flag_threetomoe
 				}
 				2 = {
 					modifier = {

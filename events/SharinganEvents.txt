@@ -38,6 +38,9 @@ SG_Sharingan.2 = {
 		name = SG_Sharingan.2.o
 		trigger = {
 			has_trait = uchihagene
+			NOT = {
+				has_character_flag = flag_onetomoe
+			}
 		}
 			random_list = {
 				100 = { add_trait = onetomoe }
@@ -60,6 +63,9 @@ SG_Sharingan.3 = {
 		name = SG_Sharingan.3.o
 		trigger = {
 			has_trait = onetomoe
+			NOT = {
+				has_character_flag = flag_twotomoe
+			}
 		}
 			random_list = {
 				100 = { 
@@ -86,6 +92,9 @@ SG_Sharingan.4 = {
 		name = SG_Sharingan.4.o
 		trigger = {
 			has_trait = twotomoe
+			NOT = {
+				has_character_flag = flag_threetomoe
+			}
 		}
 			random_list = {
 				100 = { 
@@ -112,6 +121,10 @@ SG_Sharingan.5 = {
 		name = SG_Sharingan.5.o
 		trigger = {
 			has_trait = threetomoe
+			NOT = { has_character_flag = flag_mangekyosharingan1 }
+			NOT = { has_character_flag = flag_mangekyosharingan2 }
+			NOT = { has_character_flag = flag_mangekyosharingan3 }
+			NOT = { has_character_flag = flag_mangekyosharingan4 }
 		}
 			random_list = {
 				15 = { 
@@ -161,6 +174,7 @@ SG_Sharingan.6 = {
 			OR = { has_trait = mangekyosharingan_2 }
 			OR = { has_trait = mangekyosharingan_3 }
 			OR = { has_trait = mangekyosharingan_4 }
+			NOT = { has_character_flag = flag_eternalsharingan }
 		}
 			random_list = {
 				40 = { 
