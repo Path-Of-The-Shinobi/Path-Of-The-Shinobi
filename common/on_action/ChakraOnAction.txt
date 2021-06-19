@@ -1,19 +1,1 @@
 ﻿#Chakra Events
-
-on_game_start = {
-    on_actions = {
-        Dojutsu_1
-    }
-}
-
-Dojutsu_1 = {
-    trigger = {
-        AND = {
-            is_landed = yes
-        }
-    }
-
-    events = {
-        DojutsuEvent.1
-    }
-}
