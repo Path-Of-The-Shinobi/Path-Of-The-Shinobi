@@ -127,7 +127,7 @@ sharingan_birthday_eight = {
         AND = {
             age >= 16
             NOT = { has_trait = uchihagene }
-            NOT = { has_trait = hyugaagene }
+            NOT = { has_trait = hyugagene }
             NOT = { has_trait = byakugan }
             NOT = { has_character_flag = no_eyes }
 			is_ai = no
