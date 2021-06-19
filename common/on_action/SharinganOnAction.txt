@@ -7,6 +7,7 @@
         sharingan_birthday_five
         sharingan_birthday_six
         sharingan_birthday_seven
+        sharingan_birthday_eight
     }
 }
 
@@ -119,5 +120,28 @@ sharingan_birthday_seven = {
 
     events = {
         SG_Sharingan.7
+    }
+}
+sharingan_birthday_eight = {
+    trigger = {
+        AND = {
+            age >= 16
+            NOT = { has_trait = uchihagene }
+            NOT = { has_trait = hyugaagene }
+            NOT = { has_trait = byakugan }
+            NOT = { has_character_flag = no_eyes }
+			is_ai = no
+        }
+    }
+
+    events = {
+        DojutsuEvent.1
+    }
+
+    effect = {
+        add_character_flag = {
+            flag = no_eyes
+            years = 5
+        }
     }
 }

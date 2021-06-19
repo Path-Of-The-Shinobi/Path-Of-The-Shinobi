@@ -68,11 +68,9 @@ SG_Sharingan.3 = {
 			}
 		}
 			random_list = {
-				100 = { 
-					add_trait = twotomoe 
-					remove_trait = onetomoe
-				}
+				100 = { add_trait = twotomoe }
 			}
+			remove_trait = onetomoe
 	}
 }
 
@@ -97,11 +95,9 @@ SG_Sharingan.4 = {
 			}
 		}
 			random_list = {
-				100 = { 
-					add_trait = threetomoe
-					remove_trait = twotomoe
-				}
+				100 = { add_trait = threetomoe }
 			}
+			remove_trait = twotomoe
 	}
 }
 
@@ -127,23 +123,8 @@ SG_Sharingan.5 = {
 			NOT = { has_character_flag = flag_mangekyosharingan4 }
 		}
 			random_list = {
-				15 = { 
-					add_trait = mangekyosharingan_1
-					remove_trait = threetomoe
-				}
-				15 = { 
-					add_trait = mangekyosharingan_2
-					remove_trait = threetomoe
-				}
-				15 = { 
-					add_trait = mangekyosharingan_3
-					remove_trait = threetomoe
-				}
-				15 = { 
-					add_trait = mangekyosharingan_4
-					remove_trait = threetomoe
-				}
-				40 = { add_trait = wounded_1 }
+				95 = { add_trait = mangekyosharingan }
+				50 = { add_trait = wounded_1 }
 			}
 	}
 
@@ -177,24 +158,16 @@ SG_Sharingan.6 = {
 			NOT = { has_character_flag = flag_eternalsharingan }
 		}
 			random_list = {
-				40 = { 
-					add_trait = eternalsharingan 
-					remove_trait = mangekyosharingan_1
-					remove_trait = mangekyosharingan_2
-					remove_trait = mangekyosharingan_3
-					remove_trait = mangekyosharingan_4
-				}
-				60 = { add_trait = wounded_1 }
+				75 = { add_trait = eternalsharingan }
+				25 = { add_trait = wounded_1 }
 			}
+			remove_trait = mangekyosharingan
 	}
 
 	option = {
 		name = SG_Sharingan.6.k
 		trigger = {
-			has_trait = mangekyosharingan_1
-			OR = { has_trait = mangekyosharingan_2 }
-			OR = { has_trait = mangekyosharingan_3 }
-			OR = { has_trait = mangekyosharingan_4 }
+			has_trait = mangekyosharingan
 		}
 	}
 }
@@ -217,11 +190,9 @@ SG_Sharingan.7 = {
 			has_trait = eternalsharingan
 		}
 			random_list = {
-				50 = { 
-					add_trait = rinnegan
-					remove_trait = eternalsharingan
-				}
+				50 = { add_trait = rinnegan }
 				50 = { add_trait = wounded_1 }
+				2 = { remove_trait = eternalsharingan }
 			}
 	}
 
