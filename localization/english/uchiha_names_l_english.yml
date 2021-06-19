@@ -156,7 +156,7 @@
  create_shadow_clone_desc:0 "Kage Bunshin no jutsu 1000 Shadow Clones"
  perform_kotoamatsukami_interaction:0 "Perform Kotoamatsukami"
  perform_kotoamatsukami_desc:0 "Perform Kotamatsukami to create a hook against your target."
- train_sharingan_level_one_interaction:0 "Train Sharingan level One"
+ train_sharingan_level_one_interaction:0 "Train Sharingan"
  train_sharingan_level_one_interaction_desc:0 "Train to try and level up your sharingan"
  train_sharingan_level_two_interaction:0 "Train Sharingan level Two"
  train_sharingan_level_two_interaction_desc:0 "Train to try and level up your sharingan"
