@@ -142,14 +142,6 @@ train_sharingan_level_one_interaction = {
 	is_shown = {
 		scope:actor = {
 			has_trait = uchihagene
-			NOT = { has_trait = onetomoe }
-			NOT = { has_trait = twotomoe }
-			NOT = { has_trait = threetomoe }
-			NOT = { has_trait = mangekyosharingan_1 }
-			NOT = { has_trait = mangekyosharingan_2 }
-			NOT = { has_trait = mangekyosharingan_3 }
-			NOT = { has_trait = mangekyosharingan_4 }
-			NOT = { has_trait = eternalsharingan }
 			NOT = { has_character_flag = endtrain }
 			NOT = { has_character_modifier = train_recently }
 		}
