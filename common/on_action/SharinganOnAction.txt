@@ -130,6 +130,7 @@ sharingan_birthday_eight = {
             NOT = { has_trait = hyugaagene }
             NOT = { has_trait = byakugan }
             NOT = { has_character_flag = no_eyes }
+			is_ai = no
         }
     }
 
