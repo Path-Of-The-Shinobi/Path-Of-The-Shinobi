@@ -144,6 +144,9 @@ train_sharingan_level_one_interaction = {
 			has_trait = uchihagene
 			NOT = { has_character_flag = endtrain }
 			NOT = { has_character_modifier = train_recently }
+			NOT = { has_trait = wounded_1 }
+			NOT = { has_trait = wounded_2 }
+			NOT = { has_trait = wounded_3 }
 		}
 	}
 
