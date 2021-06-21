@@ -18,6 +18,7 @@ sharingan_level.1 = {
 				has_trait = uchihagene
 				NOT = {
 					has_character_flag = flag_onetomoesharingan
+					has_trait = onetomoe
 				}
 			}
 			random_list = {
@@ -59,6 +60,10 @@ sharingan_level.1 = {
 			limit = {
 				has_trait = onetomoe
 				has_character_flag = flag_onetomoesharingan
+				NOT = {
+					has_character_flag = flag_twotomoesharingan
+					has_trait = twotomoe
+				}
 			}
 			random_list = {
 				8.5 = {
