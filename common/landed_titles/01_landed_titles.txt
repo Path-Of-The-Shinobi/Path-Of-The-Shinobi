@@ -259,6 +259,12 @@ e_shinobi_world = {
 					color = { 132 85 52 }
 					color2 = { 255 255 255 }
 				}
+
+				b_kara = {
+					province = 106
+					color = { 130 20 20 }
+					color2 = { 255 255 255 }
+				}
 			}
 		}
 		d_duchy_6 = {
