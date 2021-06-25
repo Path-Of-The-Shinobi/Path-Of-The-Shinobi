@@ -6,35 +6,6 @@
 		on_uchiha_birth
 		on_hyuga_birth
 		on_forbidden_birth
-		on_child_uchiha_birth
-	}
-}
-
-on_child_uchiha_birth = {
-	effect = {
-		if = {
-			limit = {
-				scope:child = {
-					AND = {
-						is_uchiha = yes
-						NOT = { has_trait = firerelease }
-					}
-				}
-			}
-			add_trait = firerelease
-		}
-		else_if = {
-			limit = {
-				scope:child = {
-					AND = {
-						is_uchiha = yes
-						has_trait = firerelease
-					}
-				}
-			}
-			remove_trait = firerelease
-			add_trait = firerelease
-		}
 	}
 }
 

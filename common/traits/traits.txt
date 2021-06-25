@@ -816,7 +816,6 @@ hyugagene = {
 
 firerelease = {
 	index = 689
-	name = trait_firerelease
 	martial = 2
 	prowess = 5
 	ruler_designer_cost = 7

@@ -44,4 +44,21 @@ DojutsuEvent.1 = {
                 }
             }
     }
+
+    option = {
+        name = DojutsuEvent.1.b
+        trigger = {
+            AND = {
+                NOT = {
+                    has_trait = uchihagene
+                }
+                NOT = {
+                    has_trait = hyuga
+                }
+                NOT = {
+                    has_trait = byakugan
+                }
+            }
+        }
+    }
 }

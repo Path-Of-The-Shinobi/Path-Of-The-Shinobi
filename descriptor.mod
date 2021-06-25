@@ -5,5 +5,5 @@ tags={
 }
 name="Path of the Shinobi"
 picture="thumbnail.png"
-supported_version="1.4.0"
+supported_version="1.4.2"
 remote_file_id="2218620123"

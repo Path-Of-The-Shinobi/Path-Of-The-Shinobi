@@ -1,0 +1,131 @@
+﻿first_shinobi_war = {
+	start_date = 965.1.1
+	is_playable = yes
+
+	character = {
+		name = "hashirama_senju"
+		dynasty = 1
+		dynasty_splendor_level = 1
+		type = male
+		birth = 924.1.1
+		title = k_konoha
+		government = feudal_government
+		culture = senju
+		religion = test_faith
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 2
+		position = { 765 590 }
+
+		animation = disapproval
+	}
+}
+
+second_shinobi_war = {
+	start_date = 986.1.1
+	is_playable = yes
+
+	character = {
+		name = "hiruzen_sarutobi"
+		dynasty = 3
+		dynasty_splendor_level = 1
+		type = male
+		birth = 924.1.1
+		title = k_konoha
+		government = feudal_government
+		culture = sarutobi
+		religion = test_faith
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 26
+		position = { 765 590 }
+
+		animation = disapproval
+	}
+}
+
+third_shinobi_war = {
+	start_date = 996.1.1
+	is_playable = yes
+
+	character = {
+		name = "hiruzen_sarutobi"
+		dynasty = 3
+		dynasty_splendor_level = 1
+		type = male
+		birth = 924.1.1
+		title = k_konoha
+		government = feudal_government
+		culture = sarutobi
+		religion = test_faith
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 26
+		position = { 765 590 }
+
+		animation = disapproval
+	}
+}
+
+fourth_shinobi_war = {
+	start_date = 1017.1.1
+	is_playable = yes
+
+	character = {
+		name = "tsunade_senju"
+		dynasty = 1
+		dynasty_splendor_level = 1
+		type = male
+		birth = 962.1.1
+		title = k_konoha
+		government = feudal_government
+		culture = senju
+		religion = test_faith
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 2
+		position = { 765 590 }
+
+		animation = disapproval
+	}
+}
+
+og_naruto_start = {
+	start_date = 1012.1.1
+	is_playable = yes
+
+	character = {
+		name = "hiruzen_sarutobi"
+		dynasty = 3
+		dynasty_splendor_level = 1
+		type = male
+		birth = 924.1.1
+		title = k_konoha
+		government = feudal_government
+		culture = sarutobi
+		religion = test_faith
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 26
+		position = { 765 590 }
+
+		animation = disapproval
+	}
+}
+
+boruto_movie = {
+	start_date = 1032.1.1
+	is_playable = yes
+
+	character = {
+		name = "naruto_uzumaki"
+		dynasty = 9
+		dynasty_splendor_level = 1
+		type = male
+		birth = 1000.1.1
+		title = k_konoha
+		government = feudal_government
+		culture = uzumaki
+		religion = test_faith
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 64
+		position = { 765 590 }
+
+		animation = disapproval
+	}
+}
