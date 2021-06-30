@@ -72,4 +72,10 @@ train_recently = {
 
 steal_sharingan_modifier = {
     icon = health_negative
+    health = -1
+}
+
+defensive_modifier = {
+    icon = health_positive
+    health = 1
 }

@@ -1,6 +1,6 @@
 ﻿#Custom Categories
 
-#interaction_category_jutsu = {
-#	index = 9
-#	desc = "JUTSU_ACTIONS"
-#}
+interaction_category_jutsu = {
+	index = 2022
+	desc = "JUTSU_ACTIONS"
+}

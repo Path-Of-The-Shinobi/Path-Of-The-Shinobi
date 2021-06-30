@@ -8,216 +8,21 @@ sharingan_level.1 = {
 		character = root
 		animation = rage
 	}
+	
 	option = {
 		name = sharingan_level.1.a
-		ai_chance = {
-			base = 100
+		trigger = {
+			has_trait = uchihagene
+            NOT = { has_trait = onetomoe }
 		}
-		if = {
-			limit = {
-				has_trait = uchihagene
-				NOT = {
-					has_character_flag = flag_onetomoesharingan
-				}
+		random_list = {
+			100 = {
+                add_trait = onetomoe
+				add_character_modifier = {
+					modifier = train_recently
+					months = 6
+            	}
 			}
-			random_list = {
-				9 = {
-					modifier = {
-						add = 1.5
-						has_trait = intellect_good_3
-					}
-					modifier = {
-						add = 1.2
-						has_trait = intellect_good_2
-					}
-					modifier = {
-						add = 1.0
-						has_trait = intellect_good_1
-					}
-					add_trait = onetomoe
-					add_character_flag = flag_onetomoesharingan
-					add_character_flag = flag_onetomoe
-				}
-				1 = {
-					modifier = {
-						add = 1.2
-						has_trait = intellect_bad_1
-					}
-					modifier = {
-						add = 1.8
-						has_trait = intellect_bad_2
-					}
-					modifier = {
-						add = 2.5
-						has_trait = intellect_bad_3
-					}
-					add_trait = wounded_1
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_trait = onetomoe
-				has_character_flag = flag_onetomoesharingan
-			}
-			random_list = {
-				8.5 = {
-					modifier = {
-						add = 1.5
-						has_trait = intellect_good_3
-					}
-					modifier = {
-						add = 1.2
-						has_trait = intellect_good_2
-					}
-					add_trait = twotomoe
-					remove_trait = onetomoe
-					add_character_flag = flag_twotomoesharingan
-					remove_character_flag = flag_onetomoesharingan
-					add_character_flag = flag_twotomoe
-				}
-				1.5 = {
-					modifier = {
-						add = 1.2
-						has_trait = intellect_bad_1
-					}
-					modifier = {
-						add = 1.8
-						has_trait = intellect_bad_2
-					}
-					modifier = {
-						add = 2.5
-						has_trait = intellect_bad_3
-					}
-					add_trait = wounded_1
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_trait = twotomoe
-				has_character_flag = flag_twotomoesharingan
-			}
-			random_list = {
-				8 = {
-					modifier = {
-						add = 1.5
-						has_trait = intellect_good_3
-					}
-					modifier = {
-						add = 1.2
-						has_trait = intellect_good_2
-					}
-					add_trait = threetomoe
-					remove_trait = twotomoe
-					add_character_flag = flag_threetomoesharingan
-					remove_character_flag = flag_twotomoesharingan
-					add_character_flag = flag_threetomoe
-				}
-				2 = {
-					modifier = {
-						add = 1.2
-						has_trait = intellect_bad_1
-					}
-					modifier = {
-						add = 1.8
-						has_trait = intellect_bad_2
-					}
-					modifier = {
-						add = 2.5
-						has_trait = intellect_bad_3
-					}
-					add_trait = wounded_1
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_trait = threetomoe
-				has_character_flag = flag_threetomoesharingan
-			}
-			random_list = {
-				1.5 = {
-					modifier = {
-						add = 1.5
-						has_trait = intellect_good_3
-					}
-					modifier = {
-						add = 1.2
-						has_trait = intellect_good_2
-					}
-					add_trait = mangekyosharingan_1
-					remove_trait = threetomoe
-					add_character_flag = flag_mangekyosharingan1
-					add_character_flag = flag_mangekyosharingan
-					remove_character_flag = flag_threetomoesharingan
-				}
-				1.5 = {
-					modifier = {
-						add = 1.5
-						has_trait = intellect_good_3
-					}
-					modifier = {
-						add = 1.2
-						has_trait = intellect_good_2
-					}
-					add_trait = mangekyosharingan_2
-					remove_trait = threetomoe
-					add_character_flag = flag_mangekyosharingan2
-					add_character_flag = flag_mangekyosharingan
-					remove_character_flag = flag_threetomoesharingan
-				}
-				1.5 = {
-					modifier = {
-						add = 1.5
-						has_trait = intellect_good_3
-					}
-					modifier = {
-						add = 1.2
-						has_trait = intellect_good_2
-					}
-					add_trait = mangekyosharingan_3
-					remove_trait = threetomoe
-					add_character_flag = flag_mangekyosharingan3
-					add_character_flag = flag_mangekyosharingan
-					remove_character_flag = flag_threetomoesharingan
-				}
-				1.5 = {
-					modifier = {
-						add = 1.5
-						has_trait = intellect_good_3
-					}
-					modifier = {
-						add = 1.2
-						has_trait = intellect_good_2
-					}
-					add_trait = mangekyosharingan_4
-					remove_trait = threetomoe
-					add_character_flag = flag_mangekyosharingan4
-					add_character_flag = flag_mangekyosharingan
-					remove_character_flag = flag_threetomoesharingan
-					add_character_flag = flag_endtrain
-				}
-				4 = {
-					modifier = {
-						add = 1.2
-						has_trait = intellect_bad_1
-					}
-					modifier = {
-						add = 1.8
-						has_trait = intellect_bad_2
-					}
-					modifier = {
-						add = 2.5
-						has_trait = intellect_bad_3
-					}
-					add_trait = wounded_1
-				}
-			}
-		}
-		add_character_modifier = {
-			modifier = train_recently
-			years = 1
 		}
 	}
 }
@@ -231,64 +36,98 @@ sharingan_level.2 = {
 		animation = rage
 	}
 	
-	trigger = {
-		OR = {
-			has_trait = mangekyosharingan_1
-			has_trait = mangekyosharingan_2
-			has_trait = mangekyosharingan_3
-			has_trait = mangekyosharingan_4
+	option = {
+		name = sharingan_level.2.a
+		trigger = {
+			has_trait = onetomoe
+            NOT = { has_trait = twotomoe }
 		}
+		random_list = {
+			100 = {
+                add_trait = twotomoe
+				remove_trait = onetomoe
+				add_character_modifier = {
+					modifier = train_recently
+					months = 6
+            	}
+			}
+		}
+	}
+}
+
+sharingan_level.3 = {
+	title = sharingan_level.3.t
+	desc = sharingan_level.3.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
 	}
 	
 	option = {
-		name = sharingan_level.2.a
-		ai_chance = {
-			base = 100
+		name = sharingan_level.3.a
+		trigger = {
+			has_trait = twotomoe
+            NOT = { has_trait = threetomoe }
 		}
-		if = {
-			limit = {
-				OR = {
-					has_trait = mangekyosharingan_1
-					has_trait = mangekyosharingan_2
-					has_trait = mangekyosharingan_3
-					has_trait = mangekyosharingan_4
-				}
-				NOT = {
-					has_trait = eternalsharingan
-				}
+		random_list = {
+			100 = {
+                add_trait = threetomoe
+				remove_trait = twotomoe
+				add_character_modifier = {
+					modifier = train_recently
+					months = 6
+            	}
 			}
-			random_list = {
-				5 = {
-					modifier = {
-						add = 1.5
-						has_trait = intellect_good_3
-					}
-					modifier = {
-						add = 1.2
-						has_trait = intellect_good_2
-					}
-					add_trait = eternalsharingan
-					remove_trait = mangekyosharingan_1
-					remove_trait = mangekyosharingan_2
-					remove_trait = mangekyosharingan_3
-					remove_trait = mangekyosharingan_4
-					add_character_flag = flag_eternalsharingan
-					remove_character_flag = flag_mangekyosharingan
-				}
-				5 = {
-					modifier = {
-						add = 1.2
-						has_trait = intellect_bad_1
-					}
-					modifier = {
-						add = 1.8
-						has_trait = intellect_bad_2
-					}
-					modifier = {
-						add = 2.5
-						has_trait = intellect_bad_3
-					}
-					add_trait = wounded_1
+		}
+	}
+}
+
+sharingan_level.4 = {
+	title = sharingan_level.4.t
+	desc = sharingan_level.4.d
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	right_portrait = {
+		character = scope:recipient
+		animation = worry
+	}
+	
+	option = {
+		name = sharingan_level.4.a
+		trigger = {
+			has_trait = threetomoe
+            NOT = { has_trait = mangekyosharingan_1 }
+			NOT = { has_trait = mangekyosharingan_2 }
+			NOT = { has_trait = mangekyosharingan_3 }
+			NOT = { has_trait = mangekyosharingan_4 }
+		}
+		random_list = {
+			20 = {
+				add_trait = mangekyosharingan_1
+				remove_trait = threetomoe
+			}
+			20 = {
+				add_trait = mangekyosharingan_2
+				remove_trait = threetomoe
+			}
+			20 = {
+				add_trait = mangekyosharingan_3
+				remove_trait = threetomoe
+			}
+			20 = {
+				add_trait = mangekyosharingan_4
+				remove_trait = threetomoe
+			}
+		}
+		hidden_effect = {
+			scope:recipient = {
+				death = {
+					killer = scope:actor
+					death_reason = killed_for_power
 				}
 			}
 		}

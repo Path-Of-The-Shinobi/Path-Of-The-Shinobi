@@ -1,42 +1,125 @@
 ﻿namespace = sixpaths_jutsu
 
-sixpaths_jutsu.1 = {
+sixpaths_jutsu.001 = {
   type = character_event
-  title = sixpaths_jutsu.1.t
-  desc = sixpaths_jutsu.1.d
+  title = sixpaths_jutsu.001.t
+  desc = sixpaths_jutsu.001.d
     
-  theme = vassal
+  theme = secret
 
   right_portrait = {
-  character = root
+  character = scope:actor
   animation = anger
   }
 
   option = {
-	  name = sixpaths_jutsu.1.o
-	  hidden_effect = { 
-      add_character_modifier = { 
-      modifier = chibakutensei_modifier
-      years = 2
+	  name = sixpaths_jutsu.001.a
+    trigger = {
+      has_trait = eternalsharingan
+      has_trait = senjugene
+    }
+    hidden_effect = {
+      trigger_event = {
+        id = sixpaths_jutsu.002
+        days = 1
+      }
+      add_character_flag = {
+        flag = on_quest1
+        months = 1
+      }
+    }
+  }
+  option = {
+    name = sixpaths_jutsu.001.b
+    trigger = {
+      has_trait = eternalsharingan
+      has_trait = senjugene
+    }
+    hidden_effect = {
+      add_character_flag = {
+        flag = refused_quest
+        months = 12
       }
     }
   }
 }
 
-#sixpaths_jutsu.2 = {
-#  type = character_event
-#  title = sixpaths_jutsu.2.t
-#  desc = sixpaths_jutsu.2.d
-#
-#  theme = martial
-#
-#  right_portrait = {
-#    character = root
-#    animation = worry
-#  }
-#
-#  option = {
-#    sixpaths_jutsu.2.o
-#
-#  }
-#}
+sixpaths_jutsu.002 = {
+  type = character_event
+  title = sixpaths_jutsu.002.t
+  desc = sixpaths_jutsu.002.d
+  
+  theme = secret
+
+  right_portrait = {
+    character = scope:actor
+    animation = worry
+  }
+  option = {
+    name = sixpaths_jutsu.002.a
+    trigger = {
+      has_character_flag = on_quest1
+    }
+    random_list = {
+      90 = { add_character_flag = { flag = on_quest2 months = 6 } remove_character_flag = on_quest1 }
+      10 = { add_trait = wounded_1 }
+    }
+    hidden_effect = {
+      trigger_event = {
+        id = sixpaths_jutsu.003
+        months = 4
+      }
+    }
+  }
+  option = {
+    name = sixpaths_jutsu.002.b
+    trigger = {
+      has_character_flag = on_quest1
+    }
+    hidden_effect = {
+      add_character_flag = {
+        flag = abandoned_quest
+        months = 12
+      }
+      remove_character_flag = refused_quest
+    }
+  }
+}
+
+sixpaths_jutsu.003 = {
+  type = character_event
+  title = sixpaths_jutsu.003.t
+  desc = sixpaths_jutsu.003.d
+  
+  theme = secret
+
+  right_portrait = {
+    character = scope:actor
+    animation = worry
+  }
+  
+  option = {
+    name = sixpaths_jutsu.003.a
+    trigger = {
+      has_character_flag = on_quest2
+    }
+    random_list = {
+      85 = { remove_trait = eternalsharingan add_trait = rinnegan }
+      15 = { add_trait = wounded_1 }
+    }
+  }
+  
+  option = {
+    name = sixpaths_jutsu.003.b
+    trigger = {
+      has_character_flag = on_quest2
+    }
+    hidden_effect = {
+      add_character_flag = {
+        flag = abandoned_quest
+        months = 12
+      }
+      remove_character_flag = refused_quest
+    }
+  }
+}

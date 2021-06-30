@@ -2,8 +2,8 @@
 
 ByakuganEvent.1 = {
 	type = character_event
-	title = ByakuganEvent.2.t
-	desc = ByakuganEvent.2.d
+	title = ByakuganEvent.1.t
+	desc = ByakuganEvent.1.d
 	
 	theme = crown
 
@@ -22,6 +22,7 @@ ByakuganEvent.1 = {
             add_character_modifier = { 
 				modifier = eight_trigrams_modifier
 				years = 5
+			}
         }
     }
 }

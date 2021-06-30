@@ -53,7 +53,7 @@ DojutsuEvent.1 = {
                     has_trait = uchihagene
                 }
                 NOT = {
-                    has_trait = hyuga
+                    has_trait = hyugagene
                 }
                 NOT = {
                     has_trait = byakugan

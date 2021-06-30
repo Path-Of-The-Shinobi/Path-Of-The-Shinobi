@@ -1,1 +1,30 @@
 ﻿#Chakra Events
+
+on_game_start = {
+    on_actions = {
+        random_traits_one
+    }
+}
+
+random_traits_one = {
+    trigger = {
+        scope:actor = {
+            is_ai = yes
+        }
+    }
+    hidden_effect = {
+        random_kingdom = {
+            limit = {
+                is_alive = yes
+            }
+            random_list = {
+                20 = { add_trait = uzumakigene }
+                20 = { add_trait = senjugene }
+                20 = { add_trait = hyugagene }
+                20 = { add_trait = uchihagene }
+                20 = { add_trait = byakugan }
+                20 = { add_trait = woodrelease }
+            }
+        }
+    }
+}

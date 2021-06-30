@@ -31,3 +31,8 @@ death_ascended = {
 stolen_sharingan_reason = {
 	icon = "death_murder.dds"
 }
+
+killed_for_power = {
+	public_knowledge = yes
+	icon = "death_murder.dds"
+}

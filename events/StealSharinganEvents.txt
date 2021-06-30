@@ -1,0 +1,292 @@
+﻿namespace = steal_sharingan
+
+steal_sharingan.001 = {
+	type = character_event
+	title = steal_sharingan.001.t
+	desc = steal_sharingan.001.d
+
+	theme = crown
+
+	left_portrait = {
+	character = root
+	animation = rage
+	}
+    right_portrait = {
+        character = scope:recipient
+        animation = worry
+    }
+
+	option = {
+		name = steal_sharingan.001.a
+		trigger = {
+			scope:actor = {
+				has_trait = education_learning_4
+			}
+			scope:recipient = {
+				has_trait = onetomoe
+			}
+		}
+		scope:actor = {
+			add_trait = onetomoe
+		}
+		scope:recipient = {
+			remove_trait = onetomoe
+		}
+	}
+	option = {
+		name = steal_sharingan.001.b
+		trigger = {
+			scope:actor = {
+				has_trait = education_learning_4
+			}
+			scope:recipient = {
+				has_trait = twotomoe
+			}
+		}
+		scope:actor = {
+			add_trait = twotomoe
+		}
+		scope:recipient = {
+			remove_trait = twotomoe
+		}
+	}
+	option = {
+		name = steal_sharingan.001.c
+		trigger = {
+			scope:actor = {
+				has_trait = education_learning_4
+			}
+			scope:recipient = {
+				has_trait = threetomoe
+			}
+		}
+		scope:actor = {
+			add_trait = threetomoe
+		}
+		scope:recipient = {
+			remove_trait = threetomoe
+		}
+	}
+	option = {
+		name = steal_sharingan.001.d
+		trigger = {
+			scope:actor = {
+				has_trait = education_learning_4
+			}
+			scope:recipient = {
+				has_trait = mangekyosharingan_1
+			}
+		}
+		scope:actor = {
+			random_list = {
+				15 = { add_trait = mangekyosharingan_1 
+			}
+				75 = { add_character_modifier = { modifier = steal_sharingan_modifier months = 6 }
+			}
+		}
+			scope:recipient = {
+				random_list = {
+				2 = { remove_trait = mangekyosharingan_1 
+			}
+				98 = { add_character_modifier = { modifier = defensive_modifier months = 6 } }
+			}
+			}
+		}
+	}
+	option = {
+		name = steal_sharingan.001.e
+		trigger = {
+			scope:actor = {
+				has_trait = education_learning_4
+			}
+			scope:recipient = {
+				has_trait = mangekyosharingan_2
+			}
+		}
+		scope:actor = {
+			random_list = {
+				15 = { add_trait = mangekyosharingan_2 
+			}
+				75 = { add_character_modifier = { modifier = steal_sharingan_modifier months = 6 }
+			}
+		}
+		scope:recipient = {
+			random_list = {
+				2 = { remove_trait = mangekyosharingan_2 
+			}
+				98 = { add_character_modifier = { modifier = defensive_modifier months = 6 } }
+			}
+		}
+	}
+	}
+	option = {
+		name = steal_sharingan.001.f
+		trigger = {
+			scope:actor = {
+				has_trait = education_learning_4
+			}
+			scope:recipient = {
+				has_trait = mangekyosharingan_3
+			}
+		}
+		scope:actor = {
+			random_list = {
+				15 = { add_trait = mangekyosharingan_3 
+				}
+				75 = { add_character_modifier = { modifier = steal_sharingan_modifier months = 6 }
+				}
+			}
+		}
+		scope:recipient = {
+			random_list = {
+				2 = { remove_trait = mangekyosharingan_3 
+			}
+				98 = { add_character_modifier = { modifier = defensive_modifier months = 6 } }
+			}
+		}
+	}
+	option = {
+		name = steal_sharingan.001.g
+		trigger = {
+			scope:actor = {
+				has_trait = education_learning_4
+			}
+			scope:recipient = {
+				has_trait = mangekyosharingan_4
+			}
+		}
+		scope:actor = {
+			random_list = {
+				15 = { add_trait = mangekyosharingan_4 
+			}
+				75 = { add_character_modifier = { modifier = steal_sharingan_modifier months = 6 }
+			}
+		}
+		scope:recipient = {
+			random_list = {
+				2 = { remove_trait = mangekyosharingan_4 
+			}
+				98 = { add_character_modifier = { modifier = defensive_modifier months = 6 } }
+			}
+			}
+		}
+	}
+}
+
+steal_sharingan.002 = {
+	type = character_event
+	title = steal_sharingan.002.t
+	desc = steal_sharingan.002.d
+
+	theme = crown
+
+	left_portrait = {
+	character = root
+	animation = rage
+	}
+    right_portrait = {
+        character = scope:recipient
+        animation = worry
+    }
+
+	option = {
+		name = steal_sharingan.002.a
+		trigger = {
+			scope:actor = {
+				is_sibling_of = scope:recipient
+				AND = {
+					has_trait = mangekyosharingan_1
+				}
+			}
+			scope:recipient = {
+				is_sibling_of = scope:actor
+				AND = {
+					has_trait = mangekyosharingan_1
+				}
+			}
+		}
+		scope:actor = {
+			add_trait = eternalsharingan
+			remove_trait = mangekyosharingan_1
+		}
+		scope:recipient = {
+			add_trait = eternalsharingan
+			remove_trait = mangekyosharingan_1
+		}
+	}
+	option = {
+		name = steal_sharingan.002.b
+		trigger = {
+			scope:actor = {
+				is_sibling_of = scope:recipient
+				AND = {
+					has_trait = mangekyosharingan_2
+				}
+			}
+			scope:recipient = {
+				is_sibling_of = scope:actor
+				AND = {
+					has_trait = mangekyosharingan_2
+				}
+			}
+		}
+		scope:actor = {
+			add_trait = eternalsharingan
+			remove_trait = mangekyosharingan_2
+		}
+		scope:recipient = {
+			add_trait = eternalsharingan
+			remove_trait = mangekyosharingan_2
+		}
+	}
+	option = {
+		name = steal_sharingan.002.c
+		trigger = {
+			scope:actor = {
+				is_sibling_of = scope:recipient
+				AND = {
+					has_trait = mangekyosharingan_3
+				}
+			}
+			scope:recipient = {
+				is_sibling_of = scope:actor
+				AND = {
+					has_trait = mangekyosharingan_3
+				}
+			}
+		}
+		scope:actor = {
+			add_trait = eternalsharingan
+			remove_trait = mangekyosharingan_3
+		}
+		scope:recipient = {
+			add_trait = eternalsharingan
+			remove_trait = mangekyosharingan_3
+		}
+	}
+	option = {
+		name = steal_sharingan.002.d
+		trigger = {
+			scope:actor = {
+				is_sibling_of = scope:recipient
+				AND = {
+					has_trait = mangekyosharingan_4
+				}
+			}
+			scope:recipient = {
+				is_sibling_of = scope:actor
+				AND = {
+					has_trait = mangekyosharingan_4
+				}
+			}
+		}
+		scope:actor = {
+			add_trait = eternalsharingan
+			remove_trait = mangekyosharingan_4
+		}
+		scope:recipient = {
+			add_trait = eternalsharingan
+			remove_trait = mangekyosharingan_4
+		}
+	}
+}
