@@ -1200,3 +1200,103 @@ senjugene = {
 		}
 	}
 }
+
+ninjarank_genin = {
+	index = 708
+	diplomacy = 1
+	health = 0.2
+	ruler_designer_cost = 2
+	monthly_dynasty_prestige = 0.2
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_ninjarank_genin
+			}
+			desc = trait_ninjarank_genin_desc
+		}
+	}
+}
+
+ninjarank_chunin = {
+	index = 709
+	diplomacy = 2
+	health = 0.4
+	ruler_designer_cost = 4
+	monthly_dynasty_prestige = 0.4
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_ninjarank_chunin
+			}
+			desc = trait_ninjarank_chunin_desc
+		}
+	}
+}
+
+ninjarank_jonin = {
+	index = 710
+	diplomacy = 3
+	health = 0.6
+	ruler_designer_cost = 6
+	monthly_dynasty_prestige = 0.6
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_ninjarank_jonin
+			}
+			desc = trait_ninjarank_jonin_desc
+		}
+	}
+}
+
+ninjarank_kage = {
+	index = 711
+	diplomacy = 4
+	health = 1
+	ruler_designer_cost = 10
+	monthly_dynasty_prestige = 1
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_ninjarank_kage
+			}
+			desc = trait_ninjarank_kage_desc
+		}
+	}
+}
+
+medical_nin = {
+	index = 712
+	learning = 4
+	health = 2
+	ruler_designer_cost = 20
+	monthly_dynasty_prestige = 2
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_medical_nin
+			}
+			desc = trait_medical_nin_desc
+		}
+	}
+}

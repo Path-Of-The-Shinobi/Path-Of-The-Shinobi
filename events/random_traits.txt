@@ -1,0 +1,29 @@
+﻿namespace = RandomTraits
+
+RandomTraits.001 = {
+    type = character_event
+    title = RandomTraits.001.t
+    desc = RandomTraits.001.d
+    theme = crown
+
+    right_portrait = {
+        character = scope:actor
+        animation = worry
+    }
+
+    option = {
+        name = RandomTraits.001.a
+        trigger = {
+            AND = {
+                is_ruler = yes
+            }
+        }
+
+        random_list = {
+            20 = { add_trait = uzumakigene }
+            20 = { add_trait = uchihagene }
+            20 = { add_trait = senjugene }
+            20 = { add_trait = hyugagene }
+        }
+    }
+}

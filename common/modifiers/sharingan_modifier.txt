@@ -15,11 +15,6 @@ izanagi_modifier = {
     advantage = 20
 }
 
-chibakutensei_modifier = {
-    icon = martial_positive
-    siege_phase_time = -40
-}
-
 eight_trigrams_modifier = {
     icon = prowess_positive
     prowess = 64
@@ -78,4 +73,9 @@ steal_sharingan_modifier = {
 defensive_modifier = {
     icon = health_positive
     health = 1
+}
+
+chibaku_tensei_modifier = {
+    icon = martial_positive
+    siege_phase_time = -5
 }

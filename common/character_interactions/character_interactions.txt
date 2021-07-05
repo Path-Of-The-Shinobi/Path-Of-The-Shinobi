@@ -23,35 +23,6 @@ perform_tsukuyomi_interaction = {
     }
 }
 
-create_shadow_clone_interaction = {
-	category = interaction_category_hostile
-	common_interaction = no
-
-	ai_maybe = no
-
-	desc = create_shadow_clone_desc
-
-	is_shown = {
-		scope:actor = {
-			martial >= 10
-			NOT = { has_character_flag = recently_used_shadow_clones }
-			has_character_flag = chakra_level_100
-			is_ai = no
-		}
-	}
-
-	 on_send = {
-		 scope:actor = {
-			 trigger_event = SG_Secret.3
-
-			  add_character_flag = {
-				 flag = recently_used_shadow_clones
-				 years = 5
-			 }
-		 }
-	 }
-}
-
 perform_kotoamatsukami_interaction = {
 	category = interaction_category_hostile
 	common_interaction = no
@@ -191,7 +162,6 @@ train_sharingan_level_three_interaction = {
 			has_trait = twotomoe
 			NOT = { has_character_modifier = train_recently }
 			NOT = { has_trait = threetomoe }
-
 		}
 	}
 
@@ -301,10 +271,6 @@ use_amaterasu_interaction = {
 	on_send = {
 		scope:actor = {
 			trigger_event = MangekyoEvents.0
-			add_character_flag = {
-				flag = Blind_Sharingan_1
-				years = 700
-			}
 		}
 	}
 }
@@ -386,20 +352,22 @@ train_rinnegan_interaction  = {
 	}
 }
 
-obtain_rinne_sharingan = {
+perform_chibaku_tensei_interaction = {
 	category = interaction_category_hostile
 	common_interaction = no
-	desc = obtain_rinne_sharingan_desc
+	desc = perform_chibaku_tensei_interaction_desc
 	is_shown = {
 		scope:actor = {
 			has_trait = rinnegan
-			has_trait = ten_tail
+			has_character_flag = unlock_tensei
 		}
 	}
 	on_send = {
-		trigger_event = {
-			id = sixpaths_jutsu.005
-			days = 2
+		scope:actor = {
+			trigger_event = {
+				id = SG_Secret.001
+				days = 2
+			}
 		}
 	}
 }

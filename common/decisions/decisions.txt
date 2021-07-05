@@ -329,7 +329,7 @@ decision_elemental_release = {
 }
 
 decision_summoning_jutsu = {
-	ai_check__interval = 50
+	ai_check_interval = 50
 	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
 	desc = decision_summoning_jutsu_desc
 	selection_tooltip = decision_summoning_jutsu_tooltip

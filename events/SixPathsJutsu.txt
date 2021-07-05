@@ -123,3 +123,30 @@ sixpaths_jutsu.003 = {
     }
   }
 }
+
+sixpaths_jutsu.004 = {
+  type = character_event
+  title = sixpaths_jutsu.004.t
+  desc = sixpaths_jutsu.004.d
+  
+  theme = secret
+
+  right_portrait = {
+    character = scope:actor
+    animation = worry
+  }
+  
+  option = {
+    name = sixpaths_jutsu.004.a
+    trigger = {
+      has_trait = rinnegan
+      NOT = { has_character_flag = unlock_tensei }
+    }
+    hidden_effect = {
+      add_character_flag = {
+        flag = unlock_tensei
+        years = 20
+      }
+    }
+  }
+}
