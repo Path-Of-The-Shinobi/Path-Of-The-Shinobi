@@ -1,0 +1,17 @@
+﻿random_traits = {
+    default = random_traits_yes
+
+    random_traits_yes = {
+    }
+    random_traits_no = {
+    }
+}
+
+auto_level = {
+    default = auto_level_yes
+
+    auto_level_yes = {
+    }
+    auto_level_no = {
+    }
+}

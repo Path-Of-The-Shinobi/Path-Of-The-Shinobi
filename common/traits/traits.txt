@@ -1300,3 +1300,79 @@ medical_nin = {
 		}
 	}
 }
+
+seal_novice = {
+	index = 713
+	learning = 5
+	ruler_designer_cost = 20
+	monthly_dynasty_prestige = 0.5
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seal_novice
+			}
+			desc = trait_seal_novice_desc
+		}
+	}
+}
+
+seal_basic = {
+	index = 714
+	learning = 7
+	ruler_designer_cost = 30
+	monthly_dynasty_prestige = 0.7
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seal_basic
+			}
+			desc = trait_seal_basic_desc
+		}
+	}
+}
+
+seal_specialist = {
+	index = 715
+	learning = 9
+	ruler_designer_cost = 40
+	monthly_dynasty_prestige = 0.9
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seal_specialist
+			}
+			desc = trait_seal_specialist_desc
+		}
+	}
+}
+
+seal_master = {
+	index = 716
+	learning = 11
+	ruler_designer_cost = 50
+	monthly_dynasty_prestige = 1.1
+	inherit_chance = 0
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seal_master
+			}
+			desc = trait_seal_master_desc
+		}
+	}
+}

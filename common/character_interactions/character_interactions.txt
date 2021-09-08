@@ -112,6 +112,7 @@ train_sharingan_level_one_interaction = {
 	is_shown = {
 		scope:actor = {
 			has_trait = uchihagene
+			has_game_rule = auto_level_no
 			NOT = { has_character_modifier = train_recently }
 			NOT = { has_trait = onetomoe }
 			NOT = { has_trait = twotomoe }
@@ -121,6 +122,7 @@ train_sharingan_level_one_interaction = {
 			NOT = { has_trait = mangekyosharingan_3 }
 			NOT = { has_trait = mangekyosharingan_4 }
 			NOT = { has_trait = eternalsharingan }
+			NOT = { has_game_rule = auto_level_yes }
 		}
 	}
 
@@ -139,9 +141,11 @@ train_sharingan_level_two_interaction = {
 	is_shown = {
 		scope:actor = {
 			has_trait = onetomoe
+			has_game_rule = auto_level_no
 			NOT = { has_character_modifier = train_recently }
 			NOT = { has_trait = threetomoe }
 			NOT = { has_trait = twotomoe }
+			NOT = { has_game_rule = auto_level_yes }
 		}
 	}
 
@@ -160,8 +164,10 @@ train_sharingan_level_three_interaction = {
 	is_shown = {
 		scope:actor = {
 			has_trait = twotomoe
+			has_game_rule = auto_level_no
 			NOT = { has_character_modifier = train_recently }
 			NOT = { has_trait = threetomoe }
+			NOT = { has_game_rule = auto_level_yes }
 		}
 	}
 
@@ -270,7 +276,7 @@ use_amaterasu_interaction = {
 
 	on_send = {
 		scope:actor = {
-			trigger_event = MangekyoEvents.0
+			trigger_event = MangekyoEvents.001
 		}
 	}
 }

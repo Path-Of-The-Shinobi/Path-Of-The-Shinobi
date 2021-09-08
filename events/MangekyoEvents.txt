@@ -1,9 +1,9 @@
 ﻿namespace = MangekyoEvents
 
-MangekyoEvents.0 = {
+MangekyoEvents.001 = {
     type = character_event
-    title = MangekyoEvents.0.t
-    desc = MangekyoEvents.0.d
+    title = MangekyoEvents.001.t
+    desc = MangekyoEvents.001.d
 
     theme = martial
 
@@ -18,7 +18,7 @@ MangekyoEvents.0 = {
 	}
 
     option = {
-		name = MangekyoEvents.0.o
+		name = MangekyoEvents.001.o
 		hidden_effect = {
 			scope:actor = {
 				add_character_flag = {

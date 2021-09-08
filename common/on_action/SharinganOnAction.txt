@@ -15,7 +15,9 @@ sharingan_birthday_one = {
     trigger = {
         AND = {
             age = 16
+            has_game_rule = auto_level_yes
             martial >= 2
+            NOT = { has_game_rule = auto_level_no }
         }
         OR = {
             has_trait = education_martial_1
@@ -39,9 +41,11 @@ sharingan_birthday_one = {
 sharingan_birthday_two = {
     trigger = {
         AND = {
+            has_game_rule = auto_level_yes
             age = 18
             has_trait = uchihagene
             NOT = { has_trait = rinnesharingan }
+            NOT = { has_game_rule = auto_level_no }
         }
     }
 
@@ -54,8 +58,10 @@ sharingan_birthday_three = {
     trigger = {
         AND = {
             age = 20
+            has_game_rule = auto_level_yes
             has_trait = onetomoe
             NOT = { has_trait = rinnesharingan }
+            NOT = { has_game_rule = auto_level_no }
         }
     }
 
@@ -68,8 +74,10 @@ sharingan_birthday_four = {
     trigger = {
         AND = {
             age = 22
+            has_game_rule = auto_level_yes
             has_trait = twotomoe
             NOT = { has_trait = rinnesharingan }
+            NOT = { has_game_rule = auto_level_no }
         }
     }
 
@@ -82,8 +90,10 @@ sharingan_birthday_five = {
     trigger = {
         AND = {
             age = 24
+            has_game_rule = auto_level_yes
             has_trait = threetomoe
             NOT = { has_trait = rinnesharingan }
+            NOT = { has_game_rule = auto_level_no }
         }
     }
 
@@ -96,11 +106,13 @@ sharingan_birthday_six = {
     trigger = {
         AND = {
             age = 26
+            has_game_rule = auto_level_yes
             has_trait = mangekyosharingan_1
             OR = { has_trait = mangekyosharingan_2 }
             OR = { has_trait = mangekyosharingan_3 }
             OR = { has_trait = mangekyosharingan_4 }
             NOT = { has_trait = rinnesharingan }
+            NOT = { has_game_rule = auto_level_no }
         }
     }
 
@@ -113,50 +125,14 @@ sharingan_birthday_seven = {
     trigger = {
         AND = {
             age >= 28
+            has_game_rule = auto_level_yes
             has_trait = eternalsharingan
             NOT = { has_trait = rinnegan }
+            NOT = { has_game_rule = auto_level_no }
         }
     }
 
     events = {
         SG_Sharingan.7
-    }
-}
-
-sharingan_birthday_eight = {
-    trigger = {
-        AND = {
-            is_ruler = yes
-            NOT = { has_trait = uchihagene }
-            NOT = { has_trait = senjugene }
-            NOT = { has_trait = uzumakigene }
-            NOT = { has_trait = hyugagene }
-        }
-    }
-
-    events = {
-        RandomTraits.001
-    }
-}
-
-shgaringan_birthday_nine = {
-    trigger = {
-        NOT = { has_trait = uchihagene }
-        NOT = { has_trait = byakugan }
-        NOT = { has_trait = hyugagene }
-    }
-    events = {
-        DojutsuEvent.001
-    }
-}
-
-shgaringan_birthday_nine = {
-    trigger = {
-        NOT = { has_trait = uchihagene }
-        NOT = { has_trait = byakugan }
-        NOT = { has_trait = hyugagene }
-    }
-    events = {
-        DojutsuEvent.001
     }
 }

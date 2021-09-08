@@ -16,7 +16,6 @@ sixpaths_jutsu.001 = {
 	  name = sixpaths_jutsu.001.a
     trigger = {
       has_trait = eternalsharingan
-      has_trait = senjugene
     }
     hidden_effect = {
       trigger_event = {
@@ -33,7 +32,6 @@ sixpaths_jutsu.001 = {
     name = sixpaths_jutsu.001.b
     trigger = {
       has_trait = eternalsharingan
-      has_trait = senjugene
     }
     hidden_effect = {
       add_character_flag = {

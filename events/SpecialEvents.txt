@@ -24,5 +24,6 @@ SG_Secret.001 = {
 			random_list = {
 				100 = { add_character_modifier = { modifier = chibaku_tensei_modifier months = 2 }
 			}
+		}
 	}
 }

@@ -1,5 +1,5 @@
-﻿bm_869_chakra = {
-	start_date = 869.1.1
+﻿bm_871_chakra = {
+	start_date = 871.1.1
 	is_playable = yes
 
 	# Kagyua Otsutsuki (York) ID: 999001

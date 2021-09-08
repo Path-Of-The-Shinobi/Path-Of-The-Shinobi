@@ -317,8 +317,7 @@ decision_elemental_release = {
 		NOT = { has_trait = earthrelease }
 	}
 	
-	effect = { trigger_event = ElementalRelease.1 
-	}
+	effect = { trigger_event = ElementalRelease.1 }
 	ai_potential = {
 		always = yes
 	}
@@ -353,5 +352,62 @@ decision_summoning_jutsu = {
 
 	ai_will_do = {
 		base = 100
+	}
+}
+
+decision_convert_faith = {
+	ai_check_interval = 50
+	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+	desc = decision_convert_faith_desc
+	selection_tooltip = decision_convert_faith_tooltip
+	is_shown = {
+		NOT = { has_faith = faith:sixpaths }
+	}
+	effect = {
+		set_character_faith = faith:sixpaths
+	}
+}
+
+decision_uchihapath = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+	desc = decision_uchihapath_desc
+	selection_tooltip = decision_uchihapath_tooltip
+	is_shown = {
+		NOT = { has_trait = byakugan }
+		NOT = { has_trait = uchihagene }
+		NOT = { has_trait = hyugagene }
+	}
+	is_valid = {
+		NOT = { has_trait = byakugan }
+		NOT = { has_trait = uchihagene }
+		NOT = { has_trait = hyugagene }
+	}
+	effect = {
+		trigger_event = {
+			id = DojutsuEvent.001
+			days = 1
+		}
+	}
+}
+
+decision_random_events = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_rift_scape.dds"
+	desc = decision_random_events
+	selection_tooltip = decision_random_events_tooltip
+	is_shown = {
+		has_game_rule = random_traits_yes
+		NOT = { has_character_flag = Random_Traits }
+	}
+	effect = {
+		trigger_event = { 
+			id = Random_Traits.001
+			days = 1
+		}
+		add_character_flag = {
+			flag = Random_Traits
+			years = 300
+		}
 	}
 }

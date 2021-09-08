@@ -1,9 +1,9 @@
 ﻿namespace = RandomTraits
 
-RandomTraits.001 = {
+Random_Traits.001 = {
     type = character_event
-    title = RandomTraits.001.t
-    desc = RandomTraits.001.d
+    title = Random_Traits.001.t
+    desc = Random_Traits.001.d
     theme = crown
 
     right_portrait = {
@@ -12,13 +12,7 @@ RandomTraits.001 = {
     }
 
     option = {
-        name = RandomTraits.001.a
-        trigger = {
-            AND = {
-                is_ruler = yes
-            }
-        }
-
+        name = Random_Traits.001.a
         random_list = {
             20 = { add_trait = uzumakigene }
             20 = { add_trait = uchihagene }

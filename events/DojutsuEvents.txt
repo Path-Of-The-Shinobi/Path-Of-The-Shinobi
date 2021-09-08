@@ -17,14 +17,13 @@ DojutsuEvent.001 = {
 		trigger = {
 			AND = {
                 NOT = { has_trait = uchihagene }
+                has_prestige >= 200
             }
 		}
-			random_list = {
-				100 = {
-                    add_trait = uchihagene
-                    set_house = house:house_Uchiha
-                }
-			}
+        hidden_effect = {
+            add_trait = uchihagene
+            set_house = house:house_Uchiha
+        }
 	}
 
     option = {
@@ -33,18 +32,16 @@ DojutsuEvent.001 = {
             AND = {
                 NOT = { has_trait = hyugagene }
                 NOT = { has_trait = byakugan }
+                has_prestige >= 200
             }
         }
-            random_list = {
-                100 = 
-                {
-                add_trait = hyugagene 
-                add_trait = byakugan
-                set_house = house:house_Hygua
-                }
-            }
+        hidden_effect = {
+            add_trait = hyugagene 
+            add_trait = byakugan
+            set_house = house:house_Hygua
+        }
     }
-
+    
     option = {
         name = DojutsuEvent.001.b
         trigger = {
